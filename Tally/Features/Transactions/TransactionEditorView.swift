@@ -68,6 +68,7 @@ struct TransactionEditorView: View {
     @State private var saveTick = 0
     @State private var isSaving = false
     @State private var didSetDefaults = false
+    @State private var didDelete = false
     @FocusState private var titleFocused: Bool
 
     init(transaction: Transaction? = nil, initialKind: TransactionKind = .expense) {
@@ -142,6 +143,15 @@ struct TransactionEditorView: View {
     // MARK: Body
 
     var body: some View {
+        if didDelete {
+            // The model is gone; don't read from it while the sheet dismisses.
+            Color.clear
+        } else {
+            editorBody
+        }
+    }
+
+    private var editorBody: some View {
         NavigationStack {
             Form {
                 kindSection
@@ -694,9 +704,9 @@ struct TransactionEditorView: View {
 
     private func deleteTransaction() {
         guard let transaction else { return }
+        didDelete = true
         context.delete(transaction)
         try? context.save()
-        saveTick += 1
         dismiss()
     }
 }
