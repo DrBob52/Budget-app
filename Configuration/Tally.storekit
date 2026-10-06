@@ -1,0 +1,49 @@
+{
+  "identifier" : "6F1C1A3E",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_compatibilityTimeRate" : { "3" : 6 },
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21A5C0D1",
+      "localizations" : [],
+      "name" : "Tally Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "4.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "7B2E9F01",
+          "introductoryOffer" : { "internalID" : "7B2E9F11", "paymentMode" : "free", "subscriptionPeriod" : "P1W" },
+          "localizations" : [ { "description" : "All Tally Pro features, billed monthly", "displayName" : "Tally Pro Monthly", "locale" : "en_US" } ],
+          "productID" : "com.tallybudget.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "21A5C0D1",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "29.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "7B2E9F02",
+          "introductoryOffer" : { "internalID" : "7B2E9F12", "paymentMode" : "free", "subscriptionPeriod" : "P1W" },
+          "localizations" : [ { "description" : "All Tally Pro features, billed yearly", "displayName" : "Tally Pro Yearly", "locale" : "en_US" } ],
+          "productID" : "com.tallybudget.pro.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "21A5C0D1",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : { "major" : 3, "minor" : 0 }
+}
