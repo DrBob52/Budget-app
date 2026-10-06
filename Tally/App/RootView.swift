@@ -38,6 +38,7 @@ struct RootView: View {
         .onOpenURL { router.handle($0) }
         .onAppear {
             lock.lockIfNeeded(settings: settings)
+            PhoneWatchBridge.shared.activate(container: context.container, settings: settings)
             refreshData()
         }
         .task {
