@@ -40,6 +40,10 @@ struct RootView: View {
             lock.lockIfNeeded(settings: settings)
             PhoneWatchBridge.shared.activate(container: context.container, settings: settings)
             refreshData()
+            if let url = IntentRouting.consume() { router.handle(url) }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .intentOpenURL)) { _ in
+            if let url = IntentRouting.consume() { router.handle(url) }
         }
         .task {
             await store.start()

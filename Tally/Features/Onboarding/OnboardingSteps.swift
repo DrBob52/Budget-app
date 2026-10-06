@@ -195,7 +195,7 @@ struct OnboardingRhythmStep: View {
         switch kind {
         case .monthly: return "calendar"
         case .biweekly: return "calendar.badge.clock"
-        case .weekly: return "calendar.day.timeline.left"
+        case .weekly: return "calendar.badge.plus"
         }
     }
 
