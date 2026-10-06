@@ -243,9 +243,6 @@ private enum PaywallFormat {
     static func periodLength(_ period: Product.SubscriptionPeriod, count: Int) -> String {
         let total: Int = max(period.value * max(count, 1), 1)
         let base: String = unitName(period.unit)
-        if period.unit == .week && total % 1 == 0 && total == 1 {
-            return "1 week"
-        }
         return total == 1 ? "1 \(base)" : "\(total) \(base)s"
     }
 
@@ -449,12 +446,7 @@ private struct PaywallLegalFootnote: View {
     }
 }
 
-#Preview("Paywall") {
-    PaywallView()
-        .previewEnvironment()
-}
-
-#Preview("Paywall, on Pro") {
+#Preview {
     PaywallView()
         .previewEnvironment()
 }
