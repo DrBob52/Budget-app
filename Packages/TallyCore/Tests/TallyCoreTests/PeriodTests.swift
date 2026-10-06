@@ -226,8 +226,8 @@ final class PeriodCalculatorTests: XCTestCase {
         let calc = calculator()
         let jan = calc.period(containing: date(2026, 1, 15))
         assertPeriod(calc.period(before: jan), date(2025, 12, 1), date(2026, 1, 1))
-        let dec = calc.period(containing: date(2025, 12, 15))
-        assertPeriod(calc.period(after: dec), date(2026, 1, 1), date(2026, 2, 1))
+        let december = calc.period(containing: date(2025, 12, 15))
+        assertPeriod(calc.period(after: december), date(2026, 1, 1), date(2026, 2, 1))
     }
 
     func testMonthly25PeriodAfterAndBeforeAcrossYear() {
