@@ -223,7 +223,6 @@ final class InsightsCalculatorTests: XCTestCase {
             makeEntry("301", on: date(2026, 10, 5))
         ]
         let totals = InsightsCalculator.periodTotals(entries: entries, periods: periods)
-        XCTAssertEqual(InsightsCalculator.averageExpenses(totals), dec("200.33333333333333333333333333333333333333").rounded(scale: 20).isZero ? 0 : InsightsCalculator.averageExpenses(totals))
         XCTAssertEqual(InsightsCalculator.averageExpenses(totals).doubleValue, 200.3333333333, accuracy: 1e-6)
     }
 
