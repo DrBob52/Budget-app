@@ -69,7 +69,10 @@ public enum CSV {
     }
 
     public static func escape(_ field: String, delimiter: Character = ",") -> String {
-        let needsQuotes = field.contains(delimiter) || field.contains("\"") || field.contains("\n") || field.contains("\r")
+        // Check scalars: "\r\n" is a single Character, so Character-based checks miss it.
+        let needsQuotes = field.unicodeScalars.contains { scalar in
+            scalar == "\"" || scalar == "\n" || scalar == "\r" || delimiter.unicodeScalars.contains(scalar)
+        }
         guard needsQuotes else { return field }
         return "\"" + field.replacingOccurrences(of: "\"", with: "\"\"") + "\""
     }
@@ -171,21 +174,23 @@ public enum StatementImporter {
         let header = first.map { $0.lowercased().trimmingCharacters(in: .whitespaces) }
         let looksLikeHeader = parseDate(first.first ?? "", format: nil) == nil
 
-        func find(_ keys: [String]) -> Int? {
-            header.firstIndex { name in keys.contains { name.contains($0) } }
+        func find(_ keys: [String], rejecting rejected: [String] = []) -> Int? {
+            header.firstIndex { name in
+                keys.contains { name.contains($0) } && !rejected.contains { name.contains($0) }
+            }
         }
 
         mapping.hasHeader = looksLikeHeader
         if looksLikeHeader {
             mapping.dateColumn = find(["date", "datum", "posted", "booking"]) ?? 0
             mapping.descriptionColumn = find(["description", "text", "payee", "merchant", "name", "memo", "beskrivning", "mottagare", "details"]) ?? 1
-            if let debit = find(["debit", "withdrawal", "money out", "paid out", "uttag"]),
-               let credit = find(["credit", "deposit", "money in", "paid in", "insättning"]) {
+            if let debit = find(["debit", "withdrawal", "money out", "paid out", "uttag"], rejecting: ["date"]),
+               let credit = find(["credit", "deposit", "money in", "paid in", "insättning"], rejecting: ["date"]) {
                 mapping.amountColumn = nil
                 mapping.debitColumn = debit
                 mapping.creditColumn = credit
             } else {
-                mapping.amountColumn = find(["amount", "belopp", "value", "sum"]) ?? min(2, max(first.count - 1, 0))
+                mapping.amountColumn = find(["amount", "belopp", "value", "sum"], rejecting: ["date", "datum", "balance", "saldo"]) ?? min(2, max(first.count - 1, 0))
             }
         } else {
             mapping.dateColumn = 0
@@ -259,11 +264,9 @@ public enum StatementImporter {
             case let (dot?, comma?):
                 separator = dot > comma ? "." : ","
             case let (dot?, nil):
-                let digitsAfter = s.distance(from: dot, to: s.endIndex) - 1
-                separator = (digitsAfter == 3 && s.filter { $0 == "." }.count >= 1 && s.count > 4) ? "," : "."
+                separator = looksLikeGrouping(s, separator: ".", last: dot) ? "," : "."
             case let (nil, comma?):
-                let digitsAfter = s.distance(from: comma, to: s.endIndex) - 1
-                separator = digitsAfter == 3 ? "." : ","
+                separator = looksLikeGrouping(s, separator: ",", last: comma) ? "." : ","
             case (nil, nil):
                 separator = "."
             }
@@ -276,6 +279,17 @@ public enum StatementImporter {
         guard var value = Decimal(string: s, locale: Locale(identifier: "en_US_POSIX")) else { return nil }
         if negative { value = -value }
         return value
+    }
+
+    /// With only one kind of separator present, it groups thousands when it appears more than
+    /// once, or once with exactly three digits after it and a non-zero whole part ("1.234").
+    /// "0.123" and "12.5" are decimals.
+    static func looksLikeGrouping(_ s: String, separator: Character, last: String.Index) -> Bool {
+        if s.filter({ $0 == separator }).count > 1 { return true }
+        let digitsAfter = s.distance(from: last, to: s.endIndex) - 1
+        let whole = s[..<last]
+        let wholeIsZero = whole.isEmpty || whole.allSatisfy { $0 == "0" }
+        return digitsAfter == 3 && !wholeIsZero
     }
 
     public static func parseDate(_ text: String, format: String?) -> Date? {
