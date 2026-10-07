@@ -48,11 +48,11 @@ struct OnboardingScaffold<Content: View>: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(title)
+                    title
                         .font(.display(30))
                         .foregroundStyle(Palette.ink)
                         .fixedSize(horizontal: false, vertical: true)
-                    Text(subtitle)
+                    subtitle
                         .font(.body)
                         .foregroundStyle(Palette.inkSecondary)
                         .fixedSize(horizontal: false, vertical: true)
