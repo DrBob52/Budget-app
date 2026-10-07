@@ -1,7 +1,73 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@ of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ of %2$@"
+          }
+        }
+      }
+    },
+    "^[%lld day](inflect: true) left" : {
 
+    },
+    "Amount" : {
+
+    },
+    "Categories" : {
+
+    },
+    "Change category" : {
+
+    },
+    "left to spend" : {
+
+    },
+    "Log" : {
+
+    },
+    "Log expense" : {
+
+    },
+    "Logged" : {
+
+    },
+    "Next" : {
+
+    },
+    "No budgeted categories yet. Set limits in the Plan tab on your iPhone." : {
+
+    },
+    "No category" : {
+
+    },
+    "None" : {
+
+    },
+    "Per day" : {
+
+    },
+    "Period ended" : {
+
+    },
+    "Pick a category" : {
+
+    },
+    "Remaining" : {
+
+    },
+    "Sample figures. Open Tally on your iPhone to sync." : {
+
+    },
+    "Sent to your iPhone" : {
+
+    },
+    "Spent" : {
+
+    }
   },
   "version" : "1.0"
 }

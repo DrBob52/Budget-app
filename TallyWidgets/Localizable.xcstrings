@@ -1,7 +1,67 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@ left, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ left, %2$@"
+          }
+        }
+      }
+    },
+    "%@ per day" : {
 
+    },
+    "^[%lld day](inflect: true) left" : {
+
+    },
+    "Expense" : {
+
+    },
+    "Income" : {
+
+    },
+    "Jump straight to logging an expense or income." : {
+
+    },
+    "Left" : {
+
+    },
+    "Left to spend" : {
+
+    },
+    "LEFT TO SPEND" : {
+
+    },
+    "Log expense" : {
+
+    },
+    "Money in" : {
+
+    },
+    "Money out" : {
+
+    },
+    "Period ended" : {
+
+    },
+    "Quick add" : {
+
+    },
+    "Set budgets in the Plan tab to see categories here." : {
+
+    },
+    "Takes a few seconds" : {
+
+    },
+    "TOP CATEGORIES" : {
+
+    },
+    "What remains of this period's budget, and what you can spend each day." : {
+
+    }
   },
   "version" : "1.0"
 }

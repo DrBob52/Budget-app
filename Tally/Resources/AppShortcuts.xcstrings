@@ -1,86 +1,123 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "Add an expense to ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Añadir un gasto a ${applicationName}"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Add an expense to ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir un gasto a ${applicationName}"
           }
         }
       }
     },
-    "Check my budget in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Revisar mi presupuesto en ${applicationName}"
+    "Check my budget in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisar mi presupuesto en ${applicationName}"
           }
         }
       }
     },
-    "How much is left in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cuánto me queda en ${applicationName}"
+    "How much is left in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "How much is left in ${applicationName}",
+              "Check my budget in ${applicationName}",
+              "What can I spend in ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Cuánto me queda en ${applicationName}"
           }
         }
       }
     },
-    "Log an expense in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Registrar un gasto en ${applicationName}"
+    "Log an expense in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Log an expense in ${applicationName}",
+              "Add an expense to ${applicationName}",
+              "Record spending in ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Registrar un gasto en ${applicationName}"
           }
         }
       }
     },
-    "New transaction in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nuevo movimiento en ${applicationName}"
+    "New transaction in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuevo movimiento en ${applicationName}"
           }
         }
       }
     },
-    "Open quick add in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abrir añadido rápido en ${applicationName}"
+    "Open quick add in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Open quick add in ${applicationName}",
+              "New transaction in ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Abrir añadido rápido en ${applicationName}"
           }
         }
       }
     },
-    "Record spending in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Anotar un gasto en ${applicationName}"
+    "Record spending in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anotar un gasto en ${applicationName}"
           }
         }
       }
     },
-    "What can I spend in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cuánto puedo gastar en ${applicationName}"
+    "What can I spend in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuánto puedo gastar en ${applicationName}"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

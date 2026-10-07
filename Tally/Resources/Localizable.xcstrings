@@ -1,7 +1,1992 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "- %@ is all square" : {
 
+    },
+    "- %@ is owed %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "- %1$@ is owed %2$@"
+          }
+        }
+      }
+    },
+    "- %@ owes %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "- %1$@ owes %2$@"
+          }
+        }
+      }
+    },
+    "/ month" : {
+
+    },
+    "%" : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ · Ended" : {
+
+    },
+    "%@ · Next %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · Next %2$@"
+          }
+        }
+      }
+    },
+    "%@ · Paused" : {
+
+    },
+    "%@ (you)" : {
+
+    },
+    "%@ → %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ → %2$@"
+          }
+        }
+      }
+    },
+    "%@ budget, amounts hidden" : {
+
+    },
+    "%@ for %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ for %2$@"
+          }
+        }
+      }
+    },
+    "%@ for the first %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ for the first %2$@"
+          }
+        }
+      }
+    },
+    "%@ free" : {
+
+    },
+    "%@ is coming out. Make sure there is enough set aside." : {
+
+    },
+    "%@ is due tomorrow" : {
+
+    },
+    "%@ is nearly used up" : {
+
+    },
+    "%@ is over budget" : {
+
+    },
+    "%@ left" : {
+
+    },
+    "%@ left of %@ this period." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ left of %2$@ this period."
+          }
+        }
+      }
+    },
+    "%@ left to assign" : {
+
+    },
+    "%@ left to spend" : {
+
+    },
+    "%@ limit" : {
+
+    },
+    "%@ of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ of %2$@"
+          }
+        }
+      }
+    },
+    "%@ over" : {
+
+    },
+    "%@ over ^[%lld period](inflect: true)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ over ^[%2$lld period](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ over the total." : {
+
+    },
+    "%@ over your income" : {
+
+    },
+    "%@ paid · %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ paid · %2$@"
+          }
+        }
+      }
+    },
+    "%@ paid %@ %@. This adds a repayment to the history and updates everyone's balance." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ paid %2$@ %3$@. This adds a repayment to the history and updates everyone's balance."
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld day](inflect: true)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ per ^[%2$lld day](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld month](inflect: true)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ per ^[%2$lld month](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld week](inflect: true)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ per ^[%2$lld week](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld year](inflect: true)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ per ^[%2$lld year](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per day" : {
+
+    },
+    "%@ per month" : {
+
+    },
+    "%@ per period" : {
+
+    },
+    "%@ per week" : {
+
+    },
+    "%@ per year" : {
+
+    },
+    "%@ spent this period" : {
+
+    },
+    "%@ still to assign." : {
+
+    },
+    "%@ to go." : {
+
+    },
+    "%@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@"
+          }
+        }
+      }
+    },
+    "%@, %@ left of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@ left of %3$@"
+          }
+        }
+      }
+    },
+    "%@, %@ over of %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@ over of %3$@"
+          }
+        }
+      }
+    },
+    "%@, %@ spent, no limit set" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@ spent, no limit set"
+          }
+        }
+      }
+    },
+    "%@, %@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@, %3$@"
+          }
+        }
+      }
+    },
+    "%@, %@, amount hidden" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@, amount hidden"
+          }
+        }
+      }
+    },
+    "%@, amounts hidden" : {
+
+    },
+    "%@, no limit, amounts hidden" : {
+
+    },
+    "%@, then %@. Cancel anytime." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, then %2$@. Cancel anytime."
+          }
+        }
+      }
+    },
+    "%@: %@. Limit %@, spent %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$@. Limit %3$@, spent %4$@."
+          }
+        }
+      }
+    },
+    "%@. Cancel anytime." : {
+
+    },
+    "%@. Income %@, spent %@, net %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@. Income %2$@, spent %3$@, net %4$@."
+          }
+        }
+      }
+    },
+    "%@'s shares and repayments will be deleted. Expenses they paid stay in your ledger." : {
+
+    },
+    "%lld percent" : {
+
+    },
+    "%lld%%" : {
+
+    },
+    "%lld%% less than last period" : {
+
+    },
+    "%lld%% more than last period" : {
+
+    },
+    "^[%lld category](inflect: true)" : {
+
+    },
+    "^[%lld day](inflect: true)" : {
+
+    },
+    "^[%lld month](inflect: true)" : {
+
+    },
+    "^[%lld period](inflect: true)" : {
+
+    },
+    "^[%lld purchase](inflect: true)" : {
+
+    },
+    "^[%lld week](inflect: true)" : {
+
+    },
+    "^[%lld year](inflect: true)" : {
+
+    },
+    "×" : {
+
+    },
+    "≈" : {
+
+    },
+    "≈ %@ per day for ^[%lld day](inflect: true)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "≈ %1$@ per day for ^[%2$lld day](inflect: true)"
+          }
+        }
+      }
+    },
+    "0" : {
+
+    },
+    "A bill" : {
+
+    },
+    "A category" : {
+
+    },
+    "A fresh budget every week." : {
+
+    },
+    "A new budget every two weeks, in step with your pay." : {
+
+    },
+    "A period starts on" : {
+
+    },
+    "A person with 2 shares owes twice as much as a person with 1." : {
+
+    },
+    "A quick note of today's spending keeps your plan honest." : {
+
+    },
+    "A quiet period" : {
+
+    },
+    "A rough figure is fine. Tally uses it to suggest sensible limits in the next step." : {
+
+    },
+    "About" : {
+
+    },
+    "About %@ a month" : {
+
+    },
+    "Account" : {
+
+    },
+    "Account name" : {
+
+    },
+    "Accounts" : {
+
+    },
+    "Across ^[%lld account](inflect: true)" : {
+
+    },
+    "Active" : {
+
+    },
+    "Active bills and subscriptions, averaged over a month." : {
+
+    },
+    "Activity" : {
+
+    },
+    "Actual balance" : {
+
+    },
+    "Add a category" : {
+
+    },
+    "Add a few transactions and your spending patterns will show up here." : {
+
+    },
+    "Add a partner, roommates or a trip group." : {
+
+    },
+    "Add a recurring item" : {
+
+    },
+    "Add a transaction" : {
+
+    },
+    "Add account or goal" : {
+
+    },
+    "Add an account" : {
+
+    },
+    "Add an account to see your net worth." : {
+
+    },
+    "Add an expense to your budget without opening Tally." : {
+
+    },
+    "Add another person" : {
+
+    },
+    "Add category" : {
+
+    },
+    "Add expense category" : {
+
+    },
+    "Add income category" : {
+
+    },
+    "Add money" : {
+
+    },
+    "Add person" : {
+
+    },
+    "Add recurring item" : {
+
+    },
+    "Add rent, subscriptions or a paycheck and Tally will log each one when it comes due." : {
+
+    },
+    "Add shared expense" : {
+
+    },
+    "Add the places your money lives, like a checking account, cash or a credit card." : {
+
+    },
+    "Add transaction" : {
+
+    },
+    "Add your first account" : {
+
+    },
+    "Add your first expense or paycheck and it will show up here." : {
+
+    },
+    "Add your first expense with the plus button and watch the bars fill in." : {
+
+    },
+    "Add your income in the earlier step to see how much is left to assign." : {
+
+    },
+    "Adding people is part of Tally Pro." : {
+
+    },
+    "Adds expense of" : {
+
+    },
+    "Adds income of" : {
+
+    },
+    "Adjust balance" : {
+
+    },
+    "Advanced insights" : {
+
+    },
+    "Ahead of pace by %@. Spending is running faster than your budget allows." : {
+
+    },
+    "All accounts" : {
+
+    },
+    "All categories" : {
+
+    },
+    "All square" : {
+
+    },
+    "All time" : {
+
+    },
+    "All types" : {
+
+    },
+    "Allow notifications for Tally in the system Settings to receive reminders." : {
+
+    },
+    "Amount" : {
+
+    },
+    "Amount you owe today" : {
+
+    },
+    "another account" : {
+
+    },
+    "Anything above this counts as over budget for the period." : {
+
+    },
+    "Anything to log today?" : {
+
+    },
+    "Appearance" : {
+
+    },
+    "Archive" : {
+
+    },
+    "Archive account" : {
+
+    },
+    "Archive category" : {
+
+    },
+    "Archive goal" : {
+
+    },
+    "Archive this account?" : {
+
+    },
+    "Archive this category?" : {
+
+    },
+    "Archive this goal?" : {
+
+    },
+    "Archived (%lld)" : {
+
+    },
+    "Archived accounts are hidden and left out of net worth. Their transactions keep their history, and you can restore the account any time." : {
+
+    },
+    "Archived categories are hidden but their transactions keep their history." : {
+
+    },
+    "Archived categories keep their past transactions but no longer appear when adding new ones." : {
+
+    },
+    "Archiving hides the goal and keeps its history. Deleting removes it and every deposit." : {
+
+    },
+    "Assets" : {
+
+    },
+    "Assigned" : {
+
+    },
+    "Average" : {
+
+    },
+    "Average spending" : {
+
+    },
+    "Average spending %@" : {
+
+    },
+    "Back" : {
+
+    },
+    "Back to today" : {
+
+    },
+    "Balance" : {
+
+    },
+    "Balance adjustment" : {
+
+    },
+    "Balances" : {
+
+    },
+    "Basics" : {
+
+    },
+    "Behind pace by %@. You are spending slower than an even rate." : {
+
+    },
+    "Bill reminders" : {
+
+    },
+    "Bill reminders arrive the morning before a recurring bill is due. Overspend alerts appear once per period when a category reaches 90 percent of its budget." : {
+
+    },
+    "Bills and subscriptions that log themselves." : {
+
+    },
+    "Budget" : {
+
+    },
+    "Budget per period" : {
+
+    },
+    "Budget period" : {
+
+    },
+    "Budget rhythm" : {
+
+    },
+    "Budget summary, amounts hidden" : {
+
+    },
+    "Budget with the whole picture." : {
+
+    },
+    "Budgeted" : {
+
+    },
+    "By period" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Carried" : {
+
+    },
+    "Carry leftover forward" : {
+
+    },
+    "Carry leftover to next period" : {
+
+    },
+    "Carry over only takes effect once rollover is switched on in Settings. Leave a limit empty to stop budgeting that category." : {
+
+    },
+    "Cash" : {
+
+    },
+    "Categories" : {
+
+    },
+    "Categories are how Tally groups your spending. Add a few, then give each a limit to build your plan." : {
+
+    },
+    "Categories set to carry over move their leftover, or overspend, into the next period. Leave a limit empty to stop budgeting that category." : {
+
+    },
+    "Category" : {
+
+    },
+    "Check my budget" : {
+
+    },
+    "Checking" : {
+
+    },
+    "Choose a plan" : {
+
+    },
+    "Choose at least one person to share this with." : {
+
+    },
+    "Choose what you want to keep an eye on. Limits are suggestions based on your income, so adjust any of them." : {
+
+    },
+    "Clear filters" : {
+
+    },
+    "Clear search" : {
+
+    },
+    "Clear search and filters" : {
+
+    },
+    "Close" : {
+
+    },
+    "Color" : {
+
+    },
+    "Color %@" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Could not restore purchases. %@" : {
+
+    },
+    "Create a goal" : {
+
+    },
+    "Credit card" : {
+
+    },
+    "Currency" : {
+
+    },
+    "Current balance" : {
+
+    },
+    "Current budget: %@" : {
+
+    },
+    "Daily pace" : {
+
+    },
+    "Daily reminder" : {
+
+    },
+    "Dark" : {
+
+    },
+    "Data" : {
+
+    },
+    "Date" : {
+
+    },
+    "Date of your next payday" : {
+
+    },
+    "Day" : {
+
+    },
+    "Day %lld" : {
+
+    },
+    "Debug" : {
+
+    },
+    "Default" : {
+
+    },
+    "Default account" : {
+
+    },
+    "Delete" : {
+
+    },
+    "Delete goal" : {
+
+    },
+    "Delete goal and history" : {
+
+    },
+    "Delete recurring item" : {
+
+    },
+    "Delete this goal?" : {
+
+    },
+    "Delete this recurring item?" : {
+
+    },
+    "Delete this transaction?" : {
+
+    },
+    "Delete transaction" : {
+
+    },
+    "Deposit" : {
+
+    },
+    "Details" : {
+
+    },
+    "Dinner with Sam" : {
+
+    },
+    "Done" : {
+
+    },
+    "Duplicate" : {
+
+    },
+    "Edit" : {
+
+    },
+    "Edit account" : {
+
+    },
+    "Edit budget" : {
+
+    },
+    "Edit category" : {
+
+    },
+    "Edit expense" : {
+
+    },
+    "Edit goal" : {
+
+    },
+    "Edit income" : {
+
+    },
+    "Edit person" : {
+
+    },
+    "Edit recurring item" : {
+
+    },
+    "Edit transfer" : {
+
+    },
+    "Emergency fund" : {
+
+    },
+    "Enter a value for at least one person." : {
+
+    },
+    "Enter what the account really holds, for example from your bank app." : {
+
+    },
+    "Entries already added to your ledger stay where they are." : {
+
+    },
+    "Entries are added automatically when they come due. A start date in the past adds the ones you missed." : {
+
+    },
+    "Erase all data" : {
+
+    },
+    "Erase all data?" : {
+
+    },
+    "Erase everything" : {
+
+    },
+    "Even pace to %@" : {
+
+    },
+    "Every amount in Tally is shown in this currency. You can change it later in Settings." : {
+
+    },
+    "Every transaction, category, account, goal and shared budget on this device is deleted and settings return to their defaults. This cannot be undone." : {
+
+    },
+    "Every two weeks, next payday %@" : {
+
+    },
+    "Everyday" : {
+
+    },
+    "Everything you meant to set aside is here. It's yours to enjoy, or to withdraw whenever you're ready." : {
+
+    },
+    "Expected income" : {
+
+    },
+    "Expected income per month" : {
+
+    },
+    "Expected income per period" : {
+
+    },
+    "Expected income per two weeks" : {
+
+    },
+    "Expected income per week" : {
+
+    },
+    "Expense" : {
+
+    },
+    "Explore with sample data" : {
+
+    },
+    "Export CSV" : {
+
+    },
+    "Exports are plain CSV that opens in any spreadsheet." : {
+
+    },
+    "Filter" : {
+
+    },
+    "For a credit card, turn this on if you owe money today. Purchases will then grow the amount owed." : {
+
+    },
+    "Frequency" : {
+
+    },
+    "From" : {
+
+    },
+    "Future entries are added automatically when they come due." : {
+
+    },
+    "Get started" : {
+
+    },
+    "Give your categories limits to compare spending with an even pace." : {
+
+    },
+    "Give your money a plan" : {
+
+    },
+    "Goal name" : {
+
+    },
+    "Goal reached" : {
+
+    },
+    "Hear how much is left to spend this period." : {
+
+    },
+    "Here is what Tally will set up. Everything can be changed later." : {
+
+    },
+    "Hide amounts" : {
+
+    },
+    "History" : {
+
+    },
+    "How much was it?" : {
+
+    },
+    "How often do you plan?" : {
+
+    },
+    "I could not read your budget just now. Open Tally and try again." : {
+
+    },
+    "Icon" : {
+
+    },
+    "In" : {
+
+    },
+    "Include in net worth" : {
+
+    },
+    "Included with Pro" : {
+
+    },
+    "Includes %@ carried over" : {
+
+    },
+    "Income" : {
+
+    },
+    "Income vs spending" : {
+
+    },
+    "Insights" : {
+
+    },
+    "Investments" : {
+
+    },
+    "Is owed" : {
+
+    },
+    "Keep a running tab with the people you spend with" : {
+
+    },
+    "Keep repeating" : {
+
+    },
+    "Know where your money goes, and decide where it goes next." : {
+
+    },
+    "Last %lld periods" : {
+
+    },
+    "Last one on" : {
+
+    },
+    "Leave empty to track spending without a limit. Carry-over also needs rollover turned on in Settings." : {
+
+    },
+    "Ledger" : {
+
+    },
+    "left" : {
+
+    },
+    "Left" : {
+
+    },
+    "Left to spend" : {
+
+    },
+    "Liabilities" : {
+
+    },
+    "Light" : {
+
+    },
+    "limit" : {
+
+    },
+    "Limit" : {
+
+    },
+    "Limit %@" : {
+
+    },
+    "Limit per period" : {
+
+    },
+    "Limits per period" : {
+
+    },
+    "Lisbon trip" : {
+
+    },
+    "Load sample data" : {
+
+    },
+    "Loading plans..." : {
+
+    },
+    "Lock with %@" : {
+
+    },
+    "Log ${amount} expense in ${category}" : {
+
+    },
+    "Log an expense" : {
+
+    },
+    "Log an expense, say who paid and how it divides. Tally keeps a running balance for everyone and tells you the simplest way to even things out." : {
+
+    },
+    "Log expense" : {
+
+    },
+    "Logged %@ for %@. %@ left in %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Logged %1$@ for %2$@. %3$@ left in %4$@."
+          }
+        }
+      }
+    },
+    "Logged %@ for %@. That puts you %@ over budget there." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Logged %1$@ for %2$@. That puts you %3$@ over budget there."
+          }
+        }
+      }
+    },
+    "Logged %@." : {
+
+    },
+    "Logged %@. %@ left to spend this period." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Logged %1$@. %2$@ left to spend this period."
+          }
+        }
+      }
+    },
+    "Logged %@. You are %@ over budget this period." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Logged %1$@. You are %2$@ over budget this period."
+          }
+        }
+      }
+    },
+    "Manage subscription" : {
+
+    },
+    "Mark paid" : {
+
+    },
+    "Me" : {
+
+    },
+    "Method" : {
+
+    },
+    "Money in" : {
+
+    },
+    "Monthly" : {
+
+    },
+    "Monthly, from the %@" : {
+
+    },
+    "Move money" : {
+
+    },
+    "Name" : {
+
+    },
+    "Name, such as Rent or Streaming" : {
+
+    },
+    "Negative balance (owed)" : {
+
+    },
+    "Net" : {
+
+    },
+    "Net worth" : {
+
+    },
+    "New" : {
+
+    },
+    "New account" : {
+
+    },
+    "New category" : {
+
+    },
+    "New expense" : {
+
+    },
+    "New goal" : {
+
+    },
+    "New income" : {
+
+    },
+    "New recurring item" : {
+
+    },
+    "New transfer" : {
+
+    },
+    "Next one" : {
+
+    },
+    "Next period" : {
+
+    },
+    "No account" : {
+
+    },
+    "No accounts yet" : {
+
+    },
+    "No active Tally Pro subscription was found for this Apple ID." : {
+
+    },
+    "No activity on this account yet." : {
+
+    },
+    "No categories yet" : {
+
+    },
+    "No currency matches that search." : {
+
+    },
+    "No difference" : {
+
+    },
+    "No expense categories yet." : {
+
+    },
+    "No goals yet" : {
+
+    },
+    "No limit" : {
+
+    },
+    "No spending recorded in this period." : {
+
+    },
+    "No transactions yet" : {
+
+    },
+    "Nobody owes anyone right now." : {
+
+    },
+    "None yet" : {
+
+    },
+    "Not budgeted" : {
+
+    },
+    "Not counted in your net worth" : {
+
+    },
+    "Not in net worth" : {
+
+    },
+    "Not in your share" : {
+
+    },
+    "Not now" : {
+
+    },
+    "Not set" : {
+
+    },
+    "Not sure yet? Skip this and set limits by hand. You can change it any time." : {
+
+    },
+    "Not unlocked" : {
+
+    },
+    "Note" : {
+
+    },
+    "Note (optional)" : {
+
+    },
+    "Nothing added yet. Use “Add money” to make your first deposit." : {
+
+    },
+    "Nothing has been recorded in this period." : {
+
+    },
+    "Nothing matches" : {
+
+    },
+    "Nothing repeats yet" : {
+
+    },
+    "Nothing shared yet. Add an expense, choose who paid and how it divides." : {
+
+    },
+    "Nothing spent in this category during this period." : {
+
+    },
+    "Nothing to chart yet" : {
+
+    },
+    "Nothing to settle right now." : {
+
+    },
+    "Notifications are off" : {
+
+    },
+    "of" : {
+
+    },
+    "of %@ planned" : {
+
+    },
+    "On pace" : {
+
+    },
+    "One budget a month, starting on your payday." : {
+
+    },
+    "Only in debug builds. Adds example categories, accounts and transactions." : {
+
+    },
+    "Open my budget" : {
+
+    },
+    "Open quick add" : {
+
+    },
+    "Open Settings" : {
+
+    },
+    "Open Tally on the add transaction sheet." : {
+
+    },
+    "Opening balance" : {
+
+    },
+    "Opens the transaction" : {
+
+    },
+    "Optional" : {
+
+    },
+    "Optional. This is the starting point Tally counts from." : {
+
+    },
+    "Options" : {
+
+    },
+    "Other" : {
+
+    },
+    "Out" : {
+
+    },
+    "over" : {
+
+    },
+    "Over budget" : {
+
+    },
+    "Over budget by %@" : {
+
+    },
+    "Over by" : {
+
+    },
+    "Over-assigned" : {
+
+    },
+    "Overspend alerts" : {
+
+    },
+    "Overview" : {
+
+    },
+    "Owes" : {
+
+    },
+    "Paid by" : {
+
+    },
+    "Paid this period" : {
+
+    },
+    "Passcode" : {
+
+    },
+    "Pause" : {
+
+    },
+    "Paused" : {
+
+    },
+    "Payday" : {
+
+    },
+    "Payday (period starts on day)" : {
+
+    },
+    "Payee or title" : {
+
+    },
+    "Payees appear here once your expenses have titles." : {
+
+    },
+    "People" : {
+
+    },
+    "People you share with" : {
+
+    },
+    "Percentages that don't add up to 100 are scaled to fit." : {
+
+    },
+    "Period" : {
+
+    },
+    "Pick your categories" : {
+
+    },
+    "Plan" : {
+
+    },
+    "Plans are not available right now" : {
+
+    },
+    "Previous period" : {
+
+    },
+    "Quick add" : {
+
+    },
+    "Rainy day" : {
+
+    },
+    "Reach it by" : {
+
+    },
+    "Record this payment?" : {
+
+    },
+    "Recurring" : {
+
+    },
+    "Recurring transactions" : {
+
+    },
+    "Recurring transactions, widgets and the Apple Watch app stay free." : {
+
+    },
+    "Reduced by %@ overspent earlier" : {
+
+    },
+    "Remind me before it's due" : {
+
+    },
+    "Reminders" : {
+
+    },
+    "Remove" : {
+
+    },
+    "Remove %@" : {
+
+    },
+    "Remove person" : {
+
+    },
+    "Remove this person?" : {
+
+    },
+    "Removing someone also removes their share of past expenses and any repayments they were part of, so balances can change." : {
+
+    },
+    "Rename, reorder, recolor or archive the categories you budget with." : {
+
+    },
+    "Repayments you mark as paid will appear here." : {
+
+    },
+    "Repeat" : {
+
+    },
+    "Repeats" : {
+
+    },
+    "Restore" : {
+
+    },
+    "Restore purchases" : {
+
+    },
+    "Resume" : {
+
+    },
+    "Right on pace." : {
+
+    },
+    "Roll over unspent budget" : {
+
+    },
+    "Rollover carries what you did not spend in a category into the next period, and carries overspending forward as a smaller allowance. Each category can opt in from its editor." : {
+
+    },
+    "Save" : {
+
+    },
+    "Save %@ per month to reach it by %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Save %1$@ per month to reach it by %2$@"
+          }
+        }
+      }
+    },
+    "Save %lld%%" : {
+
+    },
+    "Save toward as many goals as you like, each with its own pace." : {
+
+    },
+    "saved" : {
+
+    },
+    "Savings" : {
+
+    },
+    "Savings goal" : {
+
+    },
+    "Savings goals" : {
+
+    },
+    "Savings rate" : {
+
+    },
+    "Schedule" : {
+
+    },
+    "Search currencies" : {
+
+    },
+    "Search title, note or category" : {
+
+    },
+    "Security & privacy" : {
+
+    },
+    "See who owes whom and record repayments." : {
+
+    },
+    "Sent from Tally" : {
+
+    },
+    "Series" : {
+
+    },
+    "Set a limit for the categories you care about and Tally will show what is left to spend, day by day." : {
+
+    },
+    "Set aside money for something specific, a trip, a cushion or a big purchase, and watch it fill up." : {
+
+    },
+    "Set category limits" : {
+
+    },
+    "Set limit" : {
+
+    },
+    "Set up" : {
+
+    },
+    "Set up Together" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Settled" : {
+
+    },
+    "Settled up" : {
+
+    },
+    "Settlement history" : {
+
+    },
+    "Share a plain-text summary whenever you like." : {
+
+    },
+    "Share costs, save toward more goals and see the patterns behind your spending." : {
+
+    },
+    "Share summary" : {
+
+    },
+    "Shared activity" : {
+
+    },
+    "Shared budget summary" : {
+
+    },
+    "Shared budgets" : {
+
+    },
+    "Shared spending" : {
+
+    },
+    "Show all %lld" : {
+
+    },
+    "Show amounts" : {
+
+    },
+    "Show fewer" : {
+
+    },
+    "Shows this category's transactions" : {
+
+    },
+    "Skip for now" : {
+
+    },
+    "someone" : {
+
+    },
+    "Someone" : {
+
+    },
+    "Spending" : {
+
+    },
+    "Spending by category" : {
+
+    },
+    "Spending has passed the plan by %@" : {
+
+    },
+    "Spending here is not counted against a category limit, but it still reduces what is left to spend." : {
+
+    },
+    "Spending is level with last period" : {
+
+    },
+    "spent" : {
+
+    },
+    "Spent" : {
+
+    },
+    "Spent so far" : {
+
+    },
+    "Split" : {
+
+    },
+    "Split any expense equally, by amount, percentage or shares." : {
+
+    },
+    "Split costs with the people you live with and settle up in a tap." : {
+
+    },
+    "Split only" : {
+
+    },
+    "Split with others" : {
+
+    },
+    "Start planning" : {
+
+    },
+    "Starts" : {
+
+    },
+    "Step %lld of %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Step %1$lld of %2$lld"
+          }
+        }
+      }
+    },
+    "Stop on a date" : {
+
+    },
+    "Subscribe" : {
+
+    },
+    "Subscribe to Tally Pro" : {
+
+    },
+    "Subscriptions renew automatically at the price shown unless cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple ID when you confirm the purchase. Manage or cancel any time in your Apple ID settings. Any free trial is for new subscribers only and converts to a paid plan when it ends." : {
+
+    },
+    "Suggested payments" : {
+
+    },
+    "System" : {
+
+    },
+    "Tally" : {
+
+    },
+    "Tally has no accounts and no tracking. Budgets and transactions are stored only on your device." : {
+
+    },
+    "Tally Pro" : {
+
+    },
+    "Tally shows" : {
+
+    },
+    "Tally starts a fresh budget at the rhythm of your pay, so the numbers line up with real life." : {
+
+    },
+    "Target" : {
+
+    },
+    "Target date" : {
+
+    },
+    "Target date %@" : {
+
+    },
+    "Thank you for backing Tally. Every Pro feature is unlocked." : {
+
+    },
+    "That amount is too small to log." : {
+
+    },
+    "That amount needs to be more than zero." : {
+
+    },
+    "The App Store could not verify this purchase." : {
+
+    },
+    "The default account is preselected when you add a transaction." : {
+
+    },
+    "The free plan includes ^[%lld active goal](inflect: true). Archive one or unlock Tally Pro for more." : {
+
+    },
+    "The lock appears whenever Tally opens or returns from the background. Hiding amounts blurs money on screen until you turn it off." : {
+
+    },
+    "The purchase did not go through. %@" : {
+
+    },
+    "The target date, %@, has passed." : {
+
+    },
+    "Their shares and repayments will be deleted, so balances can change." : {
+
+    },
+    "This category has no limit yet. Use Edit to set one." : {
+
+    },
+    "This category has no limit. Set one in the Plan tab to see it on the chart." : {
+
+    },
+    "This is how you appear next to shared expenses." : {
+
+    },
+    "This is saved as a transaction called “Balance adjustment” with no category, dated today." : {
+
+    },
+    "This period" : {
+
+    },
+    "This period has not started yet." : {
+
+    },
+    "Time" : {
+
+    },
+    "Title" : {
+
+    },
+    "Title (optional)" : {
+
+    },
+    "To" : {
+
+    },
+    "to go" : {
+
+    },
+    "Today" : {
+
+    },
+    "Together" : {
+
+    },
+    "Top payees" : {
+
+    },
+    "Transactions" : {
+
+    },
+    "Transfer" : {
+
+    },
+    "Transfer from %@" : {
+
+    },
+    "Transfer to %@" : {
+
+    },
+    "Trends, comparisons and patterns across every period." : {
+
+    },
+    "Try a different search, or loosen the filters." : {
+
+    },
+    "Try again" : {
+
+    },
+    "Try Tally Pro free" : {
+
+    },
+    "Turn on app lock" : {
+
+    },
+    "Type" : {
+
+    },
+    "Unassigned" : {
+
+    },
+    "Unassigned is expected income minus everything you have set aside below." : {
+
+    },
+    "Uncategorized" : {
+
+    },
+    "Unlimited goals" : {
+
+    },
+    "Unlock with %@" : {
+
+    },
+    "Unlock with Tally Pro" : {
+
+    },
+    "Unlock your budget" : {
+
+    },
+    "Use as default account" : {
+
+    },
+    "Version" : {
+
+    },
+    "Wallet" : {
+
+    },
+    "We could not reach the App Store. Check your connection and try again." : {
+
+    },
+    "Week starts on" : {
+
+    },
+    "Weekly, from %@" : {
+
+    },
+    "What do you expect to earn each month?" : {
+
+    },
+    "What do you expect to earn each week?" : {
+
+    },
+    "What do you expect to earn every two weeks?" : {
+
+    },
+    "What the account held when you added it. Turn on the toggle if it starts below zero." : {
+
+    },
+    "What you get" : {
+
+    },
+    "Where does your money live? One account is enough to begin, and you can add more later." : {
+
+    },
+    "Which currency do you use?" : {
+
+    },
+    "Which day do you get paid?" : {
+
+    },
+    "Widgets and Apple Watch" : {
+
+    },
+    "With a date, Tally works out how much to set aside each month." : {
+
+    },
+    "Withdraw" : {
+
+    },
+    "Withdrawal" : {
+
+    },
+    "Yearly" : {
+
+    },
+    "Yesterday" : {
+
+    },
+    "You" : {
+
+    },
+    "You are %@ over budget for %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You are %1$@ over budget for %2$@."
+          }
+        }
+      }
+    },
+    "You can take out up to %@." : {
+
+    },
+    "You have %@ left to spend for %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You have %1$@ left to spend for %2$@."
+          }
+        }
+      }
+    },
+    "You have %@ left to spend. That is about %@ a day for the next ^[%lld day](inflect: true)." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You have %1$@ left to spend. That is about %2$@ a day for the next ^[%3$lld day](inflect: true)."
+          }
+        }
+      }
+    },
+    "You have not set any category budgets for %@ yet. You have spent %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You have not set any category budgets for %1$@ yet. You have spent %2$@."
+          }
+        }
+      }
+    },
+    "You have spent %@ of %@ this period." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You have spent %1$@ of %2$@ this period."
+          }
+        }
+      }
+    },
+    "You're on Pro" : {
+
+    },
+    "Your budget is locked." : {
+
+    },
+    "Your budget is ready" : {
+
+    },
+    "Your budget on the Home Screen, Lock Screen and wrist." : {
+
+    },
+    "Your data stays on this device." : {
+
+    },
+    "Your name" : {
+
+    },
+    "Your purchase is waiting for approval. Pro unlocks as soon as it goes through." : {
+
+    },
+    "Your repeating costs" : {
+
+    },
+    "Your share" : {
+
+    }
   },
   "version" : "1.0"
 }
