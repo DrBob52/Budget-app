@@ -1,73 +1,212 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%@ of %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ of %2$@"
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ of %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ of %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ de %2$@"
           }
         }
       }
     },
-    "^[%lld day](inflect: true) left" : {
-
+    "Amount": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importe"
+          }
+        }
+      }
     },
-    "Amount" : {
-
+    "Categories": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Categorías"
+          }
+        }
+      }
     },
-    "Categories" : {
-
+    "Change category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambiar categoría"
+          }
+        }
+      }
     },
-    "Change category" : {
-
+    "Log": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar"
+          }
+        }
+      }
     },
-    "left to spend" : {
-
+    "Log expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar gasto"
+          }
+        }
+      }
     },
-    "Log" : {
-
+    "Logged": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrado"
+          }
+        }
+      }
     },
-    "Log expense" : {
-
+    "Next": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siguiente"
+          }
+        }
+      }
     },
-    "Logged" : {
-
+    "No budgeted categories yet. Set limits in the Plan tab on your iPhone.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay categorías con presupuesto. Define límites en la pestaña Plan de tu iPhone."
+          }
+        }
+      }
     },
-    "Next" : {
-
+    "No category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin categoría"
+          }
+        }
+      }
     },
-    "No budgeted categories yet. Set limits in the Plan tab on your iPhone." : {
-
+    "None": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ninguna"
+          }
+        }
+      }
     },
-    "No category" : {
-
+    "Per day": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por día"
+          }
+        }
+      }
     },
-    "None" : {
-
+    "Period ended": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo terminado"
+          }
+        }
+      }
     },
-    "Per day" : {
-
+    "Pick a category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige una categoría"
+          }
+        }
+      }
     },
-    "Period ended" : {
-
+    "Remaining": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restante"
+          }
+        }
+      }
     },
-    "Pick a category" : {
-
+    "Sample figures. Open Tally on your iPhone to sync.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cifras de ejemplo. Abre Tally en tu iPhone para sincronizar."
+          }
+        }
+      }
     },
-    "Remaining" : {
-
+    "Sent to your iPhone": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviado a tu iPhone"
+          }
+        }
+      }
     },
-    "Sample figures. Open Tally on your iPhone to sync." : {
-
+    "Spent": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastado"
+          }
+        }
+      }
     },
-    "Sent to your iPhone" : {
-
+    "^[%lld day](inflect: true) left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld día](inflect: true) restante"
+          }
+        }
+      }
     },
-    "Spent" : {
-
+    "left to spend": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "disponible"
+          }
+        }
+      }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

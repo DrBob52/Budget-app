@@ -1,67 +1,192 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%@ left, %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ left, %2$@"
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ left, %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ left, %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ disponible, %2$@"
           }
         }
       }
     },
-    "%@ per day" : {
-
+    "%@ per day": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ al día"
+          }
+        }
+      }
     },
-    "^[%lld day](inflect: true) left" : {
-
+    "Expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gasto"
+          }
+        }
+      }
     },
-    "Expense" : {
-
+    "Income": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingreso"
+          }
+        }
+      }
     },
-    "Income" : {
-
+    "Jump straight to logging an expense or income.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ve directo a registrar un gasto o ingreso."
+          }
+        }
+      }
     },
-    "Jump straight to logging an expense or income." : {
-
+    "LEFT TO SPEND": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DISPONIBLE"
+          }
+        }
+      }
     },
-    "Left" : {
-
+    "Left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponible"
+          }
+        }
+      }
     },
-    "Left to spend" : {
-
+    "Left to spend": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponible"
+          }
+        }
+      }
     },
-    "LEFT TO SPEND" : {
-
+    "Log expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar gasto"
+          }
+        }
+      }
     },
-    "Log expense" : {
-
+    "Money in": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entradas"
+          }
+        }
+      }
     },
-    "Money in" : {
-
+    "Money out": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salidas"
+          }
+        }
+      }
     },
-    "Money out" : {
-
+    "Period ended": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo terminado"
+          }
+        }
+      }
     },
-    "Period ended" : {
-
+    "Quick add": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir rápido"
+          }
+        }
+      }
     },
-    "Quick add" : {
-
+    "Set budgets in the Plan tab to see categories here.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Define presupuestos en la pestaña Plan para ver las categorías aquí."
+          }
+        }
+      }
     },
-    "Set budgets in the Plan tab to see categories here." : {
-
+    "TOP CATEGORIES": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PRINCIPALES CATEGORÍAS"
+          }
+        }
+      }
     },
-    "Takes a few seconds" : {
-
+    "Takes a few seconds": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo toma unos segundos"
+          }
+        }
+      }
     },
-    "TOP CATEGORIES" : {
-
+    "What remains of this period's budget, and what you can spend each day.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo que queda del presupuesto de este periodo y lo que puedes gastar cada día."
+          }
+        }
+      }
     },
-    "What remains of this period's budget, and what you can spend each day." : {
-
+    "^[%lld day](inflect: true) left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld día](inflect: true) restante"
+          }
+        }
+      }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
