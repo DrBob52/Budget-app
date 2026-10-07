@@ -1,0 +1,5 @@
+/* App name under the icon. */
+"CFBundleDisplayName" = "Tally";
+"CFBundleName" = "Tally";
+/* Face ID permission prompt. */
+"NSFaceIDUsageDescription" = "Tally usa Face ID para mantener tu presupuesto en privado.";

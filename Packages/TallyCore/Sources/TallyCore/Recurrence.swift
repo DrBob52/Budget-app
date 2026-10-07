@@ -12,12 +12,12 @@ public enum RecurrenceFrequency: String, Codable, CaseIterable, Identifiable, Se
 
     public var displayName: String {
         switch self {
-        case .daily: return "Every day"
-        case .weekly: return "Every week"
-        case .biweekly: return "Every two weeks"
-        case .monthly: return "Every month"
-        case .quarterly: return "Every three months"
-        case .yearly: return "Every year"
+        case .daily: return String(localized: "Every day", bundle: .module)
+        case .weekly: return String(localized: "Every week", bundle: .module)
+        case .biweekly: return String(localized: "Every two weeks", bundle: .module)
+        case .monthly: return String(localized: "Every month", bundle: .module)
+        case .quarterly: return String(localized: "Every three months", bundle: .module)
+        case .yearly: return String(localized: "Every year", bundle: .module)
         }
     }
 

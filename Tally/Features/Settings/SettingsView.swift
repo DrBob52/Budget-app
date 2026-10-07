@@ -15,7 +15,6 @@ struct SettingsView: View {
     @Environment(AppLockController.self) private var lock
     @Environment(ProStore.self) private var store
 
-    @State private var showImport = false
     @State private var showPaywall = false
     @State private var confirmErase = false
     @State private var showNotificationsDenied = false
@@ -43,9 +42,6 @@ struct SettingsView: View {
                     Button("Done") { dismiss() }
                 }
             }
-            .navigationDestination(isPresented: $showImport) {
-                ImportStatementView()
-            }
             .sheet(isPresented: $showPaywall) {
                 PaywallView()
             }
@@ -72,29 +68,6 @@ struct SettingsView: View {
 
     private var dataSection: some View {
         Section {
-            Button {
-                if store.isUnlocked(.bankImport) {
-                    showImport = true
-                } else {
-                    showPaywall = true
-                }
-            } label: {
-                HStack {
-                    Label("Import bank statement", systemImage: "square.and.arrow.down")
-                    Spacer()
-                    if !store.isUnlocked(.bankImport) {
-                        Text("Pro")
-                            .font(.caption.weight(.semibold))
-                            .foregroundStyle(Palette.caution)
-                    }
-                    Image(systemName: "chevron.right")
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(Palette.inkTertiary)
-                }
-                .contentShape(Rectangle())
-            }
-            .buttonStyle(.plain)
-
             SettingsExportRow()
 
             Button(role: .destructive) {
@@ -513,7 +486,7 @@ private struct SettingsAboutSection: View {
         } header: {
             Text("About")
         } footer: {
-            Text("Tally has no accounts and no tracking. Budgets, transactions and statements you import are stored only on your device.")
+            Text("Tally has no accounts and no tracking. Budgets and transactions are stored only on your device.")
         }
         .settingsRows()
     }

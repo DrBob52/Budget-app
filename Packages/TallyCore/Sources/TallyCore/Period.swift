@@ -9,9 +9,9 @@ public enum PeriodKind: String, Codable, CaseIterable, Identifiable, Sendable {
 
     public var displayName: String {
         switch self {
-        case .weekly: return "Weekly"
-        case .biweekly: return "Every two weeks"
-        case .monthly: return "Monthly"
+        case .weekly: return String(localized: "Weekly", bundle: .module)
+        case .biweekly: return String(localized: "Every two weeks", bundle: .module)
+        case .monthly: return String(localized: "Monthly", bundle: .module)
         }
     }
 }

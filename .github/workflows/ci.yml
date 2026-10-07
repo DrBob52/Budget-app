@@ -50,6 +50,16 @@ jobs:
             -only-testing:TallyTests \
             CODE_SIGNING_ALLOWED=NO \
             -quiet 2>&1 | tee test.log
+      - name: Check Spanish translations
+        run: |
+          set -o pipefail
+          xcodebuild -exportLocalizations \
+            -project Tally.xcodeproj \
+            -localizationPath build/localizations \
+            -exportLanguage es \
+            -skipPackagePluginValidation \
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tail -20 | tee localization.log
+          python3 scripts/check_localizations.py build/localizations
       - name: Upload logs
         if: failure()
         uses: actions/upload-artifact@v4

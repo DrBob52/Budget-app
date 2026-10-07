@@ -13,11 +13,11 @@ enum AppTab: String, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .budget: return "Plan"
-        case .ledger: return "Ledger"
-        case .insights: return "Insights"
-        case .wallet: return "Wallet"
-        case .together: return "Together"
+        case .budget: return String(localized: "Plan")
+        case .ledger: return String(localized: "Ledger")
+        case .insights: return String(localized: "Insights")
+        case .wallet: return String(localized: "Wallet")
+        case .together: return String(localized: "Together")
         }
     }
 

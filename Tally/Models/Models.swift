@@ -10,7 +10,7 @@ enum CategoryKind: String, Codable, CaseIterable, Identifiable {
     case income
 
     var id: String { rawValue }
-    var displayName: String { self == .expense ? "Expense" : "Income" }
+    var displayName: String { self == .expense ? String(localized: "Expense") : String(localized: "Income") }
 }
 
 enum AccountKind: String, Codable, CaseIterable, Identifiable {
@@ -25,12 +25,12 @@ enum AccountKind: String, Codable, CaseIterable, Identifiable {
 
     var displayName: String {
         switch self {
-        case .cash: return "Cash"
-        case .checking: return "Checking"
-        case .savings: return "Savings"
-        case .credit: return "Credit card"
-        case .investment: return "Investments"
-        case .other: return "Other"
+        case .cash: return String(localized: "Cash")
+        case .checking: return String(localized: "Checking")
+        case .savings: return String(localized: "Savings")
+        case .credit: return String(localized: "Credit card")
+        case .investment: return String(localized: "Investments")
+        case .other: return String(localized: "Other")
         }
     }
 
@@ -159,8 +159,6 @@ final class Transaction {
     var note: String = ""
     var date: Date = Date()
     var createdAt: Date = Date()
-    /// Set for rows that came from a bank statement, to skip duplicates on re-import.
-    var importFingerprint: String?
     var splitMethodRaw: String = SplitMethod.equal.rawValue
 
     var category: Category?

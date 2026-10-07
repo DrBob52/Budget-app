@@ -164,7 +164,7 @@ struct PaywallView: View {
         do {
             try await store.purchase(product)
         } catch {
-            store.errorMessage = "The purchase did not go through. \(error.localizedDescription)"
+            store.errorMessage = String(localized: "The purchase did not go through. \(error.localizedDescription)")
         }
     }
 
@@ -180,9 +180,9 @@ struct PaywallView: View {
     // MARK: Copy
 
     private var purchaseTitle: String {
-        guard let product = selectedProduct else { return "Subscribe" }
-        if hasEligibleIntro(product) { return "Try Tally Pro free" }
-        return "Subscribe to Tally Pro"
+        guard let product = selectedProduct else { return String(localized: "Subscribe") }
+        if hasEligibleIntro(product) { return String(localized: "Try Tally Pro free") }
+        return String(localized: "Subscribe to Tally Pro")
     }
 
     private func hasEligibleIntro(_ product: Product) -> Bool {
@@ -195,22 +195,23 @@ struct PaywallView: View {
         let length: String = PaywallFormat.periodLength(offer.period, count: offer.periodCount)
         switch offer.paymentMode {
         case .freeTrial:
-            return "\(length) free"
+            return String(localized: "\(length) free")
         case .payAsYouGo:
-            return "\(offer.displayPrice) per \(PaywallFormat.periodUnit(offer.period)) for \(length)"
+            let perPeriod: String = PaywallFormat.priceLine(offer.displayPrice, per: offer.period)
+            return String(localized: "\(perPeriod) for \(length)")
         case .payUpFront:
-            return "\(offer.displayPrice) for the first \(length)"
+            return String(localized: "\(offer.displayPrice) for the first \(length)")
         default:
             return nil
         }
     }
 
     private func summaryLine(for product: Product) -> String {
-        let renewal: String = "\(product.displayPrice) per \(PaywallFormat.periodUnit(product.subscription?.subscriptionPeriod))"
+        let renewal: String = PaywallFormat.priceLine(product.displayPrice, per: product.subscription?.subscriptionPeriod)
         if hasEligibleIntro(product), let intro = introText(for: product), let offer = product.subscription?.introductoryOffer, offer.paymentMode == .freeTrial {
-            return "\(intro), then \(renewal). Cancel anytime."
+            return String(localized: "\(intro), then \(renewal). Cancel anytime.")
         }
-        return "\(renewal). Cancel anytime."
+        return String(localized: "\(renewal). Cancel anytime.")
     }
 
     /// Yearly saving against twelve months of the monthly plan, as a whole percent.
@@ -232,27 +233,37 @@ struct PaywallView: View {
 // MARK: - Formatting helpers
 
 private enum PaywallFormat {
-    /// "month", "year" ...
-    static func periodUnit(_ period: Product.SubscriptionPeriod?) -> String {
-        guard let period else { return "period" }
-        let base: String = unitName(period.unit)
-        return period.value == 1 ? base : "\(period.value) \(base)s"
+    /// "$4.99 per month", "$9.99 per 3 months" ...
+    static func priceLine(_ price: String, per period: Product.SubscriptionPeriod?) -> String {
+        guard let period else { return String(localized: "\(price) per period") }
+        if period.value == 1 {
+            switch period.unit {
+            case .day: return String(localized: "\(price) per day")
+            case .week: return String(localized: "\(price) per week")
+            case .month: return String(localized: "\(price) per month")
+            case .year: return String(localized: "\(price) per year")
+            @unknown default: return String(localized: "\(price) per period")
+            }
+        }
+        let count: Int = period.value
+        switch period.unit {
+        case .day: return String(localized: "\(price) per ^[\(count) day](inflect: true)")
+        case .week: return String(localized: "\(price) per ^[\(count) week](inflect: true)")
+        case .month: return String(localized: "\(price) per ^[\(count) month](inflect: true)")
+        case .year: return String(localized: "\(price) per ^[\(count) year](inflect: true)")
+        @unknown default: return String(localized: "\(price) per period")
+        }
     }
 
     /// "7 days", "1 month" for an offer that lasts `count` periods.
     static func periodLength(_ period: Product.SubscriptionPeriod, count: Int) -> String {
         let total: Int = max(period.value * max(count, 1), 1)
-        let base: String = unitName(period.unit)
-        return total == 1 ? "1 \(base)" : "\(total) \(base)s"
-    }
-
-    private static func unitName(_ unit: Product.SubscriptionPeriod.Unit) -> String {
-        switch unit {
-        case .day: return "day"
-        case .week: return "week"
-        case .month: return "month"
-        case .year: return "year"
-        @unknown default: return "period"
+        switch period.unit {
+        case .day: return String(localized: "^[\(total) day](inflect: true)")
+        case .week: return String(localized: "^[\(total) week](inflect: true)")
+        case .month: return String(localized: "^[\(total) month](inflect: true)")
+        case .year: return String(localized: "^[\(total) year](inflect: true)")
+        @unknown default: return String(localized: "^[\(total) period](inflect: true)")
         }
     }
 }
@@ -268,7 +279,7 @@ private struct PaywallHeadline: View {
                 .font(.display(32))
                 .foregroundStyle(Palette.ink)
                 .fixedSize(horizontal: false, vertical: true)
-            Text("Share costs, bring in your statements and see the patterns behind your spending.")
+            Text("Share costs, save toward more goals and see the patterns behind your spending.")
                 .font(.body)
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -342,17 +353,18 @@ private struct PaywallPlanCard: View {
     }
 
     private var title: String {
-        isYearly ? "Yearly" : "Monthly"
+        isYearly ? String(localized: "Yearly") : String(localized: "Monthly")
     }
 
     private var priceLine: String {
-        "\(product.displayPrice) per \(PaywallFormat.periodUnit(product.subscription?.subscriptionPeriod))"
+        PaywallFormat.priceLine(product.displayPrice, per: product.subscription?.subscriptionPeriod)
     }
 
     private var perMonthLine: String? {
         guard isYearly else { return nil }
         let perMonth: Decimal = product.price / 12
-        return "About \(product.priceFormatStyle.format(perMonth)) a month"
+        let formatted: String = product.priceFormatStyle.format(perMonth)
+        return String(localized: "About \(formatted) a month")
     }
 
     var body: some View {

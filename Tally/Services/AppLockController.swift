@@ -20,7 +20,7 @@ final class AppLockController {
         case .faceID: return "Face ID"
         case .touchID: return "Touch ID"
         case .opticID: return "Optic ID"
-        default: return "Passcode"
+        default: return String(localized: "Passcode")
         }
     }
 
@@ -31,9 +31,9 @@ final class AppLockController {
     @MainActor
     func unlock() async {
         let context = LAContext()
-        context.localizedCancelTitle = "Cancel"
+        context.localizedCancelTitle = String(localized: "Cancel")
         do {
-            let success = try await context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: "Unlock your budget")
+            let success = try await context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: String(localized: "Unlock your budget"))
             if success {
                 isLocked = false
                 lastError = nil
@@ -52,6 +52,6 @@ final class AppLockController {
     @MainActor
     func verifyForEnabling() async -> Bool {
         let context = LAContext()
-        return (try? await context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: "Turn on app lock")) ?? false
+        return (try? await context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: String(localized: "Turn on app lock"))) ?? false
     }
 }

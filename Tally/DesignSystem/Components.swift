@@ -37,14 +37,21 @@ extension View {
     }
 }
 
+// Components that show a title take a `LocalizedStringKey` so string literals are translated,
+// plus a disfavored `StringProtocol` overload for text that is already final (names, amounts).
+
 /// Uppercase, letter-spaced section label.
 struct Overline: View {
-    let text: String
+    let text: Text
 
-    init(_ text: String) { self.text = text }
+    init(_ key: LocalizedStringKey) { self.text = Text(key) }
+
+    @_disfavoredOverload
+    init<S: StringProtocol>(_ verbatim: S) { self.text = Text(verbatim) }
 
     var body: some View {
-        Text(text.uppercased())
+        text
+            .textCase(.uppercase)
             .font(.overline)
             .tracking(1.4)
             .foregroundStyle(Palette.inkSecondary)
@@ -53,17 +60,23 @@ struct Overline: View {
 
 /// Section header with an optional trailing action, used above cards.
 struct SectionHeader<Trailing: View>: View {
-    let title: String
+    let title: Overline
     @ViewBuilder var trailing: () -> Trailing
 
-    init(_ title: String, @ViewBuilder trailing: @escaping () -> Trailing) {
-        self.title = title
+    init(_ key: LocalizedStringKey, @ViewBuilder trailing: @escaping () -> Trailing) {
+        self.title = Overline(key)
+        self.trailing = trailing
+    }
+
+    @_disfavoredOverload
+    init<S: StringProtocol>(_ verbatim: S, @ViewBuilder trailing: @escaping () -> Trailing) {
+        self.title = Overline(verbatim)
         self.trailing = trailing
     }
 
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
-            Overline(title)
+            title
             Spacer()
             trailing()
                 .font(.subheadline.weight(.medium))
@@ -74,8 +87,13 @@ struct SectionHeader<Trailing: View>: View {
 }
 
 extension SectionHeader where Trailing == EmptyView {
-    init(_ title: String) {
-        self.init(title) { EmptyView() }
+    init(_ key: LocalizedStringKey) {
+        self.init(key) { EmptyView() }
+    }
+
+    @_disfavoredOverload
+    init<S: StringProtocol>(_ verbatim: S) {
+        self.init(verbatim) { EmptyView() }
     }
 }
 
@@ -120,12 +138,23 @@ struct MoneyText: View {
 /// Text field for entering money. Accepts the locale's decimal separator.
 struct AmountField: View {
     @Environment(AppSettings.self) private var settings
-    let title: String
+    let title: LocalizedStringKey
     @Binding var amount: Decimal
     var large = false
 
     @State private var text = ""
     @FocusState private var focused: Bool
+
+    init(title: LocalizedStringKey, amount: Binding<Decimal>, large: Bool = false) {
+        self.title = title
+        self._amount = amount
+        self.large = large
+    }
+
+    @_disfavoredOverload
+    init<S: StringProtocol>(title: S, amount: Binding<Decimal>, large: Bool = false) {
+        self.init(title: LocalizedStringKey(String(title)), amount: amount, large: large)
+    }
 
     var body: some View {
         HStack(alignment: .firstTextBaseline, spacing: 6) {
@@ -305,9 +334,9 @@ struct AddButton: View {
 
 struct EmptyStateView: View {
     let symbol: String
-    let title: String
-    let message: String
-    var actionTitle: String? = nil
+    let title: LocalizedStringKey
+    let message: LocalizedStringKey
+    var actionTitle: LocalizedStringKey? = nil
     var action: (() -> Void)? = nil
 
     var body: some View {

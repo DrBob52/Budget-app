@@ -1,0 +1,86 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Add an expense to ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir un gasto a ${applicationName}"
+          }
+        }
+      }
+    },
+    "Check my budget in ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisar mi presupuesto en ${applicationName}"
+          }
+        }
+      }
+    },
+    "How much is left in ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuánto me queda en ${applicationName}"
+          }
+        }
+      }
+    },
+    "Log an expense in ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar un gasto en ${applicationName}"
+          }
+        }
+      }
+    },
+    "New transaction in ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo movimiento en ${applicationName}"
+          }
+        }
+      }
+    },
+    "Open quick add in ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir añadido rápido en ${applicationName}"
+          }
+        }
+      }
+    },
+    "Record spending in ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anotar un gasto en ${applicationName}"
+          }
+        }
+      }
+    },
+    "What can I spend in ${applicationName}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuánto puedo gastar en ${applicationName}"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

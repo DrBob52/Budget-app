@@ -9,9 +9,9 @@ public enum TransactionKind: String, Codable, CaseIterable, Identifiable, Sendab
 
     public var displayName: String {
         switch self {
-        case .expense: return "Expense"
-        case .income: return "Income"
-        case .transfer: return "Transfer"
+        case .expense: return String(localized: "Expense", bundle: .module)
+        case .income: return String(localized: "Income", bundle: .module)
+        case .transfer: return String(localized: "Transfer", bundle: .module)
         }
     }
 }

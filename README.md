@@ -2,6 +2,8 @@
 
 A calm, paper-and-ink budgeting app for iPhone, with widgets and an Apple Watch companion. Plan a budget per category around your payday, log spending in a couple of taps, share costs with a partner or friends and settle up, save toward goals, and see where the money goes.
 
+Tally is manual on purpose: you log every transaction yourself, which keeps each spending decision visible. It ships in English and Spanish.
+
 See [docs/FEATURES.md](docs/FEATURES.md) for the full feature list and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for how the code is organised.
 
 ## Requirements
@@ -31,7 +33,11 @@ swift test --package-path Packages/TallyCore    # budget math, periods, splits, 
 xcodebuild test -project Tally.xcodeproj -scheme Tally -destination 'platform=iOS Simulator,name=iPhone 16'
 ```
 
-CI (`.github/workflows/ci.yml`) runs both on a macOS runner on every push.
+CI (`.github/workflows/ci.yml`) runs both on a macOS runner on every push, then exports the app's strings with `xcodebuild -exportLocalizations` and fails if any visible text is missing a Spanish translation (`scripts/check_localizations.py`).
+
+## Localization
+
+UI strings live in `Localizable.xcstrings` catalogs (one per target), Siri phrases in `Tally/Resources/AppShortcuts.xcstrings`, Info.plist text in `Tally/Resources/*.lproj/InfoPlist.strings`, and TallyCore's enum names in `Packages/TallyCore/Sources/TallyCore/Resources`. Write new UI text as `Text("...")` or `String(localized: "...")` so Xcode can extract it.
 
 ## Optional: iCloud sync
 

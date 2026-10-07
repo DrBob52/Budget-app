@@ -10,10 +10,10 @@ public enum SplitMethod: String, Codable, CaseIterable, Identifiable, Sendable {
 
     public var displayName: String {
         switch self {
-        case .equal: return "Equally"
-        case .exact: return "Exact amounts"
-        case .percentage: return "Percentages"
-        case .shares: return "Shares"
+        case .equal: return String(localized: "Equally", bundle: .module)
+        case .exact: return String(localized: "Exact amounts", bundle: .module)
+        case .percentage: return String(localized: "Percentages", bundle: .module)
+        case .shares: return String(localized: "Shares", bundle: .module)
         }
     }
 }

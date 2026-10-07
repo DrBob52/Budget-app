@@ -8,7 +8,13 @@ enum AppearanceMode: String, CaseIterable, Identifiable {
     case dark
 
     var id: String { rawValue }
-    var displayName: String { rawValue.capitalized }
+    var displayName: String {
+        switch self {
+        case .system: return String(localized: "System")
+        case .light: return String(localized: "Light")
+        case .dark: return String(localized: "Dark")
+        }
+    }
 }
 
 /// User preferences, persisted in the shared App Group defaults so the widget can read them.

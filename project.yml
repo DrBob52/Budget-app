@@ -37,6 +37,8 @@ targets:
       path: Tally/Resources/Info.plist
       properties:
         CFBundleDisplayName: Tally
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, es]
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UILaunchScreen:
@@ -85,6 +87,8 @@ targets:
       path: TallyWidgets/Info.plist
       properties:
         CFBundleDisplayName: Tally
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, es]
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
@@ -111,6 +115,8 @@ targets:
       path: TallyWatch/Info.plist
       properties:
         CFBundleDisplayName: Tally
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, es]
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         WKApplication: true

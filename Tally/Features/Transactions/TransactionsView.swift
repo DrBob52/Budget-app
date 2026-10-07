@@ -147,7 +147,7 @@ struct TransactionsView: View {
             Button {
                 showsAllTime.toggle()
             } label: {
-                Text(showsAllTime ? "By period" : "All time")
+                (showsAllTime ? Text("By period") : Text("All time"))
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(Palette.accent)
             }
@@ -366,7 +366,7 @@ struct LedgerTotalsCard: View {
             .padding(.vertical, 2)
     }
 
-    private func column(title: String, amount: Decimal, colored: Bool) -> some View {
+    private func column(title: LocalizedStringKey, amount: Decimal, colored: Bool) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Overline(title)
             MoneyText(amount: amount, showsSign: colored, font: .display(19), colored: colored)
@@ -402,8 +402,8 @@ struct LedgerDayHeader: View {
 
     private var dayName: String {
         let calendar = Calendar.current
-        if calendar.isDateInToday(group.day) { return "Today" }
-        if calendar.isDateInYesterday(group.day) { return "Yesterday" }
+        if calendar.isDateInToday(group.day) { return String(localized: "Today") }
+        if calendar.isDateInYesterday(group.day) { return String(localized: "Yesterday") }
         return group.day.formatted(.dateTime.weekday(.wide))
     }
 
@@ -467,8 +467,8 @@ struct LedgerRow: View {
 
     private var subtitleText: String {
         if transaction.kind == .transfer {
-            let from: String = transaction.account?.name ?? "No account"
-            let to: String = transaction.toAccount?.name ?? "No account"
+            let from: String = transaction.account?.name ?? String(localized: "No account")
+            let to: String = transaction.toAccount?.name ?? String(localized: "No account")
             return "\(from) \u{2192} \(to)"
         }
         var parts: [String] = []

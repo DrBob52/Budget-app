@@ -38,13 +38,25 @@ enum Persistence {
 /// Starter categories offered during onboarding and used for previews.
 enum StarterCategories {
     struct Template: Identifiable, Hashable {
-        let name: String
+        /// English name; also the lookup key in the string catalog.
+        let key: String
         let symbol: String
         let colorHex: String
         let kind: CategoryKind
         /// Suggested share of income for the default budget.
         let suggestedShare: Decimal
-        var id: String { name }
+
+        init(name: String, symbol: String, colorHex: String, kind: CategoryKind, suggestedShare: Decimal) {
+            self.key = name
+            self.symbol = symbol
+            self.colorHex = colorHex
+            self.kind = kind
+            self.suggestedShare = suggestedShare
+        }
+
+        /// Name in the user's language. Categories keep the name they were created with.
+        var name: String { String(localized: String.LocalizationValue(key)) }
+        var id: String { key }
     }
 
     static let expense: [Template] = [
@@ -83,11 +95,11 @@ enum SampleData {
             let limit = template.kind == .expense ? (Decimal(4000) * template.suggestedShare).rounded(scale: 0) : 0
             let category = Category(name: template.name, symbol: template.symbol, colorHex: template.colorHex, kind: template.kind, budgetLimit: limit, sortOrder: index)
             context.insert(category)
-            categories[template.name] = category
+            categories[template.key] = category
         }
 
-        let checking = Account(name: "Everyday", kind: .checking, openingBalance: 2_150, colorHex: "#2F4B7C")
-        let savings = Account(name: "Rainy day", kind: .savings, openingBalance: 5_400, colorHex: "#1F5C4A", sortOrder: 1)
+        let checking = Account(name: String(localized: "Everyday"), kind: .checking, openingBalance: 2_150, colorHex: "#2F4B7C")
+        let savings = Account(name: String(localized: "Rainy day"), kind: .savings, openingBalance: 5_400, colorHex: "#1F5C4A", sortOrder: 1)
         let card = Account(name: "Visa", kind: .credit, openingBalance: 0, colorHex: "#A23B57", sortOrder: 2)
         [checking, savings, card].forEach(context.insert)
 
@@ -117,22 +129,22 @@ enum SampleData {
         subscription.lastGeneratedDate = subscription.startDate
         context.insert(subscription)
 
-        let trip = SavingsGoal(name: "Lisbon trip", targetAmount: 1_800, symbol: "airplane", colorHex: "#C07A2C", deadline: calendar.date(byAdding: .month, value: 5, to: now))
+        let trip = SavingsGoal(name: String(localized: "Lisbon trip"), targetAmount: 1_800, symbol: "airplane", colorHex: "#C07A2C", deadline: calendar.date(byAdding: .month, value: 5, to: now))
         context.insert(trip)
         for (amount, daysAgo) in [(Decimal(300), 60), (Decimal(250), 30), (Decimal(200), 2)] {
             let contribution = GoalContribution(amount: amount, date: calendar.date(byAdding: .day, value: -daysAgo, to: now) ?? now)
             contribution.goal = trip
             context.insert(contribution)
         }
-        let cushion = SavingsGoal(name: "Emergency fund", targetAmount: 10_000, symbol: "lifepreserver", colorHex: "#1F5C4A")
+        let cushion = SavingsGoal(name: String(localized: "Emergency fund"), targetAmount: 10_000, symbol: "lifepreserver", colorHex: "#1F5C4A")
         context.insert(cushion)
 
-        let me = Member(name: "Me", colorHex: "#1F5C4A", isMe: true)
+        let me = Member(name: String(localized: "Me"), colorHex: "#1F5C4A", isMe: true)
         let sam = Member(name: "Sam Rivera", colorHex: "#6B4E71")
         context.insert(me)
         context.insert(sam)
 
-        let dinner = Transaction(amount: 84, kind: .expense, title: "Dinner with Sam", date: calendar.date(byAdding: .day, value: -1, to: now) ?? now, category: categories["Dining Out"], account: checking)
+        let dinner = Transaction(amount: 84, kind: .expense, title: String(localized: "Dinner with Sam"), date: calendar.date(byAdding: .day, value: -1, to: now) ?? now, category: categories["Dining Out"], account: checking)
         dinner.paidBy = me
         context.insert(dinner)
         for member in [me, sam] {

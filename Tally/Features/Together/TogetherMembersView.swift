@@ -189,7 +189,7 @@ struct TogetherMemberEditor: View {
                 }
             }
             .tallyScreen()
-            .navigationTitle(editingMember == nil ? "Add person" : "Edit person")
+            .navigationTitle(editingMember == nil ? Text("Add person") : Text("Edit person"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {

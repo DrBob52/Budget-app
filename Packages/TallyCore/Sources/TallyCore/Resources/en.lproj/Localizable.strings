@@ -1,0 +1,16 @@
+/* Display names for TallyCore enums. */
+"Expense" = "Expense";
+"Income" = "Income";
+"Transfer" = "Transfer";
+"Weekly" = "Weekly";
+"Every two weeks" = "Every two weeks";
+"Monthly" = "Monthly";
+"Equally" = "Equally";
+"Exact amounts" = "Exact amounts";
+"Percentages" = "Percentages";
+"Shares" = "Shares";
+"Every day" = "Every day";
+"Every week" = "Every week";
+"Every month" = "Every month";
+"Every three months" = "Every three months";
+"Every year" = "Every year";

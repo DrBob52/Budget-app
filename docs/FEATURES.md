@@ -16,7 +16,7 @@ The feature list below comes from Buddy's public App Store listing and press cov
 | Insights on spending, income and savings | Category donut, income vs spending, daily pace, top payees, net worth trend | `Features/Insights` |
 | Shared budget with partner, who spent what | Members, "paid by", per-member spending | `Features/Together` |
 | Split expenses and settle up | Equal / exact / percentage / shares splits, balances, suggested payments, settlement history | `Features/Together`, `TallyCore/Split.swift` |
-| Import transactions from your bank | CSV and OFX/QFX statement import with column mapping and duplicate detection | `Features/Settings` |
+| Import transactions from your bank | Left out on purpose: every transaction is entered by hand so spending stays deliberate | n/a |
 | Reminders | Daily logging reminder, bill reminders, overspend alerts | `Features/Settings/NotificationService.swift` |
 | Home screen widget for quick entry | Left-to-spend and quick-add widgets, Lock Screen widgets | `TallyWidgets` |
 | Apple Watch | Watch summary + quick expense logging over WatchConnectivity | `TallyWatch` |
@@ -27,8 +27,8 @@ The feature list below comes from Buddy's public App Store listing and press cov
 | Premium subscription | Tally Pro (StoreKit 2): monthly / yearly with free trial | `Features/Paywall` |
 | Export | CSV export of all transactions | Settings |
 
-## Not built yet (needs your decision or outside services)
+## Product decisions and later work
 
-- **Live bank sync.** Automatic feeds need an aggregator (Plaid, Tink, TrueLayer, GoCardless) plus a small server to hold API secrets. Tally imports bank statement files for now.
-- **Real-time sharing across two people's phones.** Today the shared budget lives on one device and exports a summary. Syncing it between people needs CloudKit sharing (`CKShare`) or a backend.
-- **13 languages.** The UI is English. Strings are ready for an Xcode String Catalog.
+- **Bank sync and statement import.** Tally is manual by design: you log each transaction yourself, which keeps the budget intentional. The tested CSV/OFX parser stays in `TallyCore` if that ever changes.
+- **Real-time sharing across two people's phones.** Planned for later. Today the shared budget lives on one device and exports a summary. Syncing it between people needs CloudKit sharing (`CKShare`) or a backend.
+- **Languages.** English and Spanish.

@@ -247,7 +247,7 @@ struct AccountPicker: View {
     @Query(filter: #Predicate<Account> { !$0.isArchived }, sort: \Account.sortOrder)
     private var accounts: [Account]
 
-    let title: String
+    let title: LocalizedStringKey
     @Binding var selection: Account?
     var allowsNone = true
     var excluding: Account? = nil
@@ -268,13 +268,13 @@ struct AccountPicker: View {
 struct MemberPicker: View {
     @Query(sort: \Member.createdAt) private var members: [Member]
 
-    let title: String
+    let title: LocalizedStringKey
     @Binding var selection: Member?
 
     var body: some View {
         Picker(title, selection: $selection) {
             ForEach(members) { member in
-                Text(member.isMe ? "\(member.name) (you)" : member.name).tag(Member?.some(member))
+                (member.isMe ? Text("\(member.name) (you)") : Text(member.name)).tag(Member?.some(member))
             }
         }
     }

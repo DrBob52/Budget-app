@@ -136,8 +136,16 @@ struct TransactionEditorView: View {
     }
 
     private var screenTitle: String {
-        let name = kind.displayName.lowercased()
-        return transaction == nil ? "New \(name)" : "Edit \(name)"
+        let isNew = transaction == nil
+        switch kind {
+        case .expense: return isNew ? String(localized: "New expense") : String(localized: "Edit expense")
+        case .income: return isNew ? String(localized: "New income") : String(localized: "Edit income")
+        case .transfer: return isNew ? String(localized: "New transfer") : String(localized: "Edit transfer")
+        }
+    }
+
+    private var titlePlaceholder: LocalizedStringKey {
+        isTransfer ? "Title (optional)" : "Payee or title"
     }
 
     // MARK: Body
@@ -229,7 +237,7 @@ struct TransactionEditorView: View {
 
     private var detailsSection: some View {
         Section {
-            TextField(isTransfer ? "Title (optional)" : "Payee or title", text: $title)
+            TextField(titlePlaceholder, text: $title)
                 .focused($titleFocused)
                 .textInputAutocapitalization(.words)
                 .submitLabel(.done)
@@ -390,7 +398,7 @@ struct TransactionEditorView: View {
                     Image(systemName: isIncluded ? "checkmark.circle.fill" : "circle")
                         .foregroundStyle(isIncluded ? Palette.accent : Palette.inkTertiary)
                     MemberAvatar(member: member, size: 28)
-                    Text(member.isMe ? "\(member.name) (you)" : member.name)
+                    (member.isMe ? Text("\(member.name) (you)") : Text(member.name))
                         .foregroundStyle(Palette.ink)
                         .lineLimit(1)
                 }
@@ -475,7 +483,7 @@ struct TransactionEditorView: View {
     private var splitProblem: String? {
         guard showsSplit, splitOn else { return nil }
         if includedMembers.isEmpty {
-            return "Choose at least one person to share this with."
+            return String(localized: "Choose at least one person to share this with.")
         }
         if splitMethod == .exact {
             var sum: Decimal = 0
@@ -484,15 +492,15 @@ struct TransactionEditorView: View {
             }
             let difference: Decimal = (amount - sum).rounded(scale: 2)
             if difference > 0 {
-                return "\(settings.format(difference)) still to assign."
+                return String(localized: "\(settings.format(difference)) still to assign.")
             }
             if difference < 0 {
-                return "\(settings.format(-difference)) over the total."
+                return String(localized: "\(settings.format(-difference)) over the total.")
             }
             return nil
         }
         if computeShares().isEmpty {
-            return "Enter a value for at least one person."
+            return String(localized: "Enter a value for at least one person.")
         }
         return nil
     }

@@ -156,8 +156,11 @@ struct RecurringListView: View {
                 template.isActive.toggle()
                 try? context.save()
             } label: {
-                Label(template.isActive ? "Pause" : "Resume",
-                      systemImage: template.isActive ? "pause" : "play")
+                if template.isActive {
+                    Label("Pause", systemImage: "pause")
+                } else {
+                    Label("Resume", systemImage: "play")
+                }
             }
             .tint(Palette.caution)
         }
@@ -216,10 +219,10 @@ struct RecurringRow: View {
 
     private var subtitle: String {
         let frequency = template.frequency.displayName
-        if !template.isActive { return "\(frequency) \u{00B7} Paused" }
-        guard let next else { return "\(frequency) \u{00B7} Ended" }
+        if !template.isActive { return String(localized: "\(frequency) \u{00B7} Paused") }
+        guard let next else { return String(localized: "\(frequency) \u{00B7} Ended") }
         let when = next.formatted(.dateTime.month(.abbreviated).day())
-        return "\(frequency) \u{00B7} Next \(when)"
+        return String(localized: "\(frequency) \u{00B7} Next \(when)")
     }
 }
 
@@ -299,7 +302,7 @@ struct RecurringEditorView: View {
             }
             .tallyScreen()
             .scrollDismissesKeyboard(.interactively)
-            .navigationTitle(template == nil ? "New recurring item" : "Edit recurring item")
+            .navigationTitle(template == nil ? Text("New recurring item") : Text("Edit recurring item"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {

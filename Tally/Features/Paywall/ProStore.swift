@@ -101,7 +101,7 @@ final class ProStore {
             await transaction.finish()
             await refreshEntitlements()
         case .pending:
-            errorMessage = "Your purchase is waiting for approval. Pro unlocks as soon as it goes through."
+            errorMessage = String(localized: "Your purchase is waiting for approval. Pro unlocks as soon as it goes through.")
         case .userCancelled:
             break
         @unknown default:
@@ -119,10 +119,10 @@ final class ProStore {
             try await AppStore.sync()
             await refreshEntitlements()
             if !isPro {
-                errorMessage = "No active Tally Pro subscription was found for this Apple ID."
+                errorMessage = String(localized: "No active Tally Pro subscription was found for this Apple ID.")
             }
         } catch {
-            errorMessage = "Could not restore purchases. \(error.localizedDescription)"
+            errorMessage = String(localized: "Could not restore purchases. \(error.localizedDescription)")
         }
     }
 
@@ -174,14 +174,13 @@ fileprivate enum ProStoreError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .failedVerification:
-            return "The App Store could not verify this purchase."
+            return String(localized: "The App Store could not verify this purchase.")
         }
     }
 }
 
 enum ProFeature: String, CaseIterable, Identifiable {
     case sharedBudgets
-    case bankImport
     case unlimitedGoals
     case advancedInsights
     case recurring
@@ -193,25 +192,23 @@ enum ProFeature: String, CaseIterable, Identifiable {
     var requiresPro: Bool {
         switch self {
         case .recurring, .widgetsAndWatch: return false
-        case .sharedBudgets, .bankImport, .unlimitedGoals, .advancedInsights: return true
+        case .sharedBudgets, .unlimitedGoals, .advancedInsights: return true
         }
     }
 
     var title: String {
         switch self {
-        case .sharedBudgets: return "Shared budgets"
-        case .bankImport: return "Statement import"
-        case .unlimitedGoals: return "Unlimited goals"
-        case .advancedInsights: return "Advanced insights"
-        case .recurring: return "Recurring transactions"
-        case .widgetsAndWatch: return "Widgets and Apple Watch"
+        case .sharedBudgets: return String(localized: "Shared budgets")
+        case .unlimitedGoals: return String(localized: "Unlimited goals")
+        case .advancedInsights: return String(localized: "Advanced insights")
+        case .recurring: return String(localized: "Recurring transactions")
+        case .widgetsAndWatch: return String(localized: "Widgets and Apple Watch")
         }
     }
 
     var symbol: String {
         switch self {
         case .sharedBudgets: return "person.2"
-        case .bankImport: return "square.and.arrow.down"
         case .unlimitedGoals: return "flag"
         case .advancedInsights: return "chart.line.uptrend.xyaxis"
         case .recurring: return "repeat"
@@ -221,12 +218,11 @@ enum ProFeature: String, CaseIterable, Identifiable {
 
     var blurb: String {
         switch self {
-        case .sharedBudgets: return "Split costs with the people you live with and settle up in a tap."
-        case .bankImport: return "Bring in CSV and OFX statements without retyping a line."
-        case .unlimitedGoals: return "Save toward as many goals as you like, each with its own pace."
-        case .advancedInsights: return "Trends, comparisons and patterns across every period."
-        case .recurring: return "Bills and subscriptions that log themselves."
-        case .widgetsAndWatch: return "Your budget on the Home Screen, Lock Screen and wrist."
+        case .sharedBudgets: return String(localized: "Split costs with the people you live with and settle up in a tap.")
+        case .unlimitedGoals: return String(localized: "Save toward as many goals as you like, each with its own pace.")
+        case .advancedInsights: return String(localized: "Trends, comparisons and patterns across every period.")
+        case .recurring: return String(localized: "Bills and subscriptions that log themselves.")
+        case .widgetsAndWatch: return String(localized: "Your budget on the Home Screen, Lock Screen and wrist.")
         }
     }
 }
