@@ -34,8 +34,8 @@ struct AccountRow: View {
 
     private var subtitle: String {
         var parts: [String] = [account.kind.displayName]
-        if isDefault { parts.append("Default") }
-        if !account.includeInNetWorth { parts.append("Not in net worth") }
+        if isDefault { parts.append(String(localized: "Default")) }
+        if !account.includeInNetWorth { parts.append(String(localized: "Not in net worth")) }
         return parts.joined(separator: " \u{00B7} ")
     }
 }
@@ -267,11 +267,11 @@ private struct AccountActivityRow: View {
         let transaction: Transaction = entry.transaction
         guard transaction.kind == .transfer else { return transaction.displayTitle }
         if entry.isIncomingTransfer {
-            let source: String = transaction.account?.name ?? "another account"
-            return "Transfer from \(source)"
+            let source: String = transaction.account?.name ?? String(localized: "another account")
+            return String(localized: "Transfer from \(source)")
         }
-        let destination: String = transaction.toAccount?.name ?? "another account"
-        return "Transfer to \(destination)"
+        let destination: String = transaction.toAccount?.name ?? String(localized: "another account")
+        return String(localized: "Transfer to \(destination)")
     }
 
     private var subtitle: String {
@@ -358,8 +358,8 @@ struct AccountAdjustBalanceView: View {
     }
 
     private var differenceLabel: String {
-        if difference == 0 { return "No difference" }
-        return difference > 0 ? "Adds income of" : "Adds expense of"
+        if difference == 0 { return String(localized: "No difference") }
+        return difference > 0 ? String(localized: "Adds income of") : String(localized: "Adds expense of")
     }
 
     private func save() {
@@ -369,7 +369,7 @@ struct AccountAdjustBalanceView: View {
         let adjustment = Transaction(
             amount: delta.magnitudeValue,
             kind: kind,
-            title: "Balance adjustment",
+            title: String(localized: "Balance adjustment"),
             date: Date(),
             category: nil,
             account: account
@@ -438,7 +438,7 @@ struct AccountEditorView: View {
                 }
             }
             .tallyScreen()
-            .navigationTitle(account == nil ? "New account" : "Edit account")
+            .navigationTitle(account == nil ? Text("New account") : Text("Edit account"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -488,9 +488,9 @@ struct AccountEditorView: View {
         } header: {
             Text("Opening balance")
         } footer: {
-            Text(kind == .credit
-                 ? "For a credit card, turn this on if you owe money today. Purchases will then grow the amount owed."
-                 : "What the account held when you added it. Turn on the toggle if it starts below zero.")
+            kind == .credit
+                ? Text("For a credit card, turn this on if you owe money today. Purchases will then grow the amount owed.")
+                : Text("What the account held when you added it. Turn on the toggle if it starts below zero.")
         }
     }
 
