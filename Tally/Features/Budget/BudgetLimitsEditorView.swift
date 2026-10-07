@@ -140,9 +140,9 @@ struct BudgetLimitsEditorView: View {
 
     private var rolloverFooter: String {
         if settings.rolloverEnabled {
-            return "Categories set to carry over move their leftover, or overspend, into the next period. Leave a limit empty to stop budgeting that category."
+            return String(localized: "Categories set to carry over move their leftover, or overspend, into the next period. Leave a limit empty to stop budgeting that category.")
         }
-        return "Carry over only takes effect once rollover is switched on in Settings. Leave a limit empty to stop budgeting that category."
+        return String(localized: "Carry over only takes effect once rollover is switched on in Settings. Leave a limit empty to stop budgeting that category.")
     }
 
     // MARK: Bindings and saving

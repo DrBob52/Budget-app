@@ -21,7 +21,7 @@ struct CheckBudgetIntent: AppIntent {
         }
 
         let message = describe(snapshot, settings: settings)
-        return .result(dialog: "\(message)")
+        return .result(dialog: IntentDialog(stringLiteral: message))
     }
 
     private func describe(_ snapshot: BudgetSnapshot, settings: AppSettings) -> String {
@@ -30,16 +30,15 @@ struct CheckBudgetIntent: AppIntent {
         }
 
         if snapshot.totalBudget <= 0 {
-            return "You have not set any category budgets for \(snapshot.periodTitle) yet. You have spent \(money(snapshot.spent))."
+            return String(localized: "You have not set any category budgets for \(snapshot.periodTitle) yet. You have spent \(money(snapshot.spent)).")
         }
         if snapshot.leftToSpend < 0 {
-            return "You are \(money(-snapshot.leftToSpend)) over budget for \(snapshot.periodTitle)."
+            return String(localized: "You are \(money(-snapshot.leftToSpend)) over budget for \(snapshot.periodTitle).")
         }
         let days = snapshot.daysRemaining
-        let dayText = days == 1 ? "1 day" : "\(days) days"
         if let allowance = snapshot.dailyAllowance, days > 0 {
-            return "You have \(money(snapshot.leftToSpend)) left to spend. That is about \(money(allowance)) a day for the next \(dayText)."
+            return String(localized: "You have \(money(snapshot.leftToSpend)) left to spend. That is about \(money(allowance)) a day for the next ^[\(days) day](inflect: true).")
         }
-        return "You have \(money(snapshot.leftToSpend)) left to spend for \(snapshot.periodTitle)."
+        return String(localized: "You have \(money(snapshot.leftToSpend)) left to spend for \(snapshot.periodTitle).")
     }
 }

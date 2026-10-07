@@ -27,11 +27,18 @@ struct OnboardingTallyMark: View {
 
 /// Scrolling page with a serif title and a short explanation above the step's content.
 struct OnboardingScaffold<Content: View>: View {
-    let title: String
-    let subtitle: String
+    let title: Text
+    let subtitle: Text
     let content: Content
 
-    init(title: String, subtitle: String, @ViewBuilder content: () -> Content) {
+    init(title: LocalizedStringKey, subtitle: LocalizedStringKey, @ViewBuilder content: () -> Content) {
+        self.title = Text(title)
+        self.subtitle = Text(subtitle)
+        self.content = content()
+    }
+
+    /// For copy that is already final, e.g. a localized `String` computed elsewhere.
+    init(title: Text, subtitle: Text, @ViewBuilder content: () -> Content) {
         self.title = title
         self.subtitle = subtitle
         self.content = content()
@@ -78,7 +85,7 @@ func onboardingWeekdayName(_ weekday: Int) -> String {
 
 /// Label and value on one line, used in the final summary.
 struct OnboardingSummaryRow: View {
-    let label: String
+    let label: LocalizedStringKey
     let value: String
 
     var body: some View {

@@ -46,10 +46,10 @@ extension View {
 
 /// Section header above a hairline card.
 struct InsightsSection<Content: View>: View {
-    let title: String
+    let title: LocalizedStringKey
     @ViewBuilder var content: () -> Content
 
-    init(_ title: String, @ViewBuilder content: @escaping () -> Content) {
+    init(_ title: LocalizedStringKey, @ViewBuilder content: @escaping () -> Content) {
         self.title = title
         self.content = content
     }
@@ -97,9 +97,9 @@ extension View {
 
 /// Small caption used under charts and in empty cards.
 struct InsightsNote: View {
-    let text: String
+    let text: LocalizedStringKey
 
-    init(_ text: String) { self.text = text }
+    init(_ text: LocalizedStringKey) { self.text = text }
 
     var body: some View {
         Text(text)
@@ -111,7 +111,7 @@ struct InsightsNote: View {
 
 /// Overline + amount pair used in the summary strip.
 struct InsightsStat: View {
-    let title: String
+    let title: LocalizedStringKey
     let amount: Decimal
     var showsSign = false
     var colored = false

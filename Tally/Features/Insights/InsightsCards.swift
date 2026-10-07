@@ -54,12 +54,12 @@ struct InsightsSummaryCard: View {
         let change: Double = ((now - before) / before).doubleValue
         let percent: Int = Int((abs(change) * 100).rounded())
         if percent == 0 {
-            return ("Spending is level with last period", Palette.inkSecondary)
+            return (String(localized: "Spending is level with last period"), Palette.inkSecondary)
         }
         if change < 0 {
-            return ("\(percent)% less than last period", Palette.positive)
+            return (String(localized: "\(percent)% less than last period"), Palette.positive)
         }
-        return ("\(percent)% more than last period", Palette.negative)
+        return (String(localized: "\(percent)% more than last period"), Palette.negative)
     }
 }
 
@@ -184,7 +184,7 @@ struct InsightsPayeeRow: View {
                     .font(.body)
                     .foregroundStyle(Palette.ink)
                     .lineLimit(1)
-                Text(payee.count == 1 ? "1 purchase" : "\(payee.count) purchases")
+                Text("^[\(payee.count) purchase](inflect: true)")
                     .font(.caption)
                     .foregroundStyle(Palette.inkSecondary)
             }

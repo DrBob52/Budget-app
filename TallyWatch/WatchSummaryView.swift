@@ -16,8 +16,8 @@ struct WatchSummaryView: View {
 
     private var daysText: String {
         let days = snapshot.daysRemaining
-        if days <= 0 { return "Period ended" }
-        return days == 1 ? "1 day left" : "\(days) days left"
+        if days <= 0 { return String(localized: "Period ended") }
+        return String(localized: "^[\(days) day](inflect: true) left")
     }
 
     var body: some View {
@@ -71,12 +71,12 @@ struct WatchSummaryView: View {
         if let allowance = snapshot.dailyAllowance, snapshot.daysRemaining > 0 {
             return money(allowance)
         }
-        return "None"
+        return String(localized: "None")
     }
 }
 
 struct WatchDetailRow: View {
-    let title: String
+    let title: LocalizedStringKey
     let value: String
 
     var body: some View {

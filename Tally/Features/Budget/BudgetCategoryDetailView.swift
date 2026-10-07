@@ -127,7 +127,7 @@ struct BudgetCategoryDetailView: View {
         }
     }
 
-    private func detailStat(_ title: String, amount: Decimal, signed: Bool = false) -> some View {
+    private func detailStat(_ title: LocalizedStringKey, amount: Decimal, signed: Bool = false) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Overline(title)
             MoneyText(amount: amount, showsSign: signed, font: .amountSmall)
@@ -138,10 +138,10 @@ struct BudgetCategoryDetailView: View {
     }
 
     private func headerAccessibility(status: CategoryStatus) -> String {
-        if settings.hideAmounts { return "\(category.name) budget, amounts hidden" }
+        if settings.hideAmounts { return String(localized: "\(category.name) budget, amounts hidden") }
         let left: String = settings.format(status.remaining.magnitudeValue)
-        let lead: String = status.remaining < 0 ? "\(left) over" : "\(left) left"
-        return "\(category.name): \(lead). Limit \(settings.format(status.limit)), spent \(settings.format(status.spent))."
+        let lead: String = status.remaining < 0 ? String(localized: "\(left) over") : String(localized: "\(left) left")
+        return String(localized: "\(category.name): \(lead). Limit \(settings.format(status.limit)), spent \(settings.format(status.spent)).")
     }
 
     // MARK: Transactions
@@ -201,7 +201,7 @@ struct BudgetTransactionRow: View {
 
     private var accessibilityText: String {
         let date: String = transaction.date.formatted(.dateTime.weekday(.wide).month(.wide).day())
-        if settings.hideAmounts { return "\(transaction.displayTitle), \(date), amount hidden" }
-        return "\(transaction.displayTitle), \(date), \(settings.format(transaction.amount))"
+        if settings.hideAmounts { return String(localized: "\(transaction.displayTitle), \(date), amount hidden") }
+        return String(localized: "\(transaction.displayTitle), \(date), \(settings.format(transaction.amount))")
     }
 }

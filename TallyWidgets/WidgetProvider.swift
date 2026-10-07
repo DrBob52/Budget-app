@@ -60,14 +60,14 @@ struct WidgetBudgetText {
 
     var daysLeft: String {
         let days = snapshot.daysRemaining
-        if days <= 0 { return "Period ended" }
-        return days == 1 ? "1 day left" : "\(days) days left"
+        if days <= 0 { return String(localized: "Period ended") }
+        return String(localized: "^[\(days) day](inflect: true) left")
     }
 
     /// "$54 per day" or the days left when there is no allowance.
     var allowanceLine: String {
         if let allowance = snapshot.dailyAllowance, snapshot.daysRemaining > 0 {
-            return "\(money(allowance)) per day"
+            return String(localized: "\(money(allowance)) per day")
         }
         return daysLeft
     }

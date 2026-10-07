@@ -220,7 +220,7 @@ struct WatchCategoryPickerView: View {
                 Button {
                     onPick(nil)
                 } label: {
-                    WatchPickRow(symbol: "tag", name: "No category", tint: WatchPalette.inkSecondary)
+                    WatchPickRow(symbol: "tag", name: String(localized: "No category"), tint: WatchPalette.inkSecondary)
                 }
                 .buttonStyle(.plain)
             }
@@ -264,6 +264,11 @@ struct WatchConfirmView: View {
     let onBack: () -> Void
     let onConfirm: () -> Void
 
+    private var categoryLabel: Text {
+        if let category { return Text(category.name) }
+        return Text("No category")
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 8) {
@@ -272,7 +277,7 @@ struct WatchConfirmView: View {
                     .foregroundStyle(WatchPalette.ink)
                     .minimumScaleFactor(0.5)
                     .lineLimit(1)
-                Text(category?.name ?? "No category")
+                categoryLabel
                     .font(.system(size: 14))
                     .foregroundStyle(WatchPalette.inkSecondary)
                 Rectangle().fill(WatchPalette.rule).frame(height: 1)

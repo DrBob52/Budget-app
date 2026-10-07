@@ -142,7 +142,7 @@ struct WalletView: View {
         .tallyCard()
     }
 
-    private func heroColumn(title: String, amount: Decimal, tint: Color) -> some View {
+    private func heroColumn(title: LocalizedStringKey, amount: Decimal, tint: Color) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 6) {
                 Circle().fill(tint).frame(width: 6, height: 6)
@@ -157,8 +157,8 @@ struct WalletView: View {
 
     private var heroFootnote: String {
         let count = countedAccounts.count
-        if count == 0 { return "Add an account to see your net worth." }
-        return count == 1 ? "Across 1 account" : "Across \(count) accounts"
+        if count == 0 { return String(localized: "Add an account to see your net worth.") }
+        return String(localized: "Across ^[\(count) account](inflect: true)")
     }
 
     // MARK: - Accounts
@@ -236,7 +236,7 @@ struct WalletView: View {
             .textCase(nil)
         } footer: {
             if goalLimitReached {
-                Text("The free plan includes \(freeGoalLimit) active goals. Archive one or unlock Tally Pro for more.")
+                Text("The free plan includes ^[\(freeGoalLimit) active goal](inflect: true). Archive one or unlock Tally Pro for more.")
                     .font(.caption)
                     .foregroundStyle(Palette.inkTertiary)
                     .textCase(nil)

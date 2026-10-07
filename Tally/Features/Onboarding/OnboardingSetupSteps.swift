@@ -27,7 +27,7 @@ struct OnboardingCategoriesStep: View {
                     ForEach(StarterCategories.expense) { template in
                         OnboardingCategoryCard(
                             template: template,
-                            isSelected: draft.selectedExpenses.contains(template.name),
+                            isSelected: draft.selectedExpenses.contains(template.id),
                             limit: draft.limitBinding(for: template),
                             onToggle: { toggleExpense(template) }
                         )
@@ -39,7 +39,7 @@ struct OnboardingCategoriesStep: View {
                     ForEach(StarterCategories.income) { template in
                         OnboardingCategoryCard(
                             template: template,
-                            isSelected: draft.selectedIncome.contains(template.name),
+                            isSelected: draft.selectedIncome.contains(template.id),
                             limit: nil,
                             onToggle: { toggleIncome(template) }
                         )
@@ -50,18 +50,18 @@ struct OnboardingCategoriesStep: View {
     }
 
     private func toggleExpense(_ template: StarterCategories.Template) {
-        if draft.selectedExpenses.contains(template.name) {
-            draft.selectedExpenses.remove(template.name)
+        if draft.selectedExpenses.contains(template.id) {
+            draft.selectedExpenses.remove(template.id)
         } else {
-            draft.selectedExpenses.insert(template.name)
+            draft.selectedExpenses.insert(template.id)
         }
     }
 
     private func toggleIncome(_ template: StarterCategories.Template) {
-        if draft.selectedIncome.contains(template.name) {
-            draft.selectedIncome.remove(template.name)
+        if draft.selectedIncome.contains(template.id) {
+            draft.selectedIncome.remove(template.id)
         } else {
-            draft.selectedIncome.insert(template.name)
+            draft.selectedIncome.insert(template.id)
         }
     }
 }
@@ -103,9 +103,9 @@ struct OnboardingAssignedSummary: View {
     private var remainderText: String {
         let difference: Decimal = income - assigned
         if difference >= 0 {
-            return "\(settings.format(difference, compact: true)) left to assign"
+            return String(localized: "\(settings.format(difference, compact: true)) left to assign")
         }
-        return "\(settings.format(-difference, compact: true)) over your income"
+        return String(localized: "\(settings.format(-difference, compact: true)) over your income")
     }
 }
 
@@ -171,7 +171,7 @@ struct OnboardingAccountStep: View {
     ]
 
     private var balanceLabel: String {
-        draft.accountKind.isLiability ? "Amount you owe today" : "Current balance"
+        draft.accountKind.isLiability ? String(localized: "Amount you owe today") : String(localized: "Current balance")
     }
 
     var body: some View {
@@ -249,27 +249,29 @@ struct OnboardingDoneStep: View {
     private var cycleText: String {
         switch settings.periodKind {
         case .monthly:
-            return "Monthly, from the \(onboardingOrdinal(settings.monthlyStartDay))"
+            let day: String = onboardingOrdinal(settings.monthlyStartDay)
+            return String(localized: "Monthly, from the \(day)")
         case .weekly:
-            return "Weekly, from \(onboardingWeekdayName(settings.weeklyStartWeekday))"
+            let weekday: String = onboardingWeekdayName(settings.weeklyStartWeekday)
+            return String(localized: "Weekly, from \(weekday)")
         case .biweekly:
             let date: String = settings.biweeklyAnchor.formatted(date: .abbreviated, time: .omitted)
-            return "Every two weeks, next payday \(date)"
+            return String(localized: "Every two weeks, next payday \(date)")
         }
     }
 
     private var incomeText: String {
-        draft.income > 0 ? settings.format(draft.income, compact: true) : "Not set"
+        draft.income > 0 ? settings.format(draft.income, compact: true) : String(localized: "Not set")
     }
 
     private var categoriesText: String {
         let count: Int = draft.chosenExpenses.count + draft.chosenIncome.count
-        if count == 0 { return "None yet" }
-        return count == 1 ? "1 category" : "\(count) categories"
+        if count == 0 { return String(localized: "None yet") }
+        return String(localized: "^[\(count) category](inflect: true)")
     }
 
     private var accountText: String {
-        draft.willCreateAccount ? draft.trimmedAccountName : "None yet"
+        draft.willCreateAccount ? draft.trimmedAccountName : String(localized: "None yet")
     }
 
     var body: some View {
@@ -290,7 +292,7 @@ struct OnboardingDoneStep: View {
                         Rule()
                         OnboardingSummaryRow(
                             label: "Assigned",
-                            value: "\(settings.format(draft.assignedTotal, compact: true)) of \(settings.format(draft.income, compact: true))"
+                            value: String(localized: "\(settings.format(draft.assignedTotal, compact: true)) of \(settings.format(draft.income, compact: true))")
                         )
                     }
                     Rule()

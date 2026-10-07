@@ -165,7 +165,7 @@ struct TogetherView: View {
         }
     }
 
-    private func onboardingPoint(symbol: String, text: String) -> some View {
+    private func onboardingPoint(symbol: String, text: LocalizedStringKey) -> some View {
         HStack(alignment: .firstTextBaseline, spacing: 12) {
             Image(systemName: symbol)
                 .font(.subheadline)
@@ -215,7 +215,7 @@ struct TogetherView: View {
         .listStyle(.insetGrouped)
     }
 
-    private func sectionHeader(_ title: String) -> some View {
+    private func sectionHeader(_ title: LocalizedStringKey) -> some View {
         SectionHeader(title)
             .textCase(nil)
     }
@@ -250,15 +250,15 @@ struct TogetherView: View {
 
     private func paymentMessage(_ transfer: SettleUpTransfer) -> String {
         let lookup: [UUID: Member] = memberByID
-        let from: String = lookup[transfer.fromID]?.name ?? "Someone"
-        let to: String = lookup[transfer.toID]?.name ?? "someone"
-        return "\(from) paid \(to) \(settings.format(transfer.amount)). This adds a repayment to the history and updates everyone's balance."
+        let from: String = lookup[transfer.fromID]?.name ?? String(localized: "Someone")
+        let to: String = lookup[transfer.toID]?.name ?? String(localized: "someone")
+        return String(localized: "\(from) paid \(to) \(settings.format(transfer.amount)). This adds a repayment to the history and updates everyone's balance.")
     }
 
     private func record(_ transfer: SettleUpTransfer) {
         let lookup: [UUID: Member] = memberByID
         guard let from = lookup[transfer.fromID], let to = lookup[transfer.toID] else { return }
-        let settlement = Settlement(amount: transfer.amount, from: from, to: to, date: Date(), note: "Settled up")
+        let settlement = Settlement(amount: transfer.amount, from: from, to: to, date: Date(), note: String(localized: "Settled up"))
         context.insert(settlement)
         try? context.save()
         pendingPayment = nil
@@ -285,8 +285,14 @@ struct TogetherView: View {
                 .listRowBackground(Palette.surface)
             }
             if all.count > collapsedActivityCount {
-                Button(showAllActivity ? "Show fewer" : "Show all \(all.count)") {
+                Button {
                     withAnimation { showAllActivity.toggle() }
+                } label: {
+                    if showAllActivity {
+                        Text("Show fewer")
+                    } else {
+                        Text("Show all \(all.count)")
+                    }
                 }
                 .buttonStyle(.borderless)
                 .font(.subheadline.weight(.medium))
@@ -319,7 +325,7 @@ struct TogetherView: View {
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(spacing: 8) {
                         MemberAvatar(member: entry.member, size: 24)
-                        Text(entry.member.isMe ? "\(entry.member.name) (you)" : entry.member.name)
+                        (entry.member.isMe ? Text("\(entry.member.name) (you)") : Text(entry.member.name))
                             .font(.subheadline)
                             .foregroundStyle(Palette.ink)
                         Spacer()
@@ -421,9 +427,9 @@ private enum TogetherBalanceState {
 
     var label: String {
         switch self {
-        case .owed: return "Is owed"
-        case .owes: return "Owes"
-        case .square: return "All square"
+        case .owed: return String(localized: "Is owed")
+        case .owes: return String(localized: "Owes")
+        case .square: return String(localized: "All square")
         }
     }
 
@@ -459,12 +465,12 @@ struct TogetherBalanceGrid: View {
         return VStack(alignment: .leading, spacing: 10) {
             HStack(spacing: 8) {
                 MemberAvatar(member: member, size: 28)
-                Text(member.isMe ? "You" : member.name)
+                (member.isMe ? Text("You") : Text(member.name))
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(Palette.ink)
                     .lineLimit(1)
             }
-            Text(state.label.uppercased())
+            Text(state.label.localizedUppercase)
                 .font(.overline)
                 .tracking(1.2)
                 .foregroundStyle(state.tint)
@@ -541,7 +547,7 @@ struct TogetherActivityRow: View {
     private var subtitle: String {
         let date: String = transaction.date.formatted(.dateTime.month(.abbreviated).day())
         if let payer = transaction.paidBy {
-            return "\(payer.name) paid \u{00B7} \(date)"
+            return String(localized: "\(payer.name) paid \u{00B7} \(date)")
         }
         return date
     }
@@ -582,7 +588,7 @@ struct TogetherHistoryRow: View {
     var body: some View {
         HStack(spacing: 12) {
             VStack(alignment: .leading, spacing: 3) {
-                Text("\(settlement.from?.name ?? "Someone") \u{2192} \(settlement.to?.name ?? "someone")")
+                Text("\(fromName) \u{2192} \(toName)")
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(Palette.ink)
                     .lineLimit(1)
@@ -596,6 +602,9 @@ struct TogetherHistoryRow: View {
         }
         .accessibilityElement(children: .combine)
     }
+
+    private var fromName: String { settlement.from?.name ?? String(localized: "Someone") }
+    private var toName: String { settlement.to?.name ?? String(localized: "someone") }
 
     private var detail: String {
         let date: String = settlement.date.formatted(.dateTime.month(.abbreviated).day().year())
@@ -618,33 +627,33 @@ enum TogetherSummaryBuilder {
         )
         let unit: Decimal = Decimal.unit(scale: 2)
         var lines: [String] = []
-        lines.append("Shared budget summary")
+        lines.append(String(localized: "Shared budget summary"))
         lines.append(Date().formatted(.dateTime.month(.wide).day().year()))
         lines.append("")
-        lines.append("Balances")
+        lines.append(String(localized: "Balances"))
         for member in members {
             let amount: Decimal = balances[member.id] ?? 0
             if amount >= unit {
-                lines.append("- \(member.name) is owed \(settings.format(amount))")
+                lines.append(String(localized: "- \(member.name) is owed \(settings.format(amount))"))
             } else if amount <= -unit {
-                lines.append("- \(member.name) owes \(settings.format(amount.magnitudeValue))")
+                lines.append(String(localized: "- \(member.name) owes \(settings.format(amount.magnitudeValue))"))
             } else {
-                lines.append("- \(member.name) is all square")
+                lines.append(String(localized: "- \(member.name) is all square"))
             }
         }
         lines.append("")
         if transfers.isEmpty {
-            lines.append("Nothing to settle right now.")
+            lines.append(String(localized: "Nothing to settle right now."))
         } else {
-            lines.append("Suggested payments")
+            lines.append(String(localized: "Suggested payments"))
             for transfer in transfers {
-                let from: String = names[transfer.fromID] ?? "Someone"
-                let to: String = names[transfer.toID] ?? "someone"
+                let from: String = names[transfer.fromID] ?? String(localized: "Someone")
+                let to: String = names[transfer.toID] ?? String(localized: "someone")
                 lines.append("- \(from) \u{2192} \(to): \(settings.format(transfer.amount))")
             }
         }
         lines.append("")
-        lines.append("Sent from Tally")
+        lines.append(String(localized: "Sent from Tally"))
         return lines.joined(separator: "\n")
     }
 }

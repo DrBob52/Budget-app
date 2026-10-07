@@ -73,7 +73,7 @@ struct BudgetView: View {
             } label: {
                 Image(systemName: settings.hideAmounts ? "eye.slash" : "eye")
             }
-            .accessibilityLabel(settings.hideAmounts ? "Show amounts" : "Hide amounts")
+            .accessibilityLabel(settings.hideAmounts ? Text("Show amounts") : Text("Hide amounts"))
         }
         ToolbarItem(placement: .topBarTrailing) {
             Button {

@@ -185,9 +185,9 @@ struct OnboardingRhythmStep: View {
 
     private func blurb(for kind: PeriodKind) -> String {
         switch kind {
-        case .monthly: return "One budget a month, starting on your payday."
-        case .biweekly: return "A new budget every two weeks, in step with your pay."
-        case .weekly: return "A fresh budget every week."
+        case .monthly: return String(localized: "One budget a month, starting on your payday.")
+        case .biweekly: return String(localized: "A new budget every two weeks, in step with your pay.")
+        case .weekly: return String(localized: "A fresh budget every week.")
         }
     }
 
@@ -300,22 +300,30 @@ struct OnboardingIncomeStep: View {
     @Environment(AppSettings.self) private var settings
     @Bindable var draft: OnboardingDraft
 
-    private var periodNoun: String {
+    private var incomeQuestion: String {
         switch settings.periodKind {
-        case .monthly: return "month"
-        case .biweekly: return "two weeks"
-        case .weekly: return "week"
+        case .monthly: return String(localized: "What do you expect to earn each month?")
+        case .biweekly: return String(localized: "What do you expect to earn every two weeks?")
+        case .weekly: return String(localized: "What do you expect to earn each week?")
+        }
+    }
+
+    private var incomeOverline: String {
+        switch settings.periodKind {
+        case .monthly: return String(localized: "Expected income per month")
+        case .biweekly: return String(localized: "Expected income per two weeks")
+        case .weekly: return String(localized: "Expected income per week")
         }
     }
 
     var body: some View {
         OnboardingScaffold(
-            title: "What do you expect to earn each \(periodNoun)?",
-            subtitle: "A rough figure is fine. Tally uses it to suggest sensible limits in the next step."
+            title: Text(incomeQuestion),
+            subtitle: Text("A rough figure is fine. Tally uses it to suggest sensible limits in the next step.")
         ) {
             VStack(alignment: .leading, spacing: 14) {
                 VStack(alignment: .leading, spacing: 6) {
-                    Overline("Expected income per \(periodNoun)")
+                    Overline(incomeOverline)
                     AmountField(title: "0", amount: $draft.income, large: true)
                 }
                 .tallyCard()

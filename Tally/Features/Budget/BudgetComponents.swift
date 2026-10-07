@@ -70,7 +70,7 @@ struct BudgetHeroCard: View {
     private var ring: some View {
         ZStack {
             ProgressRing(progress: progress, lineWidth: 8)
-            Text("\(Int((progress * 100).rounded()))%")
+            Text(progress, format: .percent.precision(.fractionLength(0)))
                 .font(.system(.footnote, design: .serif).weight(.semibold))
                 .monospacedDigit()
                 .foregroundStyle(isOver ? Palette.negative : Palette.ink)
@@ -83,7 +83,7 @@ struct BudgetHeroCard: View {
     private var allowanceLine: some View {
         if let allowance = summary.dailyAllowance, summary.leftToSpend > 0 {
             let days = summary.daysRemaining
-            Text("≈ \(settings.format(allowance)) per day for \(days) \(days == 1 ? "day" : "days")")
+            Text("≈ \(settings.format(allowance)) per day for ^[\(days) day](inflect: true)")
                 .font(.footnote)
                 .foregroundStyle(Palette.inkSecondary)
                 .hidesAmount(settings.hideAmounts)
@@ -101,10 +101,10 @@ struct BudgetHeroCard: View {
     }
 
     private var accessibilitySummary: String {
-        if settings.hideAmounts { return "Budget summary, amounts hidden" }
+        if settings.hideAmounts { return String(localized: "Budget summary, amounts hidden") }
         let left = settings.format(summary.leftToSpend.magnitudeValue)
-        let lead = isOver ? "Over budget by \(left)" : "\(left) left to spend"
-        return "\(lead). Income \(settings.format(summary.income)), spent \(settings.format(summary.expenses)), net \(settings.format(summary.net))."
+        let lead = isOver ? String(localized: "Over budget by \(left)") : String(localized: "\(left) left to spend")
+        return String(localized: "\(lead). Income \(settings.format(summary.income)), spent \(settings.format(summary.expenses)), net \(settings.format(summary.net)).")
     }
 }
 
@@ -126,7 +126,7 @@ struct BudgetStatsRow: View {
         }
     }
 
-    private func stat<Content: View>(_ title: String, @ViewBuilder value: () -> Content) -> some View {
+    private func stat<Content: View>(_ title: LocalizedStringKey, @ViewBuilder value: () -> Content) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Overline(title)
             value()
@@ -218,17 +218,20 @@ struct BudgetCategoryRow: View {
     private var carryNote: String {
         let amount = settings.format(status.carriedOver.magnitudeValue)
         if status.carriedOver > 0 {
-            return "Includes \(amount) carried over"
+            return String(localized: "Includes \(amount) carried over")
         }
-        return "Reduced by \(amount) overspent earlier"
+        return String(localized: "Reduced by \(amount) overspent earlier")
     }
 
     private var accessibilityText: String {
-        if settings.hideAmounts { return "\(category.name), amounts hidden" }
+        if settings.hideAmounts { return String(localized: "\(category.name), amounts hidden") }
         let amount = settings.format(status.remaining.magnitudeValue)
-        var text = "\(category.name), \(amount) \(isOver ? "over" : "left") of \(settings.format(status.available))"
+        let available = settings.format(status.available)
+        let text: String = isOver
+            ? String(localized: "\(category.name), \(amount) over of \(available)")
+            : String(localized: "\(category.name), \(amount) left of \(available)")
         if status.carriedOver != 0 {
-            text += ", \(carryNote.lowercased())"
+            return String(localized: "\(text), \(carryNote.lowercased())")
         }
         return text
     }
@@ -240,7 +243,7 @@ struct BudgetUnbudgetedRow: View {
     let entry: BudgetUnbudgetedEntry
     let onSetLimit: (Category) -> Void
 
-    private var name: String { entry.category?.name ?? "Uncategorized" }
+    private var name: String { entry.category?.name ?? String(localized: "Uncategorized") }
 
     var body: some View {
         HStack(spacing: 12) {
@@ -277,8 +280,8 @@ struct BudgetUnbudgetedRow: View {
     }
 
     private var accessibilityText: String {
-        if settings.hideAmounts { return "\(name), no limit, amounts hidden" }
-        return "\(name), \(settings.format(entry.spent)) spent, no limit set"
+        if settings.hideAmounts { return String(localized: "\(name), no limit, amounts hidden") }
+        return String(localized: "\(name), \(settings.format(entry.spent)) spent, no limit set")
     }
 }
 

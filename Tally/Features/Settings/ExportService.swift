@@ -30,7 +30,7 @@ enum ExportService {
             let amountText = numberFormatter.string(from: transaction.amount as NSDecimalNumber) ?? "\(transaction.amount)"
             rows.append([
                 dayFormatter.string(from: transaction.date),
-                transaction.kind.displayName,
+                transaction.kind.rawValue,
                 transaction.title,
                 transaction.category?.name ?? "",
                 transaction.account?.name ?? "",

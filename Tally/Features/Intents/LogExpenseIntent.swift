@@ -52,31 +52,31 @@ struct LogExpenseIntent: AppIntent {
         SnapshotService.refresh(context: context, settings: settings)
 
         let message = confirmation(for: value, category: chosenCategory, context: context, settings: settings)
-        return .result(dialog: "\(message)")
+        return .result(dialog: IntentDialog(stringLiteral: message))
     }
 
     @MainActor
     private func confirmation(for value: Decimal, category: Category?, context: ModelContext, settings: AppSettings) -> String {
         let logged = settings.format(value)
         guard let summary = IntentBudgetReader.summary(context: context, settings: settings) else {
-            return "Logged \(logged)."
+            return String(localized: "Logged \(logged).")
         }
 
         if let category, category.isBudgeted, let status = summary.status(for: category.id) {
             let remaining = status.remaining
             if remaining < 0 {
-                return "Logged \(logged) for \(category.name). That puts you \(settings.format(-remaining)) over budget there."
+                return String(localized: "Logged \(logged) for \(category.name). That puts you \(settings.format(-remaining)) over budget there.")
             }
-            return "Logged \(logged) for \(category.name). \(settings.format(remaining)) left in \(category.name)."
+            return String(localized: "Logged \(logged) for \(category.name). \(settings.format(remaining)) left in \(category.name).")
         }
 
         let left = summary.leftToSpend
         if summary.totalBudget <= 0 {
-            return "Logged \(logged)."
+            return String(localized: "Logged \(logged).")
         }
         if left < 0 {
-            return "Logged \(logged). You are \(settings.format(-left)) over budget this period."
+            return String(localized: "Logged \(logged). You are \(settings.format(-left)) over budget this period.")
         }
-        return "Logged \(logged). \(settings.format(left)) left to spend this period."
+        return String(localized: "Logged \(logged). \(settings.format(left)) left to spend this period.")
     }
 }

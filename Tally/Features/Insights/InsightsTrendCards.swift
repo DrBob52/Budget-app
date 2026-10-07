@@ -8,8 +8,8 @@ struct InsightsIncomeSpendingCard: View {
     @Environment(AppSettings.self) private var settings
     let data: InsightsData
 
-    private static let incomeName = "Income"
-    private static let spendingName = "Spending"
+    private static let incomeName = String(localized: "Income")
+    private static let spendingName = String(localized: "Spending")
 
     var body: some View {
         InsightsSection("Income vs spending") {
@@ -70,7 +70,7 @@ struct InsightsIncomeSpendingCard: View {
         }
     }
 
-    private func swatch(_ color: Color, _ title: String) -> some View {
+    private func swatch(_ color: Color, _ title: LocalizedStringKey) -> some View {
         HStack(spacing: 6) {
             RoundedRectangle(cornerRadius: 2).fill(color).frame(width: 10, height: 10)
             Text(title)
@@ -86,8 +86,8 @@ struct InsightsPaceCard: View {
     @Environment(AppSettings.self) private var settings
     let data: InsightsData
 
-    private static let spentName = "Spent"
-    private static let paceName = "On pace"
+    private static let spentName = String(localized: "Spent")
+    private static let paceName = String(localized: "On pace")
 
     private var showsPace: Bool { data.totalBudget > 0 }
 
@@ -232,7 +232,7 @@ struct InsightsNetWorthCard: View {
     private var headline: some View {
         HStack(alignment: .firstTextBaseline, spacing: 10) {
             MoneyText(amount: latest, compact: true, font: .display(28))
-            Text("\(settings.format(change, showsSign: true, compact: true)) over \(data.netWorth.count) periods")
+            Text("\(settings.format(change, showsSign: true, compact: true)) over ^[\(data.netWorth.count) period](inflect: true)")
                 .font(.footnote)
                 .foregroundStyle(change < 0 ? Palette.negative : Palette.inkSecondary)
                 .hidesAmount(settings.hideAmounts)

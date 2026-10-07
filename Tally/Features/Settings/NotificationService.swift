@@ -92,8 +92,8 @@ final class NotificationService {
         components.minute = min(max(minutes % 60, 0), 59)
 
         let content = UNMutableNotificationContent()
-        content.title = "Anything to log today?"
-        content.body = "A quick note of today's spending keeps your plan honest."
+        content.title = String(localized: "Anything to log today?")
+        content.body = String(localized: "A quick note of today's spending keeps your plan honest.")
         content.sound = .default
 
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
@@ -121,10 +121,10 @@ final class NotificationService {
 
         var requests: [UNNotificationRequest] = []
         for item in due.prefix(NotificationService.maxBillReminders) {
-            let name = item.template.title.isEmpty ? "A bill" : item.template.title
+            let name = item.template.title.isEmpty ? String(localized: "A bill") : item.template.title
             let content = UNMutableNotificationContent()
-            content.title = "\(name) is due tomorrow"
-            content.body = "\(settings.format(item.template.amount)) is coming out. Make sure there is enough set aside."
+            content.title = String(localized: "\(name) is due tomorrow")
+            content.body = String(localized: "\(settings.format(item.template.amount)) is coming out. Make sure there is enough set aside.")
             content.sound = .default
 
             let components = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: item.fireDate)
@@ -163,15 +163,15 @@ final class NotificationService {
             guard status.available > 0, status.progress >= 0.9 else { continue }
             let key = "\(status.id.uuidString)-\(stamp)"
             if alreadySent.contains(key) { continue }
-            let name = names[status.id] ?? "A category"
+            let name = names[status.id] ?? String(localized: "A category")
 
             let content = UNMutableNotificationContent()
             if status.isOver {
-                content.title = "\(name) is over budget"
-                content.body = "You have spent \(settings.format(status.spent)) of \(settings.format(status.available)) this period."
+                content.title = String(localized: "\(name) is over budget")
+                content.body = String(localized: "You have spent \(settings.format(status.spent)) of \(settings.format(status.available)) this period.")
             } else {
-                content.title = "\(name) is nearly used up"
-                content.body = "\(settings.format(status.remaining)) left of \(settings.format(status.available)) this period."
+                content.title = String(localized: "\(name) is nearly used up")
+                content.body = String(localized: "\(settings.format(status.remaining)) left of \(settings.format(status.available)) this period.")
             }
             content.sound = .default
 

@@ -37,7 +37,7 @@ enum InsightsFormat {
     }
 
     static func percent(_ value: Double) -> String {
-        "\(Int((value * 100).rounded()))%"
+        value.formatted(.percent.precision(.fractionLength(0)))
     }
 }
 
@@ -103,7 +103,7 @@ struct InsightsData {
             builtSlices.append(InsightsSlice(
                 id: item.id,
                 categoryID: item.categoryID,
-                name: category?.name ?? "Uncategorized",
+                name: category?.name ?? String(localized: "Uncategorized"),
                 symbol: category?.symbol ?? "questionmark",
                 colorHex: category?.colorHex ?? "#9C978C",
                 amount: item.total,

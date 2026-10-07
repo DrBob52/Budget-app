@@ -78,7 +78,7 @@ struct SettingsView: View {
         } header: {
             Text("Data")
         } footer: {
-            Text("Import reads CSV, OFX and QFX files from your bank. Exports are plain CSV that opens in any spreadsheet.")
+            Text("Exports are plain CSV that opens in any spreadsheet.")
         }
         .listRowBackground(Palette.surface)
     }
@@ -94,7 +94,7 @@ struct SettingsView: View {
                     Label("Tally Pro", systemImage: "sparkles")
                         .foregroundStyle(Palette.ink)
                     Spacer()
-                    Text(store.isPro ? "Active" : "Not unlocked")
+                    proStatusText
                         .font(.subheadline)
                         .foregroundStyle(store.isPro ? Palette.accent : Palette.inkSecondary)
                     Image(systemName: "chevron.right")
@@ -108,6 +108,10 @@ struct SettingsView: View {
             Text("Tally Pro")
         }
         .listRowBackground(Palette.surface)
+    }
+
+    private var proStatusText: Text {
+        store.isPro ? Text("Active") : Text("Not unlocked")
     }
 
     // MARK: Debug
@@ -225,7 +229,7 @@ private struct SettingsBudgetSection: View {
 
     private func weekdayName(_ weekday: Int) -> String {
         let symbols = Calendar.current.weekdaySymbols
-        guard weekday >= 1, weekday <= symbols.count else { return "Day \(weekday)" }
+        guard weekday >= 1, weekday <= symbols.count else { return String(localized: "Day \(weekday)") }
         return symbols[weekday - 1]
     }
 
@@ -517,8 +521,8 @@ struct SettingsCategoriesView: View {
 
     var body: some View {
         List {
-            categorySection(title: "Expense", kind: .expense, items: expense)
-            categorySection(title: "Income", kind: .income, items: income)
+            categorySection(title: "Expense", addTitle: "Add expense category", kind: .expense, items: expense)
+            categorySection(title: "Income", addTitle: "Add income category", kind: .income, items: income)
             if !archived.isEmpty {
                 archivedSection
             }
@@ -539,7 +543,7 @@ struct SettingsCategoriesView: View {
         }
     }
 
-    private func categorySection(title: String, kind: CategoryKind, items: [Category]) -> some View {
+    private func categorySection(title: LocalizedStringKey, addTitle: LocalizedStringKey, kind: CategoryKind, items: [Category]) -> some View {
         Section {
             ForEach(items) { category in
                 Button {
@@ -565,7 +569,7 @@ struct SettingsCategoriesView: View {
             Button {
                 adding = kind
             } label: {
-                Label("Add \(title.lowercased()) category", systemImage: "plus.circle")
+                Label(addTitle, systemImage: "plus.circle")
             }
         } header: {
             Text(title)

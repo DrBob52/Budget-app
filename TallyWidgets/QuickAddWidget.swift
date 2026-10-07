@@ -95,8 +95,8 @@ struct WidgetQuickAddMedium: View {
 
 struct WidgetQuickAddTile: View {
     let symbol: String
-    let title: String
-    let subtitle: String
+    let title: LocalizedStringKey
+    let subtitle: LocalizedStringKey
     let tint: Color
 
     var body: some View {

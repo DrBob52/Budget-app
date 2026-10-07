@@ -22,12 +22,13 @@ enum OnboardingStep: Int, CaseIterable {
 final class OnboardingDraft {
     /// Expected income per budget period.
     var income: Decimal = 0
-    var selectedExpenses: Set<String> = Set<String>(StarterCategories.expense.prefix(8).map { $0.name })
+    /// Selected starter categories, by their stable `Template.key` (English), not the localized name.
+    var selectedExpenses: Set<String> = Set<String>(StarterCategories.expense.prefix(8).map { $0.key })
     var selectedIncome: Set<String> = Set<String>(["Salary"])
-    /// Limits the user typed by hand. Everything else follows the suggestion.
+    /// Limits the user typed by hand, keyed by `Template.id`. Everything else follows the suggestion.
     var customLimits: [String: Decimal] = [:]
 
-    var accountName: String = "Everyday"
+    var accountName: String = String(localized: "Everyday")
     var accountKind: AccountKind = .checking
     var accountBalance: Decimal = 0
     var addsAccount: Bool = true
@@ -37,7 +38,7 @@ final class OnboardingDraft {
     }
 
     func limit(for template: StarterCategories.Template) -> Decimal {
-        customLimits[template.name] ?? suggestedLimit(for: template)
+        customLimits[template.id] ?? suggestedLimit(for: template)
     }
 
     func limitBinding(for template: StarterCategories.Template) -> Binding<Decimal> {
@@ -45,18 +46,18 @@ final class OnboardingDraft {
             get: { self.limit(for: template) },
             set: { newValue in
                 if newValue != self.limit(for: template) {
-                    self.customLimits[template.name] = newValue
+                    self.customLimits[template.id] = newValue
                 }
             }
         )
     }
 
     var chosenExpenses: [StarterCategories.Template] {
-        StarterCategories.expense.filter { selectedExpenses.contains($0.name) }
+        StarterCategories.expense.filter { selectedExpenses.contains($0.id) }
     }
 
     var chosenIncome: [StarterCategories.Template] {
-        StarterCategories.income.filter { selectedIncome.contains($0.name) }
+        StarterCategories.income.filter { selectedIncome.contains($0.id) }
     }
 
     var assignedTotal: Decimal {
