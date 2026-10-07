@@ -1,82 +1,75 @@
 {
   "sourceLanguage": "en",
   "strings": {
-    "Add an expense to ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Añadir un gasto a ${applicationName}"
-          }
-        }
-      }
-    },
-    "Check my budget in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Revisar mi presupuesto en ${applicationName}"
-          }
-        }
-      }
-    },
     "How much is left in ${applicationName}": {
+      "extractionState": "extracted_with_value",
       "localizations": {
+        "en": {
+          "stringSet": {
+            "state": "new",
+            "values": [
+              "How much is left in ${applicationName}",
+              "Check my budget in ${applicationName}",
+              "What can I spend in ${applicationName}"
+            ]
+          }
+        },
         "es": {
-          "stringUnit": {
+          "stringSet": {
             "state": "translated",
-            "value": "Cuánto me queda en ${applicationName}"
+            "values": [
+              "Cuánto me queda en ${applicationName}",
+              "Revisar mi presupuesto en ${applicationName}",
+              "Cuánto puedo gastar en ${applicationName}"
+            ]
           }
         }
       }
     },
     "Log an expense in ${applicationName}": {
+      "extractionState": "extracted_with_value",
       "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Registrar un gasto en ${applicationName}"
+        "en": {
+          "stringSet": {
+            "state": "new",
+            "values": [
+              "Log an expense in ${applicationName}",
+              "Add an expense to ${applicationName}",
+              "Record spending in ${applicationName}"
+            ]
           }
-        }
-      }
-    },
-    "New transaction in ${applicationName}": {
-      "localizations": {
+        },
         "es": {
-          "stringUnit": {
+          "stringSet": {
             "state": "translated",
-            "value": "Nuevo movimiento en ${applicationName}"
+            "values": [
+              "Registrar un gasto en ${applicationName}",
+              "Añadir un gasto a ${applicationName}",
+              "Anotar un gasto en ${applicationName}"
+            ]
           }
         }
       }
     },
     "Open quick add in ${applicationName}": {
+      "extractionState": "extracted_with_value",
       "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abrir añadido rápido en ${applicationName}"
+        "en": {
+          "stringSet": {
+            "state": "new",
+            "values": [
+              "Open quick add in ${applicationName}",
+              "New transaction in ${applicationName}"
+            ]
           }
-        }
-      }
-    },
-    "Record spending in ${applicationName}": {
-      "localizations": {
+        },
         "es": {
-          "stringUnit": {
+          "stringSet": {
             "state": "translated",
-            "value": "Anotar un gasto en ${applicationName}"
-          }
-        }
-      }
-    },
-    "What can I spend in ${applicationName}": {
-      "localizations": {
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cuánto puedo gastar en ${applicationName}"
+            "values": [
+              "Abrir añadido rápido en ${applicationName}",
+              "Nuevo movimiento en ${applicationName}"
+            ]
           }
         }
       }

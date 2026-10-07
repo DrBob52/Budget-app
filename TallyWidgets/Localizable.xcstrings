@@ -1,7 +1,192 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ left, %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ left, %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ disponible, %2$@"
+          }
+        }
+      }
+    },
+    "%@ per day": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ al día"
+          }
+        }
+      }
+    },
+    "Expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gasto"
+          }
+        }
+      }
+    },
+    "Income": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingreso"
+          }
+        }
+      }
+    },
+    "Jump straight to logging an expense or income.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ve directo a registrar un gasto o ingreso."
+          }
+        }
+      }
+    },
+    "LEFT TO SPEND": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DISPONIBLE"
+          }
+        }
+      }
+    },
+    "Left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponible"
+          }
+        }
+      }
+    },
+    "Left to spend": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponible"
+          }
+        }
+      }
+    },
+    "Log expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar gasto"
+          }
+        }
+      }
+    },
+    "Money in": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entradas"
+          }
+        }
+      }
+    },
+    "Money out": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salidas"
+          }
+        }
+      }
+    },
+    "Period ended": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo terminado"
+          }
+        }
+      }
+    },
+    "Quick add": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir rápido"
+          }
+        }
+      }
+    },
+    "Set budgets in the Plan tab to see categories here.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Define presupuestos en la pestaña Plan para ver las categorías aquí."
+          }
+        }
+      }
+    },
+    "TOP CATEGORIES": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PRINCIPALES CATEGORÍAS"
+          }
+        }
+      }
+    },
+    "Takes a few seconds": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo toma unos segundos"
+          }
+        }
+      }
+    },
+    "What remains of this period's budget, and what you can spend each day.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo que queda del presupuesto de este periodo y lo que puedes gastar cada día."
+          }
+        }
+      }
+    },
+    "^[%lld day](inflect: true) left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld día](inflect: true) restante"
+          }
+        }
+      }
+    }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

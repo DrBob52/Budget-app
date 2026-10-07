@@ -1,0 +1,2680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Packages/TallyCore/Sources/TallyCore/Resources/en.lproj/Localizable.strings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="Equally" xml:space="preserve">
+        <source>Equally</source>
+        <target>A partes iguales</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every day" xml:space="preserve">
+        <source>Every day</source>
+        <target>Cada día</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every month" xml:space="preserve">
+        <source>Every month</source>
+        <target>Cada mes</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every three months" xml:space="preserve">
+        <source>Every three months</source>
+        <target>Cada tres meses</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every two weeks" xml:space="preserve">
+        <source>Every two weeks</source>
+        <target>Cada dos semanas</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every week" xml:space="preserve">
+        <source>Every week</source>
+        <target>Cada semana</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every year" xml:space="preserve">
+        <source>Every year</source>
+        <target>Cada año</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exact amounts" xml:space="preserve">
+        <source>Exact amounts</source>
+        <target>Importes exactos</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expense" xml:space="preserve">
+        <source>Expense</source>
+        <target>Gasto</target>
+        <note>Display names for TallyCore enums.</note>
+      </trans-unit>
+      <trans-unit id="Income" xml:space="preserve">
+        <source>Income</source>
+        <target>Ingreso</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Monthly" xml:space="preserve">
+        <source>Monthly</source>
+        <target>Mensual</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Percentages" xml:space="preserve">
+        <source>Percentages</source>
+        <target>Porcentajes</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Shares" xml:space="preserve">
+        <source>Shares</source>
+        <target>Partes</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer" xml:space="preserve">
+        <source>Transfer</source>
+        <target>Transferencia</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Weekly" xml:space="preserve">
+        <source>Weekly</source>
+        <target>Semanal</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tally/Resources/AppShortcuts.xcstrings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="Add an expense to ${applicationName}" xml:space="preserve">
+        <source>Add an expense to ${applicationName}</source>
+        <target state="translated">Añadir un gasto a ${applicationName}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Check my budget in ${applicationName}" xml:space="preserve">
+        <source>Check my budget in ${applicationName}</source>
+        <target state="translated">Revisar mi presupuesto en ${applicationName}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="How much is left in ${applicationName}" xml:space="preserve">
+        <source>
+          <mrk mtype="x-set" mid="0">How much is left in ${applicationName}</mrk>
+          <mrk mtype="x-set" mid="1">Check my budget in ${applicationName}</mrk>
+          <mrk mtype="x-set" mid="2">What can I spend in ${applicationName}</mrk>
+        </source>
+        <target state="needs-review-l10n">Cuánto me queda en ${applicationName}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log an expense in ${applicationName}" xml:space="preserve">
+        <source>
+          <mrk mtype="x-set" mid="0">Log an expense in ${applicationName}</mrk>
+          <mrk mtype="x-set" mid="1">Add an expense to ${applicationName}</mrk>
+          <mrk mtype="x-set" mid="2">Record spending in ${applicationName}</mrk>
+        </source>
+        <target state="needs-review-l10n">Registrar un gasto en ${applicationName}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New transaction in ${applicationName}" xml:space="preserve">
+        <source>New transaction in ${applicationName}</source>
+        <target state="translated">Nuevo movimiento en ${applicationName}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Open quick add in ${applicationName}" xml:space="preserve">
+        <source>
+          <mrk mtype="x-set" mid="0">Open quick add in ${applicationName}</mrk>
+          <mrk mtype="x-set" mid="1">New transaction in ${applicationName}</mrk>
+        </source>
+        <target state="needs-review-l10n">Abrir añadido rápido en ${applicationName}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Record spending in ${applicationName}" xml:space="preserve">
+        <source>Record spending in ${applicationName}</source>
+        <target state="translated">Anotar un gasto en ${applicationName}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What can I spend in ${applicationName}" xml:space="preserve">
+        <source>What can I spend in ${applicationName}</source>
+        <target state="translated">Cuánto puedo gastar en ${applicationName}</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tally/Resources/en.lproj/InfoPlist.strings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Tally</source>
+        <target>Tally</target>
+        <note>App name under the icon.</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Tally</source>
+        <target>Tally</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSFaceIDUsageDescription" xml:space="preserve">
+        <source>Tally uses Face ID to keep your budget private.</source>
+        <target>Tally usa Face ID para mantener tu presupuesto en privado.</target>
+        <note>Face ID permission prompt.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tally/Resources/Localizable.xcstrings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="%" xml:space="preserve">
+        <source>%</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ (you)" xml:space="preserve">
+        <source>%@ (you)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ budget, amounts hidden" xml:space="preserve">
+        <source>%@ budget, amounts hidden</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ for %@" xml:space="preserve">
+        <source>%1$@ for %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ for the first %@" xml:space="preserve">
+        <source>%1$@ for the first %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ free" xml:space="preserve">
+        <source>%@ free</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ is coming out. Make sure there is enough set aside." xml:space="preserve">
+        <source>%@ is coming out. Make sure there is enough set aside.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ is due tomorrow" xml:space="preserve">
+        <source>%@ is due tomorrow</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ is nearly used up" xml:space="preserve">
+        <source>%@ is nearly used up</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ is over budget" xml:space="preserve">
+        <source>%@ is over budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ left" xml:space="preserve">
+        <source>%@ left</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ left of %@ this period." xml:space="preserve">
+        <source>%1$@ left of %2$@ this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ left to assign" xml:space="preserve">
+        <source>%@ left to assign</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ left to spend" xml:space="preserve">
+        <source>%@ left to spend</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ limit" xml:space="preserve">
+        <source>%@ limit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ of %@" xml:space="preserve">
+        <source>%1$@ of %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ over" xml:space="preserve">
+        <source>%@ over</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ over ^[%lld period](inflect: true)" xml:space="preserve">
+        <source>%1$@ over ^[%2$lld period](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ over the total." xml:space="preserve">
+        <source>%@ over the total.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ over your income" xml:space="preserve">
+        <source>%@ over your income</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ paid %@ %@. This adds a repayment to the history and updates everyone's balance." xml:space="preserve">
+        <source>%1$@ paid %2$@ %3$@. This adds a repayment to the history and updates everyone's balance.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ paid · %@" xml:space="preserve">
+        <source>%1$@ paid · %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per ^[%lld day](inflect: true)" xml:space="preserve">
+        <source>%1$@ per ^[%2$lld day](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per ^[%lld month](inflect: true)" xml:space="preserve">
+        <source>%1$@ per ^[%2$lld month](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per ^[%lld week](inflect: true)" xml:space="preserve">
+        <source>%1$@ per ^[%2$lld week](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per ^[%lld year](inflect: true)" xml:space="preserve">
+        <source>%1$@ per ^[%2$lld year](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per day" xml:space="preserve">
+        <source>%@ per day</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per month" xml:space="preserve">
+        <source>%@ per month</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per period" xml:space="preserve">
+        <source>%@ per period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per week" xml:space="preserve">
+        <source>%@ per week</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per year" xml:space="preserve">
+        <source>%@ per year</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ spent this period" xml:space="preserve">
+        <source>%@ spent this period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ still to assign." xml:space="preserve">
+        <source>%@ still to assign.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ to go." xml:space="preserve">
+        <source>%@ to go.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ · Ended" xml:space="preserve">
+        <source>%@ · Ended</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ · Next %@" xml:space="preserve">
+        <source>%1$@ · Next %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ · Paused" xml:space="preserve">
+        <source>%@ · Paused</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ → %@" xml:space="preserve">
+        <source>%1$@ → %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@'s shares and repayments will be deleted. Expenses they paid stay in your ledger." xml:space="preserve">
+        <source>%@'s shares and repayments will be deleted. Expenses they paid stay in your ledger.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, %@" xml:space="preserve">
+        <source>%1$@, %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, %@ left of %@" xml:space="preserve">
+        <source>%1$@, %2$@ left of %3$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, %@ over of %@" xml:space="preserve">
+        <source>%1$@, %2$@ over of %3$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, %@ spent, no limit set" xml:space="preserve">
+        <source>%1$@, %2$@ spent, no limit set</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, %@, %@" xml:space="preserve">
+        <source>%1$@, %2$@, %3$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, %@, amount hidden" xml:space="preserve">
+        <source>%1$@, %2$@, amount hidden</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, amounts hidden" xml:space="preserve">
+        <source>%@, amounts hidden</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, no limit, amounts hidden" xml:space="preserve">
+        <source>%@, no limit, amounts hidden</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@, then %@. Cancel anytime." xml:space="preserve">
+        <source>%1$@, then %2$@. Cancel anytime.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@. Cancel anytime." xml:space="preserve">
+        <source>%@. Cancel anytime.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@. Income %@, spent %@, net %@." xml:space="preserve">
+        <source>%1$@. Income %2$@, spent %3$@, net %4$@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@: %@. Limit %@, spent %@." xml:space="preserve">
+        <source>%1$@: %2$@. Limit %3$@, spent %4$@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld percent" xml:space="preserve">
+        <source>%lld percent</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld%%" xml:space="preserve">
+        <source>%lld%%</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld%% less than last period" xml:space="preserve">
+        <source>%lld%% less than last period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld%% more than last period" xml:space="preserve">
+        <source>%lld%% more than last period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="- %@ is all square" xml:space="preserve">
+        <source>- %@ is all square</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="- %@ is owed %@" xml:space="preserve">
+        <source>- %1$@ is owed %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="- %@ owes %@" xml:space="preserve">
+        <source>- %1$@ owes %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="/ month" xml:space="preserve">
+        <source>/ month</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A bill" xml:space="preserve">
+        <source>A bill</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A category" xml:space="preserve">
+        <source>A category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A fresh budget every week." xml:space="preserve">
+        <source>A fresh budget every week.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A new budget every two weeks, in step with your pay." xml:space="preserve">
+        <source>A new budget every two weeks, in step with your pay.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A period starts on" xml:space="preserve">
+        <source>A period starts on</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A person with 2 shares owes twice as much as a person with 1." xml:space="preserve">
+        <source>A person with 2 shares owes twice as much as a person with 1.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A quick note of today's spending keeps your plan honest." xml:space="preserve">
+        <source>A quick note of today's spending keeps your plan honest.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A quiet period" xml:space="preserve">
+        <source>A quiet period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A rough figure is fine. Tally uses it to suggest sensible limits in the next step." xml:space="preserve">
+        <source>A rough figure is fine. Tally uses it to suggest sensible limits in the next step.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="About %@ a month" xml:space="preserve">
+        <source>About %@ a month</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Account" xml:space="preserve">
+        <source>Account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Account name" xml:space="preserve">
+        <source>Account name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Accounts" xml:space="preserve">
+        <source>Accounts</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Across ^[%lld account](inflect: true)" xml:space="preserve">
+        <source>Across ^[%lld account](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Active" xml:space="preserve">
+        <source>Active</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Active bills and subscriptions, averaged over a month." xml:space="preserve">
+        <source>Active bills and subscriptions, averaged over a month.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activity" xml:space="preserve">
+        <source>Activity</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Actual balance" xml:space="preserve">
+        <source>Actual balance</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add a category" xml:space="preserve">
+        <source>Add a category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add a few transactions and your spending patterns will show up here." xml:space="preserve">
+        <source>Add a few transactions and your spending patterns will show up here.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add a partner, roommates or a trip group." xml:space="preserve">
+        <source>Add a partner, roommates or a trip group.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add a recurring item" xml:space="preserve">
+        <source>Add a recurring item</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add a transaction" xml:space="preserve">
+        <source>Add a transaction</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add account or goal" xml:space="preserve">
+        <source>Add account or goal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add an account" xml:space="preserve">
+        <source>Add an account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add an account to see your net worth." xml:space="preserve">
+        <source>Add an account to see your net worth.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add an expense to your budget without opening Tally." xml:space="preserve">
+        <source>Add an expense to your budget without opening Tally.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add another person" xml:space="preserve">
+        <source>Add another person</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add category" xml:space="preserve">
+        <source>Add category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add expense category" xml:space="preserve">
+        <source>Add expense category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add income category" xml:space="preserve">
+        <source>Add income category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add money" xml:space="preserve">
+        <source>Add money</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add person" xml:space="preserve">
+        <source>Add person</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add recurring item" xml:space="preserve">
+        <source>Add recurring item</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add rent, subscriptions or a paycheck and Tally will log each one when it comes due." xml:space="preserve">
+        <source>Add rent, subscriptions or a paycheck and Tally will log each one when it comes due.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add shared expense" xml:space="preserve">
+        <source>Add shared expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add the places your money lives, like a checking account, cash or a credit card." xml:space="preserve">
+        <source>Add the places your money lives, like a checking account, cash or a credit card.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add transaction" xml:space="preserve">
+        <source>Add transaction</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add your first account" xml:space="preserve">
+        <source>Add your first account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add your first expense or paycheck and it will show up here." xml:space="preserve">
+        <source>Add your first expense or paycheck and it will show up here.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add your first expense with the plus button and watch the bars fill in." xml:space="preserve">
+        <source>Add your first expense with the plus button and watch the bars fill in.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add your income in the earlier step to see how much is left to assign." xml:space="preserve">
+        <source>Add your income in the earlier step to see how much is left to assign.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adding people is part of Tally Pro." xml:space="preserve">
+        <source>Adding people is part of Tally Pro.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adds expense of" xml:space="preserve">
+        <source>Adds expense of</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adds income of" xml:space="preserve">
+        <source>Adds income of</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adjust balance" xml:space="preserve">
+        <source>Adjust balance</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced insights" xml:space="preserve">
+        <source>Advanced insights</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ahead of pace by %@. Spending is running faster than your budget allows." xml:space="preserve">
+        <source>Ahead of pace by %@. Spending is running faster than your budget allows.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All accounts" xml:space="preserve">
+        <source>All accounts</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All categories" xml:space="preserve">
+        <source>All categories</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All square" xml:space="preserve">
+        <source>All square</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All time" xml:space="preserve">
+        <source>All time</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All types" xml:space="preserve">
+        <source>All types</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow notifications for Tally in the system Settings to receive reminders." xml:space="preserve">
+        <source>Allow notifications for Tally in the system Settings to receive reminders.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Amount" xml:space="preserve">
+        <source>Amount</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Amount you owe today" xml:space="preserve">
+        <source>Amount you owe today</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Anything above this counts as over budget for the period." xml:space="preserve">
+        <source>Anything above this counts as over budget for the period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Anything to log today?" xml:space="preserve">
+        <source>Anything to log today?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Appearance" xml:space="preserve">
+        <source>Appearance</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archive" xml:space="preserve">
+        <source>Archive</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archive account" xml:space="preserve">
+        <source>Archive account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archive category" xml:space="preserve">
+        <source>Archive category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archive goal" xml:space="preserve">
+        <source>Archive goal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archive this account?" xml:space="preserve">
+        <source>Archive this account?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archive this category?" xml:space="preserve">
+        <source>Archive this category?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archive this goal?" xml:space="preserve">
+        <source>Archive this goal?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archived (%lld)" xml:space="preserve">
+        <source>Archived (%lld)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archived accounts are hidden and left out of net worth. Their transactions keep their history, and you can restore the account any time." xml:space="preserve">
+        <source>Archived accounts are hidden and left out of net worth. Their transactions keep their history, and you can restore the account any time.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archived categories are hidden but their transactions keep their history." xml:space="preserve">
+        <source>Archived categories are hidden but their transactions keep their history.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archived categories keep their past transactions but no longer appear when adding new ones." xml:space="preserve">
+        <source>Archived categories keep their past transactions but no longer appear when adding new ones.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Archiving hides the goal and keeps its history. Deleting removes it and every deposit." xml:space="preserve">
+        <source>Archiving hides the goal and keeps its history. Deleting removes it and every deposit.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Assets" xml:space="preserve">
+        <source>Assets</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Assigned" xml:space="preserve">
+        <source>Assigned</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Average" xml:space="preserve">
+        <source>Average</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Average spending" xml:space="preserve">
+        <source>Average spending</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Average spending %@" xml:space="preserve">
+        <source>Average spending %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Back" xml:space="preserve">
+        <source>Back</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Back to today" xml:space="preserve">
+        <source>Back to today</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Balance" xml:space="preserve">
+        <source>Balance</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Balance adjustment" xml:space="preserve">
+        <source>Balance adjustment</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Balances" xml:space="preserve">
+        <source>Balances</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Basics" xml:space="preserve">
+        <source>Basics</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Behind pace by %@. You are spending slower than an even rate." xml:space="preserve">
+        <source>Behind pace by %@. You are spending slower than an even rate.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bill reminders" xml:space="preserve">
+        <source>Bill reminders</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bill reminders arrive the morning before a recurring bill is due. Overspend alerts appear once per period when a category reaches 90 percent of its budget." xml:space="preserve">
+        <source>Bill reminders arrive the morning before a recurring bill is due. Overspend alerts appear once per period when a category reaches 90 percent of its budget.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bills and subscriptions that log themselves." xml:space="preserve">
+        <source>Bills and subscriptions that log themselves.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Budget" xml:space="preserve">
+        <source>Budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Budget per period" xml:space="preserve">
+        <source>Budget per period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Budget period" xml:space="preserve">
+        <source>Budget period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Budget rhythm" xml:space="preserve">
+        <source>Budget rhythm</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Budget summary, amounts hidden" xml:space="preserve">
+        <source>Budget summary, amounts hidden</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Budget with the whole picture." xml:space="preserve">
+        <source>Budget with the whole picture.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Budgeted" xml:space="preserve">
+        <source>Budgeted</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="By period" xml:space="preserve">
+        <source>By period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Carried" xml:space="preserve">
+        <source>Carried</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Carry leftover forward" xml:space="preserve">
+        <source>Carry leftover forward</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Carry leftover to next period" xml:space="preserve">
+        <source>Carry leftover to next period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Carry over only takes effect once rollover is switched on in Settings. Leave a limit empty to stop budgeting that category." xml:space="preserve">
+        <source>Carry over only takes effect once rollover is switched on in Settings. Leave a limit empty to stop budgeting that category.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cash" xml:space="preserve">
+        <source>Cash</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Categories" xml:space="preserve">
+        <source>Categories</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Categories are how Tally groups your spending. Add a few, then give each a limit to build your plan." xml:space="preserve">
+        <source>Categories are how Tally groups your spending. Add a few, then give each a limit to build your plan.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Categories set to carry over move their leftover, or overspend, into the next period. Leave a limit empty to stop budgeting that category." xml:space="preserve">
+        <source>Categories set to carry over move their leftover, or overspend, into the next period. Leave a limit empty to stop budgeting that category.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Category" xml:space="preserve">
+        <source>Category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Check my budget" xml:space="preserve">
+        <source>Check my budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Checking" xml:space="preserve">
+        <source>Checking</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Choose a plan" xml:space="preserve">
+        <source>Choose a plan</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Choose at least one person to share this with." xml:space="preserve">
+        <source>Choose at least one person to share this with.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Choose what you want to keep an eye on. Limits are suggestions based on your income, so adjust any of them." xml:space="preserve">
+        <source>Choose what you want to keep an eye on. Limits are suggestions based on your income, so adjust any of them.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Clear filters" xml:space="preserve">
+        <source>Clear filters</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Clear search" xml:space="preserve">
+        <source>Clear search</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Clear search and filters" xml:space="preserve">
+        <source>Clear search and filters</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Close" xml:space="preserve">
+        <source>Close</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color" xml:space="preserve">
+        <source>Color</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color %@" xml:space="preserve">
+        <source>Color %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Continue" xml:space="preserve">
+        <source>Continue</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Could not restore purchases. %@" xml:space="preserve">
+        <source>Could not restore purchases. %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create a goal" xml:space="preserve">
+        <source>Create a goal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Credit card" xml:space="preserve">
+        <source>Credit card</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Currency" xml:space="preserve">
+        <source>Currency</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Current balance" xml:space="preserve">
+        <source>Current balance</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Current budget: %@" xml:space="preserve">
+        <source>Current budget: %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Daily pace" xml:space="preserve">
+        <source>Daily pace</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Daily reminder" xml:space="preserve">
+        <source>Daily reminder</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dark" xml:space="preserve">
+        <source>Dark</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Data" xml:space="preserve">
+        <source>Data</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Date" xml:space="preserve">
+        <source>Date</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Date of your next payday" xml:space="preserve">
+        <source>Date of your next payday</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Day" xml:space="preserve">
+        <source>Day</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Day %lld" xml:space="preserve">
+        <source>Day %lld</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Debug" xml:space="preserve">
+        <source>Debug</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Default" xml:space="preserve">
+        <source>Default</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Default account" xml:space="preserve">
+        <source>Default account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete" xml:space="preserve">
+        <source>Delete</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete goal" xml:space="preserve">
+        <source>Delete goal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete goal and history" xml:space="preserve">
+        <source>Delete goal and history</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete recurring item" xml:space="preserve">
+        <source>Delete recurring item</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete this goal?" xml:space="preserve">
+        <source>Delete this goal?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete this recurring item?" xml:space="preserve">
+        <source>Delete this recurring item?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete this transaction?" xml:space="preserve">
+        <source>Delete this transaction?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete transaction" xml:space="preserve">
+        <source>Delete transaction</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Deposit" xml:space="preserve">
+        <source>Deposit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Details" xml:space="preserve">
+        <source>Details</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dinner with Sam" xml:space="preserve">
+        <source>Dinner with Sam</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Done" xml:space="preserve">
+        <source>Done</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Duplicate" xml:space="preserve">
+        <source>Duplicate</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit" xml:space="preserve">
+        <source>Edit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit account" xml:space="preserve">
+        <source>Edit account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit budget" xml:space="preserve">
+        <source>Edit budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit category" xml:space="preserve">
+        <source>Edit category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit expense" xml:space="preserve">
+        <source>Edit expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit goal" xml:space="preserve">
+        <source>Edit goal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit income" xml:space="preserve">
+        <source>Edit income</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit person" xml:space="preserve">
+        <source>Edit person</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit recurring item" xml:space="preserve">
+        <source>Edit recurring item</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit transfer" xml:space="preserve">
+        <source>Edit transfer</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Emergency fund" xml:space="preserve">
+        <source>Emergency fund</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter a value for at least one person." xml:space="preserve">
+        <source>Enter a value for at least one person.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter what the account really holds, for example from your bank app." xml:space="preserve">
+        <source>Enter what the account really holds, for example from your bank app.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Entries already added to your ledger stay where they are." xml:space="preserve">
+        <source>Entries already added to your ledger stay where they are.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Entries are added automatically when they come due. A start date in the past adds the ones you missed." xml:space="preserve">
+        <source>Entries are added automatically when they come due. A start date in the past adds the ones you missed.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Erase all data" xml:space="preserve">
+        <source>Erase all data</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Erase all data?" xml:space="preserve">
+        <source>Erase all data?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Erase everything" xml:space="preserve">
+        <source>Erase everything</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Even pace to %@" xml:space="preserve">
+        <source>Even pace to %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every amount in Tally is shown in this currency. You can change it later in Settings." xml:space="preserve">
+        <source>Every amount in Tally is shown in this currency. You can change it later in Settings.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every transaction, category, account, goal and shared budget on this device is deleted and settings return to their defaults. This cannot be undone." xml:space="preserve">
+        <source>Every transaction, category, account, goal and shared budget on this device is deleted and settings return to their defaults. This cannot be undone.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Every two weeks, next payday %@" xml:space="preserve">
+        <source>Every two weeks, next payday %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Everyday" xml:space="preserve">
+        <source>Everyday</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Everything you meant to set aside is here. It's yours to enjoy, or to withdraw whenever you're ready." xml:space="preserve">
+        <source>Everything you meant to set aside is here. It's yours to enjoy, or to withdraw whenever you're ready.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expected income" xml:space="preserve">
+        <source>Expected income</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expected income per month" xml:space="preserve">
+        <source>Expected income per month</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expected income per period" xml:space="preserve">
+        <source>Expected income per period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expected income per two weeks" xml:space="preserve">
+        <source>Expected income per two weeks</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expected income per week" xml:space="preserve">
+        <source>Expected income per week</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expense" xml:space="preserve">
+        <source>Expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Explore with sample data" xml:space="preserve">
+        <source>Explore with sample data</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Export CSV" xml:space="preserve">
+        <source>Export CSV</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exports are plain CSV that opens in any spreadsheet." xml:space="preserve">
+        <source>Exports are plain CSV that opens in any spreadsheet.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Filter" xml:space="preserve">
+        <source>Filter</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="For a credit card, turn this on if you owe money today. Purchases will then grow the amount owed." xml:space="preserve">
+        <source>For a credit card, turn this on if you owe money today. Purchases will then grow the amount owed.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Frequency" xml:space="preserve">
+        <source>Frequency</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="From" xml:space="preserve">
+        <source>From</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Future entries are added automatically when they come due." xml:space="preserve">
+        <source>Future entries are added automatically when they come due.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get started" xml:space="preserve">
+        <source>Get started</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Give your categories limits to compare spending with an even pace." xml:space="preserve">
+        <source>Give your categories limits to compare spending with an even pace.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Give your money a plan" xml:space="preserve">
+        <source>Give your money a plan</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Goal name" xml:space="preserve">
+        <source>Goal name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Goal reached" xml:space="preserve">
+        <source>Goal reached</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hear how much is left to spend this period." xml:space="preserve">
+        <source>Hear how much is left to spend this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Here is what Tally will set up. Everything can be changed later." xml:space="preserve">
+        <source>Here is what Tally will set up. Everything can be changed later.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hide amounts" xml:space="preserve">
+        <source>Hide amounts</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="History" xml:space="preserve">
+        <source>History</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="How much was it?" xml:space="preserve">
+        <source>How much was it?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="How often do you plan?" xml:space="preserve">
+        <source>How often do you plan?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="I could not read your budget just now. Open Tally and try again." xml:space="preserve">
+        <source>I could not read your budget just now. Open Tally and try again.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Icon" xml:space="preserve">
+        <source>Icon</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="In" xml:space="preserve">
+        <source>In</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Include in net worth" xml:space="preserve">
+        <source>Include in net worth</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Included with Pro" xml:space="preserve">
+        <source>Included with Pro</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Includes %@ carried over" xml:space="preserve">
+        <source>Includes %@ carried over</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Income" xml:space="preserve">
+        <source>Income</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Income vs spending" xml:space="preserve">
+        <source>Income vs spending</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Insights" xml:space="preserve">
+        <source>Insights</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Investments" xml:space="preserve">
+        <source>Investments</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Is owed" xml:space="preserve">
+        <source>Is owed</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Keep a running tab with the people you spend with" xml:space="preserve">
+        <source>Keep a running tab with the people you spend with</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Keep repeating" xml:space="preserve">
+        <source>Keep repeating</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Know where your money goes, and decide where it goes next." xml:space="preserve">
+        <source>Know where your money goes, and decide where it goes next.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Last %lld periods" xml:space="preserve">
+        <source>Last %lld periods</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Last one on" xml:space="preserve">
+        <source>Last one on</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Leave empty to track spending without a limit. Carry-over also needs rollover turned on in Settings." xml:space="preserve">
+        <source>Leave empty to track spending without a limit. Carry-over also needs rollover turned on in Settings.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ledger" xml:space="preserve">
+        <source>Ledger</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left" xml:space="preserve">
+        <source>Left</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left to spend" xml:space="preserve">
+        <source>Left to spend</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Liabilities" xml:space="preserve">
+        <source>Liabilities</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Light" xml:space="preserve">
+        <source>Light</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Limit" xml:space="preserve">
+        <source>Limit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Limit %@" xml:space="preserve">
+        <source>Limit %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Limit per period" xml:space="preserve">
+        <source>Limit per period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Limits per period" xml:space="preserve">
+        <source>Limits per period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Lisbon trip" xml:space="preserve">
+        <source>Lisbon trip</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Load sample data" xml:space="preserve">
+        <source>Load sample data</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Loading plans..." xml:space="preserve">
+        <source>Loading plans...</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Lock with %@" xml:space="preserve">
+        <source>Lock with %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log ${amount} expense in ${category}" xml:space="preserve">
+        <source>Log ${amount} expense in ${category}</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log an expense" xml:space="preserve">
+        <source>Log an expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log an expense, say who paid and how it divides. Tally keeps a running balance for everyone and tells you the simplest way to even things out." xml:space="preserve">
+        <source>Log an expense, say who paid and how it divides. Tally keeps a running balance for everyone and tells you the simplest way to even things out.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log expense" xml:space="preserve">
+        <source>Log expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Logged %@ for %@. %@ left in %@." xml:space="preserve">
+        <source>Logged %1$@ for %2$@. %3$@ left in %4$@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Logged %@ for %@. That puts you %@ over budget there." xml:space="preserve">
+        <source>Logged %1$@ for %2$@. That puts you %3$@ over budget there.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Logged %@." xml:space="preserve">
+        <source>Logged %@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Logged %@. %@ left to spend this period." xml:space="preserve">
+        <source>Logged %1$@. %2$@ left to spend this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Logged %@. You are %@ over budget this period." xml:space="preserve">
+        <source>Logged %1$@. You are %2$@ over budget this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Manage subscription" xml:space="preserve">
+        <source>Manage subscription</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mark paid" xml:space="preserve">
+        <source>Mark paid</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Me" xml:space="preserve">
+        <source>Me</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Method" xml:space="preserve">
+        <source>Method</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Money in" xml:space="preserve">
+        <source>Money in</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Monthly" xml:space="preserve">
+        <source>Monthly</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Monthly, from the %@" xml:space="preserve">
+        <source>Monthly, from the %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Move money" xml:space="preserve">
+        <source>Move money</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Name" xml:space="preserve">
+        <source>Name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Name, such as Rent or Streaming" xml:space="preserve">
+        <source>Name, such as Rent or Streaming</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Negative balance (owed)" xml:space="preserve">
+        <source>Negative balance (owed)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Net" xml:space="preserve">
+        <source>Net</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Net worth" xml:space="preserve">
+        <source>Net worth</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New" xml:space="preserve">
+        <source>New</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New account" xml:space="preserve">
+        <source>New account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New category" xml:space="preserve">
+        <source>New category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New expense" xml:space="preserve">
+        <source>New expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New goal" xml:space="preserve">
+        <source>New goal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New income" xml:space="preserve">
+        <source>New income</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New recurring item" xml:space="preserve">
+        <source>New recurring item</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New transfer" xml:space="preserve">
+        <source>New transfer</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Next one" xml:space="preserve">
+        <source>Next one</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Next period" xml:space="preserve">
+        <source>Next period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No account" xml:space="preserve">
+        <source>No account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No accounts yet" xml:space="preserve">
+        <source>No accounts yet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No active Tally Pro subscription was found for this Apple ID." xml:space="preserve">
+        <source>No active Tally Pro subscription was found for this Apple ID.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No activity on this account yet." xml:space="preserve">
+        <source>No activity on this account yet.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No categories yet" xml:space="preserve">
+        <source>No categories yet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No currency matches that search." xml:space="preserve">
+        <source>No currency matches that search.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No difference" xml:space="preserve">
+        <source>No difference</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No expense categories yet." xml:space="preserve">
+        <source>No expense categories yet.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No goals yet" xml:space="preserve">
+        <source>No goals yet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No limit" xml:space="preserve">
+        <source>No limit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No spending recorded in this period." xml:space="preserve">
+        <source>No spending recorded in this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No transactions yet" xml:space="preserve">
+        <source>No transactions yet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nobody owes anyone right now." xml:space="preserve">
+        <source>Nobody owes anyone right now.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="None yet" xml:space="preserve">
+        <source>None yet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not budgeted" xml:space="preserve">
+        <source>Not budgeted</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not counted in your net worth" xml:space="preserve">
+        <source>Not counted in your net worth</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not in net worth" xml:space="preserve">
+        <source>Not in net worth</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not in your share" xml:space="preserve">
+        <source>Not in your share</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not now" xml:space="preserve">
+        <source>Not now</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not set" xml:space="preserve">
+        <source>Not set</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not sure yet? Skip this and set limits by hand. You can change it any time." xml:space="preserve">
+        <source>Not sure yet? Skip this and set limits by hand. You can change it any time.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not unlocked" xml:space="preserve">
+        <source>Not unlocked</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Note" xml:space="preserve">
+        <source>Note</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Note (optional)" xml:space="preserve">
+        <source>Note (optional)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing added yet. Use “Add money” to make your first deposit." xml:space="preserve">
+        <source>Nothing added yet. Use “Add money” to make your first deposit.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing has been recorded in this period." xml:space="preserve">
+        <source>Nothing has been recorded in this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing matches" xml:space="preserve">
+        <source>Nothing matches</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing repeats yet" xml:space="preserve">
+        <source>Nothing repeats yet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing shared yet. Add an expense, choose who paid and how it divides." xml:space="preserve">
+        <source>Nothing shared yet. Add an expense, choose who paid and how it divides.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing spent in this category during this period." xml:space="preserve">
+        <source>Nothing spent in this category during this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing to chart yet" xml:space="preserve">
+        <source>Nothing to chart yet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Nothing to settle right now." xml:space="preserve">
+        <source>Nothing to settle right now.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Notifications are off" xml:space="preserve">
+        <source>Notifications are off</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="On pace" xml:space="preserve">
+        <source>On pace</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="One budget a month, starting on your payday." xml:space="preserve">
+        <source>One budget a month, starting on your payday.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Only in debug builds. Adds example categories, accounts and transactions." xml:space="preserve">
+        <source>Only in debug builds. Adds example categories, accounts and transactions.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Open Settings" xml:space="preserve">
+        <source>Open Settings</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Open Tally on the add transaction sheet." xml:space="preserve">
+        <source>Open Tally on the add transaction sheet.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Open my budget" xml:space="preserve">
+        <source>Open my budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Open quick add" xml:space="preserve">
+        <source>Open quick add</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Opening balance" xml:space="preserve">
+        <source>Opening balance</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Opens the transaction" xml:space="preserve">
+        <source>Opens the transaction</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Optional" xml:space="preserve">
+        <source>Optional</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Optional. This is the starting point Tally counts from." xml:space="preserve">
+        <source>Optional. This is the starting point Tally counts from.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Options" xml:space="preserve">
+        <source>Options</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Other" xml:space="preserve">
+        <source>Other</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Out" xml:space="preserve">
+        <source>Out</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Over budget" xml:space="preserve">
+        <source>Over budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Over budget by %@" xml:space="preserve">
+        <source>Over budget by %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Over by" xml:space="preserve">
+        <source>Over by</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Over-assigned" xml:space="preserve">
+        <source>Over-assigned</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Overspend alerts" xml:space="preserve">
+        <source>Overspend alerts</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Overview" xml:space="preserve">
+        <source>Overview</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Owes" xml:space="preserve">
+        <source>Owes</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Paid by" xml:space="preserve">
+        <source>Paid by</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Paid this period" xml:space="preserve">
+        <source>Paid this period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Passcode" xml:space="preserve">
+        <source>Passcode</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pause" xml:space="preserve">
+        <source>Pause</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Paused" xml:space="preserve">
+        <source>Paused</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Payday" xml:space="preserve">
+        <source>Payday</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Payday (period starts on day)" xml:space="preserve">
+        <source>Payday (period starts on day)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Payee or title" xml:space="preserve">
+        <source>Payee or title</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Payees appear here once your expenses have titles." xml:space="preserve">
+        <source>Payees appear here once your expenses have titles.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="People" xml:space="preserve">
+        <source>People</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="People you share with" xml:space="preserve">
+        <source>People you share with</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Percentages that don't add up to 100 are scaled to fit." xml:space="preserve">
+        <source>Percentages that don't add up to 100 are scaled to fit.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Period" xml:space="preserve">
+        <source>Period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pick your categories" xml:space="preserve">
+        <source>Pick your categories</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Plan" xml:space="preserve">
+        <source>Plan</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Plans are not available right now" xml:space="preserve">
+        <source>Plans are not available right now</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Previous period" xml:space="preserve">
+        <source>Previous period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quick add" xml:space="preserve">
+        <source>Quick add</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rainy day" xml:space="preserve">
+        <source>Rainy day</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reach it by" xml:space="preserve">
+        <source>Reach it by</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Record this payment?" xml:space="preserve">
+        <source>Record this payment?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Recurring" xml:space="preserve">
+        <source>Recurring</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Recurring transactions" xml:space="preserve">
+        <source>Recurring transactions</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Recurring transactions, widgets and the Apple Watch app stay free." xml:space="preserve">
+        <source>Recurring transactions, widgets and the Apple Watch app stay free.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reduced by %@ overspent earlier" xml:space="preserve">
+        <source>Reduced by %@ overspent earlier</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remind me before it's due" xml:space="preserve">
+        <source>Remind me before it's due</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reminders" xml:space="preserve">
+        <source>Reminders</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove" xml:space="preserve">
+        <source>Remove</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove %@" xml:space="preserve">
+        <source>Remove %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove person" xml:space="preserve">
+        <source>Remove person</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove this person?" xml:space="preserve">
+        <source>Remove this person?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Removing someone also removes their share of past expenses and any repayments they were part of, so balances can change." xml:space="preserve">
+        <source>Removing someone also removes their share of past expenses and any repayments they were part of, so balances can change.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rename, reorder, recolor or archive the categories you budget with." xml:space="preserve">
+        <source>Rename, reorder, recolor or archive the categories you budget with.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Repayments you mark as paid will appear here." xml:space="preserve">
+        <source>Repayments you mark as paid will appear here.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Repeat" xml:space="preserve">
+        <source>Repeat</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Repeats" xml:space="preserve">
+        <source>Repeats</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Restore" xml:space="preserve">
+        <source>Restore</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Restore purchases" xml:space="preserve">
+        <source>Restore purchases</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Resume" xml:space="preserve">
+        <source>Resume</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Right on pace." xml:space="preserve">
+        <source>Right on pace.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Roll over unspent budget" xml:space="preserve">
+        <source>Roll over unspent budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rollover carries what you did not spend in a category into the next period, and carries overspending forward as a smaller allowance. Each category can opt in from its editor." xml:space="preserve">
+        <source>Rollover carries what you did not spend in a category into the next period, and carries overspending forward as a smaller allowance. Each category can opt in from its editor.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Save" xml:space="preserve">
+        <source>Save</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Save %@ per month to reach it by %@" xml:space="preserve">
+        <source>Save %1$@ per month to reach it by %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Save %lld%%" xml:space="preserve">
+        <source>Save %lld%%</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Save toward as many goals as you like, each with its own pace." xml:space="preserve">
+        <source>Save toward as many goals as you like, each with its own pace.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Savings" xml:space="preserve">
+        <source>Savings</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Savings goal" xml:space="preserve">
+        <source>Savings goal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Savings goals" xml:space="preserve">
+        <source>Savings goals</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Savings rate" xml:space="preserve">
+        <source>Savings rate</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Schedule" xml:space="preserve">
+        <source>Schedule</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Search currencies" xml:space="preserve">
+        <source>Search currencies</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Search title, note or category" xml:space="preserve">
+        <source>Search title, note or category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Security &amp; privacy" xml:space="preserve">
+        <source>Security &amp; privacy</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="See who owes whom and record repayments." xml:space="preserve">
+        <source>See who owes whom and record repayments.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sent from Tally" xml:space="preserve">
+        <source>Sent from Tally</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Series" xml:space="preserve">
+        <source>Series</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set a limit for the categories you care about and Tally will show what is left to spend, day by day." xml:space="preserve">
+        <source>Set a limit for the categories you care about and Tally will show what is left to spend, day by day.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set aside money for something specific, a trip, a cushion or a big purchase, and watch it fill up." xml:space="preserve">
+        <source>Set aside money for something specific, a trip, a cushion or a big purchase, and watch it fill up.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set category limits" xml:space="preserve">
+        <source>Set category limits</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set limit" xml:space="preserve">
+        <source>Set limit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set up" xml:space="preserve">
+        <source>Set up</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set up Together" xml:space="preserve">
+        <source>Set up Together</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Settled" xml:space="preserve">
+        <source>Settled</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Settled up" xml:space="preserve">
+        <source>Settled up</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Settlement history" xml:space="preserve">
+        <source>Settlement history</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Share a plain-text summary whenever you like." xml:space="preserve">
+        <source>Share a plain-text summary whenever you like.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Share costs, save toward more goals and see the patterns behind your spending." xml:space="preserve">
+        <source>Share costs, save toward more goals and see the patterns behind your spending.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Share summary" xml:space="preserve">
+        <source>Share summary</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Shared activity" xml:space="preserve">
+        <source>Shared activity</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Shared budget summary" xml:space="preserve">
+        <source>Shared budget summary</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Shared budgets" xml:space="preserve">
+        <source>Shared budgets</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Shared spending" xml:space="preserve">
+        <source>Shared spending</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show all %lld" xml:space="preserve">
+        <source>Show all %lld</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show amounts" xml:space="preserve">
+        <source>Show amounts</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show fewer" xml:space="preserve">
+        <source>Show fewer</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Shows this category's transactions" xml:space="preserve">
+        <source>Shows this category's transactions</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Skip for now" xml:space="preserve">
+        <source>Skip for now</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Someone" xml:space="preserve">
+        <source>Someone</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spending" xml:space="preserve">
+        <source>Spending</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spending by category" xml:space="preserve">
+        <source>Spending by category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spending has passed the plan by %@" xml:space="preserve">
+        <source>Spending has passed the plan by %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spending here is not counted against a category limit, but it still reduces what is left to spend." xml:space="preserve">
+        <source>Spending here is not counted against a category limit, but it still reduces what is left to spend.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spending is level with last period" xml:space="preserve">
+        <source>Spending is level with last period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spent" xml:space="preserve">
+        <source>Spent</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spent so far" xml:space="preserve">
+        <source>Spent so far</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Split" xml:space="preserve">
+        <source>Split</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Split any expense equally, by amount, percentage or shares." xml:space="preserve">
+        <source>Split any expense equally, by amount, percentage or shares.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Split costs with the people you live with and settle up in a tap." xml:space="preserve">
+        <source>Split costs with the people you live with and settle up in a tap.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Split only" xml:space="preserve">
+        <source>Split only</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Split with others" xml:space="preserve">
+        <source>Split with others</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Start planning" xml:space="preserve">
+        <source>Start planning</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Starts" xml:space="preserve">
+        <source>Starts</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Step %lld of %lld" xml:space="preserve">
+        <source>Step %1$lld of %2$lld</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Stop on a date" xml:space="preserve">
+        <source>Stop on a date</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Subscribe" xml:space="preserve">
+        <source>Subscribe</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Subscribe to Tally Pro" xml:space="preserve">
+        <source>Subscribe to Tally Pro</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Subscriptions renew automatically at the price shown unless cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple ID when you confirm the purchase. Manage or cancel any time in your Apple ID settings. Any free trial is for new subscribers only and converts to a paid plan when it ends." xml:space="preserve">
+        <source>Subscriptions renew automatically at the price shown unless cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple ID when you confirm the purchase. Manage or cancel any time in your Apple ID settings. Any free trial is for new subscribers only and converts to a paid plan when it ends.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Suggested payments" xml:space="preserve">
+        <source>Suggested payments</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="System" xml:space="preserve">
+        <source>System</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tally" xml:space="preserve">
+        <source>Tally</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tally Pro" xml:space="preserve">
+        <source>Tally Pro</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tally has no accounts and no tracking. Budgets and transactions are stored only on your device." xml:space="preserve">
+        <source>Tally has no accounts and no tracking. Budgets and transactions are stored only on your device.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tally shows" xml:space="preserve">
+        <source>Tally shows</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tally starts a fresh budget at the rhythm of your pay, so the numbers line up with real life." xml:space="preserve">
+        <source>Tally starts a fresh budget at the rhythm of your pay, so the numbers line up with real life.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Target" xml:space="preserve">
+        <source>Target</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Target date" xml:space="preserve">
+        <source>Target date</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Target date %@" xml:space="preserve">
+        <source>Target date %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Thank you for backing Tally. Every Pro feature is unlocked." xml:space="preserve">
+        <source>Thank you for backing Tally. Every Pro feature is unlocked.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="That amount is too small to log." xml:space="preserve">
+        <source>That amount is too small to log.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="That amount needs to be more than zero." xml:space="preserve">
+        <source>That amount needs to be more than zero.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The App Store could not verify this purchase." xml:space="preserve">
+        <source>The App Store could not verify this purchase.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The default account is preselected when you add a transaction." xml:space="preserve">
+        <source>The default account is preselected when you add a transaction.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The free plan includes ^[%lld active goal](inflect: true). Archive one or unlock Tally Pro for more." xml:space="preserve">
+        <source>The free plan includes ^[%lld active goal](inflect: true). Archive one or unlock Tally Pro for more.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The lock appears whenever Tally opens or returns from the background. Hiding amounts blurs money on screen until you turn it off." xml:space="preserve">
+        <source>The lock appears whenever Tally opens or returns from the background. Hiding amounts blurs money on screen until you turn it off.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The purchase did not go through. %@" xml:space="preserve">
+        <source>The purchase did not go through. %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The target date, %@, has passed." xml:space="preserve">
+        <source>The target date, %@, has passed.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Their shares and repayments will be deleted, so balances can change." xml:space="preserve">
+        <source>Their shares and repayments will be deleted, so balances can change.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This category has no limit yet. Use Edit to set one." xml:space="preserve">
+        <source>This category has no limit yet. Use Edit to set one.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This category has no limit. Set one in the Plan tab to see it on the chart." xml:space="preserve">
+        <source>This category has no limit. Set one in the Plan tab to see it on the chart.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This is how you appear next to shared expenses." xml:space="preserve">
+        <source>This is how you appear next to shared expenses.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This is saved as a transaction called “Balance adjustment” with no category, dated today." xml:space="preserve">
+        <source>This is saved as a transaction called “Balance adjustment” with no category, dated today.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This period" xml:space="preserve">
+        <source>This period</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This period has not started yet." xml:space="preserve">
+        <source>This period has not started yet.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Time" xml:space="preserve">
+        <source>Time</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Title" xml:space="preserve">
+        <source>Title</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Title (optional)" xml:space="preserve">
+        <source>Title (optional)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="To" xml:space="preserve">
+        <source>To</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Today" xml:space="preserve">
+        <source>Today</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Together" xml:space="preserve">
+        <source>Together</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Top payees" xml:space="preserve">
+        <source>Top payees</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transactions" xml:space="preserve">
+        <source>Transactions</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer" xml:space="preserve">
+        <source>Transfer</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer from %@" xml:space="preserve">
+        <source>Transfer from %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer to %@" xml:space="preserve">
+        <source>Transfer to %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Trends, comparisons and patterns across every period." xml:space="preserve">
+        <source>Trends, comparisons and patterns across every period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Try Tally Pro free" xml:space="preserve">
+        <source>Try Tally Pro free</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Try a different search, or loosen the filters." xml:space="preserve">
+        <source>Try a different search, or loosen the filters.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Try again" xml:space="preserve">
+        <source>Try again</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Turn on app lock" xml:space="preserve">
+        <source>Turn on app lock</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Type" xml:space="preserve">
+        <source>Type</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unassigned" xml:space="preserve">
+        <source>Unassigned</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unassigned is expected income minus everything you have set aside below." xml:space="preserve">
+        <source>Unassigned is expected income minus everything you have set aside below.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Uncategorized" xml:space="preserve">
+        <source>Uncategorized</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlimited goals" xml:space="preserve">
+        <source>Unlimited goals</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlock with %@" xml:space="preserve">
+        <source>Unlock with %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlock with Tally Pro" xml:space="preserve">
+        <source>Unlock with Tally Pro</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlock your budget" xml:space="preserve">
+        <source>Unlock your budget</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use as default account" xml:space="preserve">
+        <source>Use as default account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Version" xml:space="preserve">
+        <source>Version</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Wallet" xml:space="preserve">
+        <source>Wallet</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="We could not reach the App Store. Check your connection and try again." xml:space="preserve">
+        <source>We could not reach the App Store. Check your connection and try again.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Week starts on" xml:space="preserve">
+        <source>Week starts on</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Weekly, from %@" xml:space="preserve">
+        <source>Weekly, from %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What do you expect to earn each month?" xml:space="preserve">
+        <source>What do you expect to earn each month?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What do you expect to earn each week?" xml:space="preserve">
+        <source>What do you expect to earn each week?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What do you expect to earn every two weeks?" xml:space="preserve">
+        <source>What do you expect to earn every two weeks?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What the account held when you added it. Turn on the toggle if it starts below zero." xml:space="preserve">
+        <source>What the account held when you added it. Turn on the toggle if it starts below zero.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What you get" xml:space="preserve">
+        <source>What you get</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Where does your money live? One account is enough to begin, and you can add more later." xml:space="preserve">
+        <source>Where does your money live? One account is enough to begin, and you can add more later.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Which currency do you use?" xml:space="preserve">
+        <source>Which currency do you use?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Which day do you get paid?" xml:space="preserve">
+        <source>Which day do you get paid?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Widgets and Apple Watch" xml:space="preserve">
+        <source>Widgets and Apple Watch</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With a date, Tally works out how much to set aside each month." xml:space="preserve">
+        <source>With a date, Tally works out how much to set aside each month.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Withdraw" xml:space="preserve">
+        <source>Withdraw</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Withdrawal" xml:space="preserve">
+        <source>Withdrawal</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Yearly" xml:space="preserve">
+        <source>Yearly</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Yesterday" xml:space="preserve">
+        <source>Yesterday</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You" xml:space="preserve">
+        <source>You</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You are %@ over budget for %@." xml:space="preserve">
+        <source>You are %1$@ over budget for %2$@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You can take out up to %@." xml:space="preserve">
+        <source>You can take out up to %@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You have %@ left to spend for %@." xml:space="preserve">
+        <source>You have %1$@ left to spend for %2$@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You have %@ left to spend. That is about %@ a day for the next ^[%lld day](inflect: true)." xml:space="preserve">
+        <source>You have %1$@ left to spend. That is about %2$@ a day for the next ^[%3$lld day](inflect: true).</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You have not set any category budgets for %@ yet. You have spent %@." xml:space="preserve">
+        <source>You have not set any category budgets for %1$@ yet. You have spent %2$@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You have spent %@ of %@ this period." xml:space="preserve">
+        <source>You have spent %1$@ of %2$@ this period.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You're on Pro" xml:space="preserve">
+        <source>You're on Pro</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your budget is locked." xml:space="preserve">
+        <source>Your budget is locked.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your budget is ready" xml:space="preserve">
+        <source>Your budget is ready</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your budget on the Home Screen, Lock Screen and wrist." xml:space="preserve">
+        <source>Your budget on the Home Screen, Lock Screen and wrist.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your data stays on this device." xml:space="preserve">
+        <source>Your data stays on this device.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your name" xml:space="preserve">
+        <source>Your name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your purchase is waiting for approval. Pro unlocks as soon as it goes through." xml:space="preserve">
+        <source>Your purchase is waiting for approval. Pro unlocks as soon as it goes through.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your repeating costs" xml:space="preserve">
+        <source>Your repeating costs</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your share" xml:space="preserve">
+        <source>Your share</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld category](inflect: true)" xml:space="preserve">
+        <source>^[%lld category](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld day](inflect: true)" xml:space="preserve">
+        <source>^[%lld day](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld month](inflect: true)" xml:space="preserve">
+        <source>^[%lld month](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld period](inflect: true)" xml:space="preserve">
+        <source>^[%lld period](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld purchase](inflect: true)" xml:space="preserve">
+        <source>^[%lld purchase](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld week](inflect: true)" xml:space="preserve">
+        <source>^[%lld week](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld year](inflect: true)" xml:space="preserve">
+        <source>^[%lld year](inflect: true)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="another account" xml:space="preserve">
+        <source>another account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="left" xml:space="preserve">
+        <source>left</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="limit" xml:space="preserve">
+        <source>limit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="of" xml:space="preserve">
+        <source>of</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="of %@ planned" xml:space="preserve">
+        <source>of %@ planned</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="over" xml:space="preserve">
+        <source>over</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="saved" xml:space="preserve">
+        <source>saved</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="someone" xml:space="preserve">
+        <source>someone</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="spent" xml:space="preserve">
+        <source>spent</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="to go" xml:space="preserve">
+        <source>to go</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="×" xml:space="preserve">
+        <source>×</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="≈" xml:space="preserve">
+        <source>≈</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="≈ %@ per day for ^[%lld day](inflect: true)" xml:space="preserve">
+        <source>≈ %1$@ per day for ^[%2$lld day](inflect: true)</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TallyWatch/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="es">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Tally</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>TallyWatch</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TallyWatch/Localizable.xcstrings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="%@ of %@" xml:space="preserve">
+        <source>%1$@ of %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Amount" xml:space="preserve">
+        <source>Amount</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Categories" xml:space="preserve">
+        <source>Categories</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change category" xml:space="preserve">
+        <source>Change category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log" xml:space="preserve">
+        <source>Log</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log expense" xml:space="preserve">
+        <source>Log expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Logged" xml:space="preserve">
+        <source>Logged</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Next" xml:space="preserve">
+        <source>Next</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No budgeted categories yet. Set limits in the Plan tab on your iPhone." xml:space="preserve">
+        <source>No budgeted categories yet. Set limits in the Plan tab on your iPhone.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No category" xml:space="preserve">
+        <source>No category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="None" xml:space="preserve">
+        <source>None</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Per day" xml:space="preserve">
+        <source>Per day</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Period ended" xml:space="preserve">
+        <source>Period ended</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pick a category" xml:space="preserve">
+        <source>Pick a category</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remaining" xml:space="preserve">
+        <source>Remaining</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sample figures. Open Tally on your iPhone to sync." xml:space="preserve">
+        <source>Sample figures. Open Tally on your iPhone to sync.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sent to your iPhone" xml:space="preserve">
+        <source>Sent to your iPhone</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Spent" xml:space="preserve">
+        <source>Spent</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld day](inflect: true) left" xml:space="preserve">
+        <source>^[%lld day](inflect: true) left</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="left to spend" xml:space="preserve">
+        <source>left to spend</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TallyWidgets/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="es">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Tally</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>TallyWidgets</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TallyWidgets/Localizable.xcstrings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="%@ left, %@" xml:space="preserve">
+        <source>%1$@ left, %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ per day" xml:space="preserve">
+        <source>%@ per day</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Expense" xml:space="preserve">
+        <source>Expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Income" xml:space="preserve">
+        <source>Income</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Jump straight to logging an expense or income." xml:space="preserve">
+        <source>Jump straight to logging an expense or income.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="LEFT TO SPEND" xml:space="preserve">
+        <source>LEFT TO SPEND</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left" xml:space="preserve">
+        <source>Left</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left to spend" xml:space="preserve">
+        <source>Left to spend</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log expense" xml:space="preserve">
+        <source>Log expense</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Money in" xml:space="preserve">
+        <source>Money in</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Money out" xml:space="preserve">
+        <source>Money out</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Period ended" xml:space="preserve">
+        <source>Period ended</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quick add" xml:space="preserve">
+        <source>Quick add</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set budgets in the Plan tab to see categories here." xml:space="preserve">
+        <source>Set budgets in the Plan tab to see categories here.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="TOP CATEGORIES" xml:space="preserve">
+        <source>TOP CATEGORIES</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Takes a few seconds" xml:space="preserve">
+        <source>Takes a few seconds</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What remains of this period's budget, and what you can spend each day." xml:space="preserve">
+        <source>What remains of this period's budget, and what you can spend each day.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="^[%lld day](inflect: true) left" xml:space="preserve">
+        <source>^[%lld day](inflect: true) left</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

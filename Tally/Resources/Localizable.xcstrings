@@ -1,7 +1,6170 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-
+  "sourceLanguage": "en",
+  "strings": {
+    "%": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%"
+          }
+        }
+      }
+    },
+    "%@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        }
+      }
+    },
+    "%@ (you)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (tú)"
+          }
+        }
+      }
+    },
+    "%@ budget, amounts hidden": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuesto de %@, importes ocultos"
+          }
+        }
+      }
+    },
+    "%@ for %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ for %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ por %2$@"
+          }
+        }
+      }
+    },
+    "%@ for the first %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ for the first %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ durante %2$@"
+          }
+        }
+      }
+    },
+    "%@ free": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gratis"
+          }
+        }
+      }
+    },
+    "%@ is coming out. Make sure there is enough set aside.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se cobrará %@. Asegúrate de tener suficiente reservado."
+          }
+        }
+      }
+    },
+    "%@ is due tomorrow": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vence mañana"
+          }
+        }
+      }
+    },
+    "%@ is nearly used up": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queda poco de %@"
+          }
+        }
+      }
+    },
+    "%@ is over budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Te pasaste del presupuesto en %@"
+          }
+        }
+      }
+    },
+    "%@ left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quedan %@"
+          }
+        }
+      }
+    },
+    "%@ left of %@ this period.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ left of %2$@ this period."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quedan %1$@ de %2$@ este periodo."
+          }
+        }
+      }
+    },
+    "%@ left to assign": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ por asignar"
+          }
+        }
+      }
+    },
+    "%@ left to spend": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ disponible"
+          }
+        }
+      }
+    },
+    "%@ limit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Límite de %@"
+          }
+        }
+      }
+    },
+    "%@ of %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ of %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ de %2$@"
+          }
+        }
+      }
+    },
+    "%@ over": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ de más"
+          }
+        }
+      }
+    },
+    "%@ over ^[%lld period](inflect: true)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ over ^[%2$lld period](inflect: true)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ durante ^[%2$lld periodo](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ over the total.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ por encima del total."
+          }
+        }
+      }
+    },
+    "%@ over your income": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ por encima de tus ingresos"
+          }
+        }
+      }
+    },
+    "%@ paid %@ %@. This adds a repayment to the history and updates everyone's balance.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ paid %2$@ %3$@. This adds a repayment to the history and updates everyone's balance."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ pagó %3$@ a %2$@. Esto añade un pago al historial y actualiza el saldo de todos."
+          }
+        }
+      }
+    },
+    "%@ paid · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ paid · %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ pagó · %2$@"
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld day](inflect: true)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ per ^[%2$lld day](inflect: true)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ cada ^[%2$lld día](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld month](inflect: true)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ per ^[%2$lld month](inflect: true)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ cada ^[%2$lld mes](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld week](inflect: true)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ per ^[%2$lld week](inflect: true)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ cada ^[%2$lld semana](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per ^[%lld year](inflect: true)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ per ^[%2$lld year](inflect: true)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ cada ^[%2$lld año](inflect: true)"
+          }
+        }
+      }
+    },
+    "%@ per day": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ al día"
+          }
+        }
+      }
+    },
+    "%@ per month": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ al mes"
+          }
+        }
+      }
+    },
+    "%@ per period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ por periodo"
+          }
+        }
+      }
+    },
+    "%@ per week": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ a la semana"
+          }
+        }
+      }
+    },
+    "%@ per year": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ al año"
+          }
+        }
+      }
+    },
+    "%@ spent this period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gastado este periodo"
+          }
+        }
+      }
+    },
+    "%@ still to assign.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún quedan %@ por asignar."
+          }
+        }
+      }
+    },
+    "%@ to go.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faltan %@."
+          }
+        }
+      }
+    },
+    "%@ · Ended": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · Finalizado"
+          }
+        }
+      }
+    },
+    "%@ · Next %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · Next %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · Próximo %2$@"
+          }
+        }
+      }
+    },
+    "%@ · Paused": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · En pausa"
+          }
+        }
+      }
+    },
+    "%@ → %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ → %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ → %2$@"
+          }
+        }
+      }
+    },
+    "%@'s shares and repayments will be deleted. Expenses they paid stay in your ledger.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se eliminarán las partes y los pagos de %@. Los gastos que pagó seguirán en tu registro."
+          }
+        }
+      }
+    },
+    "%@, %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %2$@"
+          }
+        }
+      }
+    },
+    "%@, %@ left of %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@ left of %3$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, quedan %2$@ de %3$@"
+          }
+        }
+      }
+    },
+    "%@, %@ over of %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@ over of %3$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %2$@ por encima de %3$@"
+          }
+        }
+      }
+    },
+    "%@, %@ spent, no limit set": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@ spent, no limit set"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %2$@ gastado, sin límite"
+          }
+        }
+      }
+    },
+    "%@, %@, %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@, %3$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %2$@, %3$@"
+          }
+        }
+      }
+    },
+    "%@, %@, amount hidden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, %2$@, amount hidden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %2$@, importe oculto"
+          }
+        }
+      }
+    },
+    "%@, amounts hidden": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, importes ocultos"
+          }
+        }
+      }
+    },
+    "%@, no limit, amounts hidden": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, sin límite, importes ocultos"
+          }
+        }
+      }
+    },
+    "%@, then %@. Cancel anytime.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@, then %2$@. Cancel anytime."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, luego %2$@. Cancela cuando quieras."
+          }
+        }
+      }
+    },
+    "%@. Cancel anytime.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. Cancela cuando quieras."
+          }
+        }
+      }
+    },
+    "%@. Income %@, spent %@, net %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@. Income %2$@, spent %3$@, net %4$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@. Ingresos %2$@, gastos %3$@, neto %4$@."
+          }
+        }
+      }
+    },
+    "%@: %@. Limit %@, spent %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@: %2$@. Limit %3$@, spent %4$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: %2$@. Límite %3$@, gastado %4$@."
+          }
+        }
+      }
+    },
+    "%lld percent": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld por ciento"
+          }
+        }
+      }
+    },
+    "%lld%%": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%%"
+          }
+        }
+      }
+    },
+    "%lld%% less than last period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%% menos que el periodo anterior"
+          }
+        }
+      }
+    },
+    "%lld%% more than last period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%% más que el periodo anterior"
+          }
+        }
+      }
+    },
+    "- %@ is all square": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "- %@ está al día"
+          }
+        }
+      }
+    },
+    "- %@ is owed %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "- %1$@ is owed %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "- A %1$@ le deben %2$@"
+          }
+        }
+      }
+    },
+    "- %@ owes %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "- %1$@ owes %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "- %1$@ debe %2$@"
+          }
+        }
+      }
+    },
+    "/ month": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "/ mes"
+          }
+        }
+      }
+    },
+    "0": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0"
+          }
+        }
+      }
+    },
+    "A bill": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una factura"
+          }
+        }
+      }
+    },
+    "A category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una categoría"
+          }
+        }
+      }
+    },
+    "A fresh budget every week.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un presupuesto nuevo cada semana."
+          }
+        }
+      }
+    },
+    "A new budget every two weeks, in step with your pay.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un presupuesto nuevo cada dos semanas, al ritmo de tu pago."
+          }
+        }
+      }
+    },
+    "A period starts on": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El periodo empieza el"
+          }
+        }
+      }
+    },
+    "A person with 2 shares owes twice as much as a person with 1.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una persona con 2 partes debe el doble que una persona con 1."
+          }
+        }
+      }
+    },
+    "A quick note of today's spending keeps your plan honest.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un apunte rápido de los gastos de hoy mantiene tu plan en orden."
+          }
+        }
+      }
+    },
+    "A quiet period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un periodo tranquilo"
+          }
+        }
+      }
+    },
+    "A rough figure is fine. Tally uses it to suggest sensible limits in the next step.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una cifra aproximada basta. Tally la usa para sugerir límites razonables en el siguiente paso."
+          }
+        }
+      }
+    },
+    "About": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de"
+          }
+        }
+      }
+    },
+    "About %@ a month": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unos %@ al mes"
+          }
+        }
+      }
+    },
+    "Account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta"
+          }
+        }
+      }
+    },
+    "Account name": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre de la cuenta"
+          }
+        }
+      }
+    },
+    "Accounts": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuentas"
+          }
+        }
+      }
+    },
+    "Across ^[%lld account](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En ^[%lld cuenta](inflect: true)"
+          }
+        }
+      }
+    },
+    "Active": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activo"
+          }
+        }
+      }
+    },
+    "Active bills and subscriptions, averaged over a month.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facturas y suscripciones activas, promediadas por mes."
+          }
+        }
+      }
+    },
+    "Activity": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actividad"
+          }
+        }
+      }
+    },
+    "Actual balance": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saldo real"
+          }
+        }
+      }
+    },
+    "Add a category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir una categoría"
+          }
+        }
+      }
+    },
+    "Add a few transactions and your spending patterns will show up here.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade algunos movimientos y tus patrones de gasto aparecerán aquí."
+          }
+        }
+      }
+    },
+    "Add a partner, roommates or a trip group.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade a tu pareja, a tus compañeros de piso o a un grupo de viaje."
+          }
+        }
+      }
+    },
+    "Add a recurring item": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir un elemento recurrente"
+          }
+        }
+      }
+    },
+    "Add a transaction": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir un movimiento"
+          }
+        }
+      }
+    },
+    "Add account or goal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir cuenta o meta"
+          }
+        }
+      }
+    },
+    "Add an account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir una cuenta"
+          }
+        }
+      }
+    },
+    "Add an account to see your net worth.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade una cuenta para ver tu patrimonio neto."
+          }
+        }
+      }
+    },
+    "Add an expense to your budget without opening Tally.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade un gasto a tu presupuesto sin abrir Tally."
+          }
+        }
+      }
+    },
+    "Add another person": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir otra persona"
+          }
+        }
+      }
+    },
+    "Add category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir categoría"
+          }
+        }
+      }
+    },
+    "Add expense category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir categoría de gastos"
+          }
+        }
+      }
+    },
+    "Add income category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir categoría de ingresos"
+          }
+        }
+      }
+    },
+    "Add money": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir dinero"
+          }
+        }
+      }
+    },
+    "Add person": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir persona"
+          }
+        }
+      }
+    },
+    "Add recurring item": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir elemento recurrente"
+          }
+        }
+      }
+    },
+    "Add rent, subscriptions or a paycheck and Tally will log each one when it comes due.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade el alquiler, suscripciones o una nómina y Tally registrará cada uno cuando venza."
+          }
+        }
+      }
+    },
+    "Add shared expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir gasto compartido"
+          }
+        }
+      }
+    },
+    "Add the places your money lives, like a checking account, cash or a credit card.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade los lugares donde está tu dinero, como una cuenta corriente, efectivo o una tarjeta de crédito."
+          }
+        }
+      }
+    },
+    "Add transaction": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir movimiento"
+          }
+        }
+      }
+    },
+    "Add your first account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade tu primera cuenta"
+          }
+        }
+      }
+    },
+    "Add your first expense or paycheck and it will show up here.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade tu primer gasto o nómina y aparecerá aquí."
+          }
+        }
+      }
+    },
+    "Add your first expense with the plus button and watch the bars fill in.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade tu primer gasto con el botón más y mira cómo se llenan las barras."
+          }
+        }
+      }
+    },
+    "Add your income in the earlier step to see how much is left to assign.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade tus ingresos en el paso anterior para ver cuánto queda por asignar."
+          }
+        }
+      }
+    },
+    "Adding people is part of Tally Pro.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir personas forma parte de Tally Pro."
+          }
+        }
+      }
+    },
+    "Adds expense of": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade un gasto de"
+          }
+        }
+      }
+    },
+    "Adds income of": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade un ingreso de"
+          }
+        }
+      }
+    },
+    "Adjust balance": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustar saldo"
+          }
+        }
+      }
+    },
+    "Advanced insights": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Análisis avanzado"
+          }
+        }
+      }
+    },
+    "Ahead of pace by %@. Spending is running faster than your budget allows.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vas por delante del ritmo en %@. Estás gastando más rápido de lo que permite tu presupuesto."
+          }
+        }
+      }
+    },
+    "All accounts": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas las cuentas"
+          }
+        }
+      }
+    },
+    "All categories": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas las categorías"
+          }
+        }
+      }
+    },
+    "All square": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todo saldado"
+          }
+        }
+      }
+    },
+    "All time": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todo el tiempo"
+          }
+        }
+      }
+    },
+    "All types": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos los tipos"
+          }
+        }
+      }
+    },
+    "Allow notifications for Tally in the system Settings to receive reminders.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite las notificaciones de Tally en los Ajustes del sistema para recibir recordatorios."
+          }
+        }
+      }
+    },
+    "Amount": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importe"
+          }
+        }
+      }
+    },
+    "Amount you owe today": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importe que debes hoy"
+          }
+        }
+      }
+    },
+    "Anything above this counts as over budget for the period.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todo lo que supere esto cuenta como exceso de presupuesto en el periodo."
+          }
+        }
+      }
+    },
+    "Anything to log today?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Algo que registrar hoy?"
+          }
+        }
+      }
+    },
+    "Appearance": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apariencia"
+          }
+        }
+      }
+    },
+    "Archive": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivar"
+          }
+        }
+      }
+    },
+    "Archive account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivar cuenta"
+          }
+        }
+      }
+    },
+    "Archive category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivar categoría"
+          }
+        }
+      }
+    },
+    "Archive goal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivar meta"
+          }
+        }
+      }
+    },
+    "Archive this account?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Archivar esta cuenta?"
+          }
+        }
+      }
+    },
+    "Archive this category?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Archivar esta categoría?"
+          }
+        }
+      }
+    },
+    "Archive this goal?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Archivar esta meta?"
+          }
+        }
+      }
+    },
+    "Archived (%lld)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivados (%lld)"
+          }
+        }
+      }
+    },
+    "Archived accounts are hidden and left out of net worth. Their transactions keep their history, and you can restore the account any time.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las cuentas archivadas se ocultan y no cuentan en el patrimonio neto. Sus movimientos conservan el historial y puedes restaurar la cuenta cuando quieras."
+          }
+        }
+      }
+    },
+    "Archived categories are hidden but their transactions keep their history.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las categorías archivadas se ocultan, pero sus movimientos conservan el historial."
+          }
+        }
+      }
+    },
+    "Archived categories keep their past transactions but no longer appear when adding new ones.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las categorías archivadas conservan sus movimientos anteriores, pero ya no aparecen al añadir otros nuevos."
+          }
+        }
+      }
+    },
+    "Archiving hides the goal and keeps its history. Deleting removes it and every deposit.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivar oculta la meta y conserva su historial. Eliminar la borra junto con todos los depósitos."
+          }
+        }
+      }
+    },
+    "Assets": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activos"
+          }
+        }
+      }
+    },
+    "Assigned": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asignado"
+          }
+        }
+      }
+    },
+    "Average": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promedio"
+          }
+        }
+      }
+    },
+    "Average spending": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gasto promedio"
+          }
+        }
+      }
+    },
+    "Average spending %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gasto promedio %@"
+          }
+        }
+      }
+    },
+    "Back": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atrás"
+          }
+        }
+      }
+    },
+    "Back to today": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volver a hoy"
+          }
+        }
+      }
+    },
+    "Balance": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saldo"
+          }
+        }
+      }
+    },
+    "Balance adjustment": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajuste de saldo"
+          }
+        }
+      }
+    },
+    "Balances": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saldos"
+          }
+        }
+      }
+    },
+    "Basics": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Básicos"
+          }
+        }
+      }
+    },
+    "Behind pace by %@. You are spending slower than an even rate.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vas por detrás del ritmo en %@. Estás gastando más despacio que un ritmo uniforme."
+          }
+        }
+      }
+    },
+    "Bill reminders": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recordatorios de facturas"
+          }
+        }
+      }
+    },
+    "Bill reminders arrive the morning before a recurring bill is due. Overspend alerts appear once per period when a category reaches 90 percent of its budget.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los recordatorios de facturas llegan la mañana anterior al vencimiento de una factura recurrente. Las alertas de gasto excesivo aparecen una vez por periodo cuando una categoría alcanza el 90 por ciento de su presupuesto."
+          }
+        }
+      }
+    },
+    "Bills & Utilities": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facturas y servicios"
+          }
+        }
+      }
+    },
+    "Bills and subscriptions that log themselves.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facturas y suscripciones que se registran solas."
+          }
+        }
+      }
+    },
+    "Budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuesto"
+          }
+        }
+      }
+    },
+    "Budget per period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuesto por periodo"
+          }
+        }
+      }
+    },
+    "Budget period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo del presupuesto"
+          }
+        }
+      }
+    },
+    "Budget rhythm": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo del presupuesto"
+          }
+        }
+      }
+    },
+    "Budget summary, amounts hidden": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumen del presupuesto, importes ocultos"
+          }
+        }
+      }
+    },
+    "Budget with the whole picture.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuesta con una visión completa."
+          }
+        }
+      }
+    },
+    "Budgeted": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuestado"
+          }
+        }
+      }
+    },
+    "By period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por periodo"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        }
+      }
+    },
+    "Carried": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrastrado"
+          }
+        }
+      }
+    },
+    "Carry leftover forward": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrastrar el sobrante"
+          }
+        }
+      }
+    },
+    "Carry leftover to next period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrastrar el sobrante al siguiente periodo"
+          }
+        }
+      }
+    },
+    "Carry over only takes effect once rollover is switched on in Settings. Leave a limit empty to stop budgeting that category.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrastrar solo funciona cuando el arrastre está activado en Ajustes. Deja un límite vacío para dejar de presupuestar esa categoría."
+          }
+        }
+      }
+    },
+    "Cash": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Efectivo"
+          }
+        }
+      }
+    },
+    "Categories": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Categorías"
+          }
+        }
+      }
+    },
+    "Categories are how Tally groups your spending. Add a few, then give each a limit to build your plan.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las categorías son la forma en que Tally agrupa tus gastos. Añade unas cuantas y dale a cada una un límite para crear tu plan."
+          }
+        }
+      }
+    },
+    "Categories set to carry over move their leftover, or overspend, into the next period. Leave a limit empty to stop budgeting that category.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las categorías con arrastre activado trasladan su sobrante, o su exceso de gasto, al siguiente periodo. Deja un límite vacío para dejar de presupuestar esa categoría."
+          }
+        }
+      }
+    },
+    "Category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Categoría"
+          }
+        }
+      }
+    },
+    "Check my budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consultar mi presupuesto"
+          }
+        }
+      }
+    },
+    "Checking": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta corriente"
+          }
+        }
+      }
+    },
+    "Choose a plan": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige un plan"
+          }
+        }
+      }
+    },
+    "Choose at least one person to share this with.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige al menos una persona con quien compartirlo."
+          }
+        }
+      }
+    },
+    "Choose what you want to keep an eye on. Limits are suggestions based on your income, so adjust any of them.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige lo que quieres vigilar. Los límites son sugerencias basadas en tus ingresos, así que puedes ajustarlos todos."
+          }
+        }
+      }
+    },
+    "Clear filters": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar filtros"
+          }
+        }
+      }
+    },
+    "Clear search": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar búsqueda"
+          }
+        }
+      }
+    },
+    "Clear search and filters": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar búsqueda y filtros"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerrar"
+          }
+        }
+      }
+    },
+    "Color": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color"
+          }
+        }
+      }
+    },
+    "Color %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color %@"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuar"
+          }
+        }
+      }
+    },
+    "Could not restore purchases. %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudieron restaurar las compras. %@"
+          }
+        }
+      }
+    },
+    "Create a goal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crear una meta"
+          }
+        }
+      }
+    },
+    "Credit card": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarjeta de crédito"
+          }
+        }
+      }
+    },
+    "Currency": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moneda"
+          }
+        }
+      }
+    },
+    "Current balance": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saldo actual"
+          }
+        }
+      }
+    },
+    "Current budget: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuesto actual: %@"
+          }
+        }
+      }
+    },
+    "Daily pace": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo diario"
+          }
+        }
+      }
+    },
+    "Daily reminder": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recordatorio diario"
+          }
+        }
+      }
+    },
+    "Dark": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oscuro"
+          }
+        }
+      }
+    },
+    "Data": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datos"
+          }
+        }
+      }
+    },
+    "Date": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fecha"
+          }
+        }
+      }
+    },
+    "Date of your next payday": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fecha de tu próximo día de pago"
+          }
+        }
+      }
+    },
+    "Day": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Día"
+          }
+        }
+      }
+    },
+    "Day %lld": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Día %lld"
+          }
+        }
+      }
+    },
+    "Debug": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depuración"
+          }
+        }
+      }
+    },
+    "Default": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Predeterminado"
+          }
+        }
+      }
+    },
+    "Default account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta predeterminada"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar"
+          }
+        }
+      }
+    },
+    "Delete goal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar meta"
+          }
+        }
+      }
+    },
+    "Delete goal and history": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar meta e historial"
+          }
+        }
+      }
+    },
+    "Delete recurring item": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar elemento recurrente"
+          }
+        }
+      }
+    },
+    "Delete this goal?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Eliminar esta meta?"
+          }
+        }
+      }
+    },
+    "Delete this recurring item?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Eliminar este elemento recurrente?"
+          }
+        }
+      }
+    },
+    "Delete this transaction?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Eliminar este movimiento?"
+          }
+        }
+      }
+    },
+    "Delete transaction": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar movimiento"
+          }
+        }
+      }
+    },
+    "Deposit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depósito"
+          }
+        }
+      }
+    },
+    "Details": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Detalles"
+          }
+        }
+      }
+    },
+    "Dining Out": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comer fuera"
+          }
+        }
+      }
+    },
+    "Dinner with Sam": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena con Sam"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listo"
+          }
+        }
+      }
+    },
+    "Duplicate": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duplicar"
+          }
+        }
+      }
+    },
+    "Edit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar"
+          }
+        }
+      }
+    },
+    "Edit account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar cuenta"
+          }
+        }
+      }
+    },
+    "Edit budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar presupuesto"
+          }
+        }
+      }
+    },
+    "Edit category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar categoría"
+          }
+        }
+      }
+    },
+    "Edit expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar gasto"
+          }
+        }
+      }
+    },
+    "Edit goal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar meta"
+          }
+        }
+      }
+    },
+    "Edit income": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar ingreso"
+          }
+        }
+      }
+    },
+    "Edit person": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar persona"
+          }
+        }
+      }
+    },
+    "Edit recurring item": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar elemento recurrente"
+          }
+        }
+      }
+    },
+    "Edit transfer": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar transferencia"
+          }
+        }
+      }
+    },
+    "Emergency fund": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fondo de emergencia"
+          }
+        }
+      }
+    },
+    "Enter a value for at least one person.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introduce un valor para al menos una persona."
+          }
+        }
+      }
+    },
+    "Enter what the account really holds, for example from your bank app.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introduce lo que la cuenta tiene realmente, por ejemplo desde la app de tu banco."
+          }
+        }
+      }
+    },
+    "Entertainment": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocio"
+          }
+        }
+      }
+    },
+    "Entries already added to your ledger stay where they are.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los movimientos ya añadidos a tu registro se quedan donde están."
+          }
+        }
+      }
+    },
+    "Entries are added automatically when they come due. A start date in the past adds the ones you missed.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los movimientos se añaden automáticamente al vencer. Una fecha de inicio en el pasado añade los que te perdiste."
+          }
+        }
+      }
+    },
+    "Erase all data": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar todos los datos"
+          }
+        }
+      }
+    },
+    "Erase all data?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Borrar todos los datos?"
+          }
+        }
+      }
+    },
+    "Erase everything": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar todo"
+          }
+        }
+      }
+    },
+    "Even pace to %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ritmo uniforme hasta %@"
+          }
+        }
+      }
+    },
+    "Every amount in Tally is shown in this currency. You can change it later in Settings.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos los importes en Tally se muestran en esta moneda. Puedes cambiarla más tarde en Ajustes."
+          }
+        }
+      }
+    },
+    "Every transaction, category, account, goal and shared budget on this device is deleted and settings return to their defaults. This cannot be undone.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos los movimientos, categorías, cuentas, metas y presupuestos compartidos de este dispositivo se eliminan y los ajustes vuelven a sus valores predeterminados. Esta acción no se puede deshacer."
+          }
+        }
+      }
+    },
+    "Every two weeks, next payday %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cada dos semanas, próximo pago %@"
+          }
+        }
+      }
+    },
+    "Everyday": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Día a día"
+          }
+        }
+      }
+    },
+    "Everything you meant to set aside is here. It's yours to enjoy, or to withdraw whenever you're ready.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aquí está todo lo que querías reservar. Es tuyo para disfrutarlo o para retirarlo cuando quieras."
+          }
+        }
+      }
+    },
+    "Expected income": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos previstos"
+          }
+        }
+      }
+    },
+    "Expected income per month": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos previstos al mes"
+          }
+        }
+      }
+    },
+    "Expected income per period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos previstos por periodo"
+          }
+        }
+      }
+    },
+    "Expected income per two weeks": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos previstos cada dos semanas"
+          }
+        }
+      }
+    },
+    "Expected income per week": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos previstos a la semana"
+          }
+        }
+      }
+    },
+    "Expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gasto"
+          }
+        }
+      }
+    },
+    "Explore with sample data": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explorar con datos de ejemplo"
+          }
+        }
+      }
+    },
+    "Export CSV": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportar CSV"
+          }
+        }
+      }
+    },
+    "Exports are plain CSV that opens in any spreadsheet.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las exportaciones son CSV simple y se abren en cualquier hoja de cálculo."
+          }
+        }
+      }
+    },
+    "Filter": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrar"
+          }
+        }
+      }
+    },
+    "For a credit card, turn this on if you owe money today. Purchases will then grow the amount owed.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En una tarjeta de crédito, activa esto si hoy debes dinero. Así, las compras aumentarán el importe adeudado."
+          }
+        }
+      }
+    },
+    "Frequency": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frecuencia"
+          }
+        }
+      }
+    },
+    "From": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desde"
+          }
+        }
+      }
+    },
+    "Future entries are added automatically when they come due.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los movimientos futuros se añaden automáticamente al vencer."
+          }
+        }
+      }
+    },
+    "Get started": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empezar"
+          }
+        }
+      }
+    },
+    "Gifts": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regalos"
+          }
+        }
+      }
+    },
+    "Give your categories limits to compare spending with an even pace.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ponle límites a tus categorías para comparar tus gastos con un ritmo uniforme."
+          }
+        }
+      }
+    },
+    "Give your money a plan": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dale un plan a tu dinero"
+          }
+        }
+      }
+    },
+    "Goal name": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre de la meta"
+          }
+        }
+      }
+    },
+    "Goal reached": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meta alcanzada"
+          }
+        }
+      }
+    },
+    "Groceries": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supermercado"
+          }
+        }
+      }
+    },
+    "Health": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salud"
+          }
+        }
+      }
+    },
+    "Hear how much is left to spend this period.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escucha cuánto te queda por gastar este periodo."
+          }
+        }
+      }
+    },
+    "Here is what Tally will set up. Everything can be changed later.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esto es lo que Tally configurará. Todo se puede cambiar más tarde."
+          }
+        }
+      }
+    },
+    "Hide amounts": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocultar importes"
+          }
+        }
+      }
+    },
+    "History": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historial"
+          }
+        }
+      }
+    },
+    "How much was it?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Cuánto fue?"
+          }
+        }
+      }
+    },
+    "How often do you plan?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Con qué frecuencia planificas?"
+          }
+        }
+      }
+    },
+    "I could not read your budget just now. Open Tally and try again.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No pude leer tu presupuesto en este momento. Abre Tally e inténtalo de nuevo."
+          }
+        }
+      }
+    },
+    "Icon": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Icono"
+          }
+        }
+      }
+    },
+    "In": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entradas"
+          }
+        }
+      }
+    },
+    "Include in net worth": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incluir en el patrimonio neto"
+          }
+        }
+      }
+    },
+    "Included with Pro": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incluido con Pro"
+          }
+        }
+      }
+    },
+    "Includes %@ carried over": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incluye %@ arrastrado"
+          }
+        }
+      }
+    },
+    "Income": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingreso"
+          }
+        }
+      }
+    },
+    "Income vs spending": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos y gastos"
+          }
+        }
+      }
+    },
+    "Insights": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Análisis"
+          }
+        }
+      }
+    },
+    "Investments": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inversiones"
+          }
+        }
+      }
+    },
+    "Is owed": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le deben"
+          }
+        }
+      }
+    },
+    "Keep a running tab with the people you spend with": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lleva la cuenta con las personas con las que gastas"
+          }
+        }
+      }
+    },
+    "Keep repeating": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguir repitiendo"
+          }
+        }
+      }
+    },
+    "Know where your money goes, and decide where it goes next.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sabe adónde va tu dinero y decide adónde irá después."
+          }
+        }
+      }
+    },
+    "Last %lld periods": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Últimos %lld periodos"
+          }
+        }
+      }
+    },
+    "Last one on": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Último el"
+          }
+        }
+      }
+    },
+    "Leave empty to track spending without a limit. Carry-over also needs rollover turned on in Settings.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déjalo vacío para registrar gastos sin límite. Arrastrar al siguiente periodo también requiere activar el arrastre en Ajustes."
+          }
+        }
+      }
+    },
+    "Ledger": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registro"
+          }
+        }
+      }
+    },
+    "Left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restante"
+          }
+        }
+      }
+    },
+    "Left to spend": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disponible"
+          }
+        }
+      }
+    },
+    "Liabilities": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasivos"
+          }
+        }
+      }
+    },
+    "Light": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claro"
+          }
+        }
+      }
+    },
+    "Limit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Límite"
+          }
+        }
+      }
+    },
+    "Limit %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Límite %@"
+          }
+        }
+      }
+    },
+    "Limit per period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Límite por periodo"
+          }
+        }
+      }
+    },
+    "Limits per period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Límites por periodo"
+          }
+        }
+      }
+    },
+    "Lisbon trip": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viaje a Lisboa"
+          }
+        }
+      }
+    },
+    "Load sample data": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cargar datos de ejemplo"
+          }
+        }
+      }
+    },
+    "Loading plans...": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cargando planes..."
+          }
+        }
+      }
+    },
+    "Lock with %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloquear con %@"
+          }
+        }
+      }
+    },
+    "Log ${amount} expense in ${category}": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar un gasto de ${amount} en ${category}"
+          }
+        }
+      }
+    },
+    "Log an expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar un gasto"
+          }
+        }
+      }
+    },
+    "Log an expense, say who paid and how it divides. Tally keeps a running balance for everyone and tells you the simplest way to even things out.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registra un gasto, indica quién pagó y cómo se divide. Tally lleva un saldo actualizado de cada persona y te indica la forma más sencilla de saldar cuentas."
+          }
+        }
+      }
+    },
+    "Log expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar gasto"
+          }
+        }
+      }
+    },
+    "Logged %@ for %@. %@ left in %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Logged %1$@ for %2$@. %3$@ left in %4$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se registró %1$@ para %2$@. Quedan %3$@ en %4$@."
+          }
+        }
+      }
+    },
+    "Logged %@ for %@. That puts you %@ over budget there.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Logged %1$@ for %2$@. That puts you %3$@ over budget there."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se registró %1$@ para %2$@. Con eso te pasas %3$@ del presupuesto."
+          }
+        }
+      }
+    },
+    "Logged %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrado: %@."
+          }
+        }
+      }
+    },
+    "Logged %@. %@ left to spend this period.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Logged %1$@. %2$@ left to spend this period."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se registró %1$@. Te quedan %2$@ disponibles este periodo."
+          }
+        }
+      }
+    },
+    "Logged %@. You are %@ over budget this period.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Logged %1$@. You are %2$@ over budget this period."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se registró %1$@. Te pasas %2$@ del presupuesto este periodo."
+          }
+        }
+      }
+    },
+    "Manage subscription": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gestionar suscripción"
+          }
+        }
+      }
+    },
+    "Mark paid": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar como pagado"
+          }
+        }
+      }
+    },
+    "Me": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yo"
+          }
+        }
+      }
+    },
+    "Method": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Método"
+          }
+        }
+      }
+    },
+    "Money in": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos"
+          }
+        }
+      }
+    },
+    "Monthly": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mensual"
+          }
+        }
+      }
+    },
+    "Monthly, from the %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mensual, desde el %@"
+          }
+        }
+      }
+    },
+    "Move money": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mover dinero"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre"
+          }
+        }
+      }
+    },
+    "Name, such as Rent or Streaming": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre, como Alquiler o Streaming"
+          }
+        }
+      }
+    },
+    "Negative balance (owed)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saldo negativo (adeudado)"
+          }
+        }
+      }
+    },
+    "Net": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neto"
+          }
+        }
+      }
+    },
+    "Net worth": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patrimonio neto"
+          }
+        }
+      }
+    },
+    "New": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo"
+          }
+        }
+      }
+    },
+    "New account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nueva cuenta"
+          }
+        }
+      }
+    },
+    "New category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nueva categoría"
+          }
+        }
+      }
+    },
+    "New expense": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo gasto"
+          }
+        }
+      }
+    },
+    "New goal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nueva meta"
+          }
+        }
+      }
+    },
+    "New income": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo ingreso"
+          }
+        }
+      }
+    },
+    "New recurring item": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo movimiento recurrente"
+          }
+        }
+      }
+    },
+    "New transfer": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nueva transferencia"
+          }
+        }
+      }
+    },
+    "Next one": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El siguiente"
+          }
+        }
+      }
+    },
+    "Next period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siguiente periodo"
+          }
+        }
+      }
+    },
+    "No account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin cuenta"
+          }
+        }
+      }
+    },
+    "No accounts yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay cuentas"
+          }
+        }
+      }
+    },
+    "No active Tally Pro subscription was found for this Apple ID.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se encontró ninguna suscripción activa de Tally Pro para este Apple ID."
+          }
+        }
+      }
+    },
+    "No activity on this account yet.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta cuenta aún no tiene actividad."
+          }
+        }
+      }
+    },
+    "No categories yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay categorías"
+          }
+        }
+      }
+    },
+    "No currency matches that search.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ninguna moneda coincide con esa búsqueda."
+          }
+        }
+      }
+    },
+    "No difference": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin diferencia"
+          }
+        }
+      }
+    },
+    "No expense categories yet.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay categorías de gasto."
+          }
+        }
+      }
+    },
+    "No goals yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay metas"
+          }
+        }
+      }
+    },
+    "No limit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin límite"
+          }
+        }
+      }
+    },
+    "No spending recorded in this period.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No hay gastos registrados en este periodo."
+          }
+        }
+      }
+    },
+    "No transactions yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay movimientos"
+          }
+        }
+      }
+    },
+    "Nobody owes anyone right now.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadie debe nada a nadie por ahora."
+          }
+        }
+      }
+    },
+    "None yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ninguno todavía"
+          }
+        }
+      }
+    },
+    "Not budgeted": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin presupuestar"
+          }
+        }
+      }
+    },
+    "Not counted in your net worth": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se cuenta en tu patrimonio neto"
+          }
+        }
+      }
+    },
+    "Not in net worth": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuera del patrimonio neto"
+          }
+        }
+      }
+    },
+    "Not in your share": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuera de tu parte"
+          }
+        }
+      }
+    },
+    "Not now": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahora no"
+          }
+        }
+      }
+    },
+    "Not set": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin definir"
+          }
+        }
+      }
+    },
+    "Not sure yet? Skip this and set limits by hand. You can change it any time.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Aún no lo tienes claro? Omite esto y define los límites a mano. Puedes cambiarlo cuando quieras."
+          }
+        }
+      }
+    },
+    "Not unlocked": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No desbloqueado"
+          }
+        }
+      }
+    },
+    "Note": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nota"
+          }
+        }
+      }
+    },
+    "Note (optional)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nota (opcional)"
+          }
+        }
+      }
+    },
+    "Nothing added yet. Use “Add money” to make your first deposit.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no has añadido nada. Usa “Añadir dinero” para hacer tu primer depósito."
+          }
+        }
+      }
+    },
+    "Nothing has been recorded in this period.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha registrado nada en este periodo."
+          }
+        }
+      }
+    },
+    "Nothing matches": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin coincidencias"
+          }
+        }
+      }
+    },
+    "Nothing repeats yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay nada que se repita"
+          }
+        }
+      }
+    },
+    "Nothing shared yet. Add an expense, choose who paid and how it divides.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay nada compartido. Añade un gasto, elige quién pagó y cómo se divide."
+          }
+        }
+      }
+    },
+    "Nothing spent in this category during this period.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha gastado nada en esta categoría durante este periodo."
+          }
+        }
+      }
+    },
+    "Nothing to chart yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay nada que graficar"
+          }
+        }
+      }
+    },
+    "Nothing to settle right now.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nada que saldar por ahora."
+          }
+        }
+      }
+    },
+    "Notifications are off": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las notificaciones están desactivadas"
+          }
+        }
+      }
+    },
+    "On pace": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al ritmo previsto"
+          }
+        }
+      }
+    },
+    "One budget a month, starting on your payday.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un presupuesto al mes, a partir de tu día de pago."
+          }
+        }
+      }
+    },
+    "Only in debug builds. Adds example categories, accounts and transactions.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo en compilaciones de depuración. Añade categorías, cuentas y movimientos de ejemplo."
+          }
+        }
+      }
+    },
+    "Open Settings": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Ajustes"
+          }
+        }
+      }
+    },
+    "Open Tally on the add transaction sheet.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abre Tally en la hoja para añadir un movimiento."
+          }
+        }
+      }
+    },
+    "Open my budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir mi presupuesto"
+          }
+        }
+      }
+    },
+    "Open quick add": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir añadir rápido"
+          }
+        }
+      }
+    },
+    "Opening balance": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saldo inicial"
+          }
+        }
+      }
+    },
+    "Opens the transaction": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abre el movimiento"
+          }
+        }
+      }
+    },
+    "Optional": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opcional"
+          }
+        }
+      }
+    },
+    "Optional. This is the starting point Tally counts from.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opcional. Es el punto desde el que Tally empieza a contar."
+          }
+        }
+      }
+    },
+    "Options": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opciones"
+          }
+        }
+      }
+    },
+    "Other": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otros"
+          }
+        }
+      }
+    },
+    "Out": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salidas"
+          }
+        }
+      }
+    },
+    "Over budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuesto excedido"
+          }
+        }
+      }
+    },
+    "Over budget by %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Superas el presupuesto en %@"
+          }
+        }
+      }
+    },
+    "Over by": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excedido en"
+          }
+        }
+      }
+    },
+    "Over-assigned": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobreasignado"
+          }
+        }
+      }
+    },
+    "Overspend alerts": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alertas de exceso de gasto"
+          }
+        }
+      }
+    },
+    "Overview": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumen"
+          }
+        }
+      }
+    },
+    "Owes": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debe"
+          }
+        }
+      }
+    },
+    "Paid by": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pagado por"
+          }
+        }
+      }
+    },
+    "Paid this period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pagado este periodo"
+          }
+        }
+      }
+    },
+    "Passcode": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Código"
+          }
+        }
+      }
+    },
+    "Pause": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pausar"
+          }
+        }
+      }
+    },
+    "Paused": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En pausa"
+          }
+        }
+      }
+    },
+    "Payday": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Día de pago"
+          }
+        }
+      }
+    },
+    "Payday (period starts on day)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Día de pago (el periodo empieza el día)"
+          }
+        }
+      }
+    },
+    "Payee or title": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beneficiario o título"
+          }
+        }
+      }
+    },
+    "Payees appear here once your expenses have titles.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los beneficiarios aparecerán aquí cuando tus gastos tengan título."
+          }
+        }
+      }
+    },
+    "People": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personas"
+          }
+        }
+      }
+    },
+    "People you share with": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personas con las que compartes"
+          }
+        }
+      }
+    },
+    "Percentages that don't add up to 100 are scaled to fit.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los porcentajes que no suman 100 se ajustan proporcionalmente."
+          }
+        }
+      }
+    },
+    "Period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo"
+          }
+        }
+      }
+    },
+    "Pick your categories": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige tus categorías"
+          }
+        }
+      }
+    },
+    "Plan": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan"
+          }
+        }
+      }
+    },
+    "Plans are not available right now": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los planes no están disponibles en este momento"
+          }
+        }
+      }
+    },
+    "Previous period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo anterior"
+          }
+        }
+      }
+    },
+    "Quick add": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir rápido"
+          }
+        }
+      }
+    },
+    "Rainy day": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fondo para imprevistos"
+          }
+        }
+      }
+    },
+    "Reach it by": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alcanzar el"
+          }
+        }
+      }
+    },
+    "Record this payment?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Registrar este pago?"
+          }
+        }
+      }
+    },
+    "Recurring": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recurrente"
+          }
+        }
+      }
+    },
+    "Recurring transactions": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Movimientos recurrentes"
+          }
+        }
+      }
+    },
+    "Recurring transactions, widgets and the Apple Watch app stay free.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los movimientos recurrentes, los widgets y la app del Apple Watch siguen siendo gratis."
+          }
+        }
+      }
+    },
+    "Reduced by %@ overspent earlier": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reducido en %@ por lo que te pasaste antes"
+          }
+        }
+      }
+    },
+    "Refunds": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reembolsos"
+          }
+        }
+      }
+    },
+    "Remind me before it's due": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recordarme antes del vencimiento"
+          }
+        }
+      }
+    },
+    "Reminders": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recordatorios"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar"
+          }
+        }
+      }
+    },
+    "Remove %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar %@"
+          }
+        }
+      }
+    },
+    "Remove person": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar persona"
+          }
+        }
+      }
+    },
+    "Remove this person?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Eliminar a esta persona?"
+          }
+        }
+      }
+    },
+    "Removing someone also removes their share of past expenses and any repayments they were part of, so balances can change.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al eliminar a alguien, también se eliminan su parte de los gastos anteriores y los pagos en los que participó, por lo que los saldos pueden cambiar."
+          }
+        }
+      }
+    },
+    "Rename, reorder, recolor or archive the categories you budget with.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Renombra, reordena, cambia el color o archiva las categorías con las que haces tu presupuesto."
+          }
+        }
+      }
+    },
+    "Rent & Housing": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alquiler y vivienda"
+          }
+        }
+      }
+    },
+    "Repayments you mark as paid will appear here.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pagos que marques como pagados aparecerán aquí."
+          }
+        }
+      }
+    },
+    "Repeat": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repetir"
+          }
+        }
+      }
+    },
+    "Repeats": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se repite"
+          }
+        }
+      }
+    },
+    "Restore": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar"
+          }
+        }
+      }
+    },
+    "Restore purchases": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar compras"
+          }
+        }
+      }
+    },
+    "Resume": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reanudar"
+          }
+        }
+      }
+    },
+    "Right on pace.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Justo al ritmo previsto."
+          }
+        }
+      }
+    },
+    "Roll over unspent budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrastrar el presupuesto sin gastar al siguiente periodo"
+          }
+        }
+      }
+    },
+    "Rollover carries what you did not spend in a category into the next period, and carries overspending forward as a smaller allowance. Each category can opt in from its editor.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El arrastre lleva al siguiente periodo lo que no gastaste en una categoría, y traslada el exceso de gasto como un margen menor. Cada categoría puede activarlo desde su editor."
+          }
+        }
+      }
+    },
+    "Salary": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salario"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guardar"
+          }
+        }
+      }
+    },
+    "Save %@ per month to reach it by %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Save %1$@ per month to reach it by %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahorra %1$@ al mes para alcanzarla el %2$@"
+          }
+        }
+      }
+    },
+    "Save %lld%%": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahorra %lld%%"
+          }
+        }
+      }
+    },
+    "Save toward as many goals as you like, each with its own pace.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahorra para tantas metas como quieras, cada una a su propio ritmo."
+          }
+        }
+      }
+    },
+    "Savings": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahorros"
+          }
+        }
+      }
+    },
+    "Savings goal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meta de ahorro"
+          }
+        }
+      }
+    },
+    "Savings goals": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metas de ahorro"
+          }
+        }
+      }
+    },
+    "Savings rate": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tasa de ahorro"
+          }
+        }
+      }
+    },
+    "Schedule": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programación"
+          }
+        }
+      }
+    },
+    "Search currencies": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar monedas"
+          }
+        }
+      }
+    },
+    "Search title, note or category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar título, nota o categoría"
+          }
+        }
+      }
+    },
+    "Security & privacy": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguridad y privacidad"
+          }
+        }
+      }
+    },
+    "See who owes whom and record repayments.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consulta quién debe a quién y registra pagos."
+          }
+        }
+      }
+    },
+    "Sent from Tally": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviado desde Tally"
+          }
+        }
+      }
+    },
+    "Series": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie"
+          }
+        }
+      }
+    },
+    "Set a limit for the categories you care about and Tally will show what is left to spend, day by day.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Define un límite para las categorías que te importan y Tally te mostrará lo que te queda por gastar, día a día."
+          }
+        }
+      }
+    },
+    "Set aside money for something specific, a trip, a cushion or a big purchase, and watch it fill up.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reserva dinero para algo concreto, un viaje, un colchón o una compra grande, y mira cómo se llena."
+          }
+        }
+      }
+    },
+    "Set category limits": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definir límites por categoría"
+          }
+        }
+      }
+    },
+    "Set limit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definir límite"
+          }
+        }
+      }
+    },
+    "Set up": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configurar"
+          }
+        }
+      }
+    },
+    "Set up Together": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configurar Juntos"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes"
+          }
+        }
+      }
+    },
+    "Settled": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saldado"
+          }
+        }
+      }
+    },
+    "Settled up": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuentas saldadas"
+          }
+        }
+      }
+    },
+    "Settlement history": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historial de cuentas saldadas"
+          }
+        }
+      }
+    },
+    "Share a plain-text summary whenever you like.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparte un resumen en texto simple cuando quieras."
+          }
+        }
+      }
+    },
+    "Share costs, save toward more goals and see the patterns behind your spending.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparte gastos, ahorra para más metas y descubre los patrones detrás de tus gastos."
+          }
+        }
+      }
+    },
+    "Share summary": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartir resumen"
+          }
+        }
+      }
+    },
+    "Shared activity": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actividad compartida"
+          }
+        }
+      }
+    },
+    "Shared budget summary": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumen del presupuesto compartido"
+          }
+        }
+      }
+    },
+    "Shared budgets": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presupuestos compartidos"
+          }
+        }
+      }
+    },
+    "Shared spending": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastos compartidos"
+          }
+        }
+      }
+    },
+    "Shopping": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compras"
+          }
+        }
+      }
+    },
+    "Show all %lld": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar los %lld"
+          }
+        }
+      }
+    },
+    "Show amounts": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar importes"
+          }
+        }
+      }
+    },
+    "Show fewer": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar menos"
+          }
+        }
+      }
+    },
+    "Shows this category's transactions": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muestra los movimientos de esta categoría"
+          }
+        }
+      }
+    },
+    "Side income": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingresos extra"
+          }
+        }
+      }
+    },
+    "Skip for now": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Omitir por ahora"
+          }
+        }
+      }
+    },
+    "Someone": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alguien"
+          }
+        }
+      }
+    },
+    "Spending": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastos"
+          }
+        }
+      }
+    },
+    "Spending by category": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gasto por categoría"
+          }
+        }
+      }
+    },
+    "Spending has passed the plan by %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El gasto supera el plan en %@"
+          }
+        }
+      }
+    },
+    "Spending here is not counted against a category limit, but it still reduces what is left to spend.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los gastos aquí no cuentan contra el límite de una categoría, pero sí reducen lo que te queda por gastar."
+          }
+        }
+      }
+    },
+    "Spending is level with last period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El gasto es igual al del periodo anterior"
+          }
+        }
+      }
+    },
+    "Spent": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastado"
+          }
+        }
+      }
+    },
+    "Spent so far": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastado hasta ahora"
+          }
+        }
+      }
+    },
+    "Split": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir"
+          }
+        }
+      }
+    },
+    "Split any expense equally, by amount, percentage or shares.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divide cualquier gasto a partes iguales, por importe, porcentaje o participaciones."
+          }
+        }
+      }
+    },
+    "Split costs with the people you live with and settle up in a tap.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Divide gastos con quienes vives y salda cuentas en un toque."
+          }
+        }
+      }
+    },
+    "Split only": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo dividir"
+          }
+        }
+      }
+    },
+    "Split with others": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividir con otros"
+          }
+        }
+      }
+    },
+    "Start planning": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empezar a planificar"
+          }
+        }
+      }
+    },
+    "Starts": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empieza"
+          }
+        }
+      }
+    },
+    "Step %lld of %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Step %1$lld of %2$lld"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paso %1$lld de %2$lld"
+          }
+        }
+      }
+    },
+    "Stop on a date": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminar en una fecha"
+          }
+        }
+      }
+    },
+    "Subscribe": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suscribirse"
+          }
+        }
+      }
+    },
+    "Subscribe to Tally Pro": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suscribirte a Tally Pro"
+          }
+        }
+      }
+    },
+    "Subscriptions": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suscripciones"
+          }
+        }
+      }
+    },
+    "Subscriptions renew automatically at the price shown unless cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple ID when you confirm the purchase. Manage or cancel any time in your Apple ID settings. Any free trial is for new subscribers only and converts to a paid plan when it ends.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las suscripciones se renuevan automáticamente al precio indicado, salvo que las canceles al menos 24 horas antes de que termine el periodo actual. El pago se carga a tu Apple ID cuando confirmas la compra. Puedes gestionar o cancelar en cualquier momento en los ajustes de tu Apple ID. Cualquier prueba gratuita es solo para nuevos suscriptores y se convierte en un plan de pago cuando termina."
+          }
+        }
+      }
+    },
+    "Suggested payments": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pagos sugeridos"
+          }
+        }
+      }
+    },
+    "System": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistema"
+          }
+        }
+      }
+    },
+    "Tally": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tally"
+          }
+        }
+      }
+    },
+    "Tally Pro": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tally Pro"
+          }
+        }
+      }
+    },
+    "Tally has no accounts and no tracking. Budgets and transactions are stored only on your device.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tally no requiere cuenta ni te rastrea. Los presupuestos y movimientos se guardan solo en tu dispositivo."
+          }
+        }
+      }
+    },
+    "Tally shows": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tally muestra"
+          }
+        }
+      }
+    },
+    "Tally starts a fresh budget at the rhythm of your pay, so the numbers line up with real life.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tally inicia un presupuesto nuevo al ritmo de tu pago, para que las cifras coincidan con la vida real."
+          }
+        }
+      }
+    },
+    "Target": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objetivo"
+          }
+        }
+      }
+    },
+    "Target date": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fecha objetivo"
+          }
+        }
+      }
+    },
+    "Target date %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fecha objetivo %@"
+          }
+        }
+      }
+    },
+    "Thank you for backing Tally. Every Pro feature is unlocked.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gracias por apoyar a Tally. Todas las funciones Pro están desbloqueadas."
+          }
+        }
+      }
+    },
+    "That amount is too small to log.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ese importe es demasiado pequeño para registrarlo."
+          }
+        }
+      }
+    },
+    "That amount needs to be more than zero.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El importe debe ser mayor que cero."
+          }
+        }
+      }
+    },
+    "The App Store could not verify this purchase.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La App Store no pudo verificar esta compra."
+          }
+        }
+      }
+    },
+    "The default account is preselected when you add a transaction.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La cuenta predeterminada se preselecciona al añadir un movimiento."
+          }
+        }
+      }
+    },
+    "The free plan includes ^[%lld active goal](inflect: true). Archive one or unlock Tally Pro for more.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El plan gratuito incluye ^[%lld meta activa](inflect: true). Archiva una o desbloquea Tally Pro para tener más."
+          }
+        }
+      }
+    },
+    "The lock appears whenever Tally opens or returns from the background. Hiding amounts blurs money on screen until you turn it off.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El bloqueo aparece cada vez que Tally se abre o vuelve del segundo plano. Ocultar los importes difumina el dinero en pantalla hasta que lo desactives."
+          }
+        }
+      }
+    },
+    "The purchase did not go through. %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La compra no se completó. %@"
+          }
+        }
+      }
+    },
+    "The target date, %@, has passed.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fecha objetivo, %@, ya pasó."
+          }
+        }
+      }
+    },
+    "Their shares and repayments will be deleted, so balances can change.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se eliminarán sus partes y pagos, por lo que los saldos pueden cambiar."
+          }
+        }
+      }
+    },
+    "This category has no limit yet. Use Edit to set one.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta categoría aún no tiene límite. Usa Editar para definir uno."
+          }
+        }
+      }
+    },
+    "This category has no limit. Set one in the Plan tab to see it on the chart.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta categoría no tiene límite. Defínelo en la pestaña Plan para verlo en el gráfico."
+          }
+        }
+      }
+    },
+    "This is how you appear next to shared expenses.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Así apareces junto a los gastos compartidos."
+          }
+        }
+      }
+    },
+    "This is saved as a transaction called “Balance adjustment” with no category, dated today.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se guarda como un movimiento llamado “Ajuste de saldo” sin categoría, con la fecha de hoy."
+          }
+        }
+      }
+    },
+    "This period": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este periodo"
+          }
+        }
+      }
+    },
+    "This period has not started yet.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este periodo aún no ha empezado."
+          }
+        }
+      }
+    },
+    "Time": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hora"
+          }
+        }
+      }
+    },
+    "Title": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Título"
+          }
+        }
+      }
+    },
+    "Title (optional)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Título (opcional)"
+          }
+        }
+      }
+    },
+    "To": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoy"
+          }
+        }
+      }
+    },
+    "Together": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juntos"
+          }
+        }
+      }
+    },
+    "Top payees": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Principales beneficiarios"
+          }
+        }
+      }
+    },
+    "Transactions": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Movimientos"
+          }
+        }
+      }
+    },
+    "Transfer": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transferencia"
+          }
+        }
+      }
+    },
+    "Transfer from %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transferencia desde %@"
+          }
+        }
+      }
+    },
+    "Transfer to %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transferencia a %@"
+          }
+        }
+      }
+    },
+    "Transport": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transporte"
+          }
+        }
+      }
+    },
+    "Travel": {
+      "comment": "Starter category name.",
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viajes"
+          }
+        }
+      }
+    },
+    "Trends, comparisons and patterns across every period.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tendencias, comparaciones y patrones de todos los periodos."
+          }
+        }
+      }
+    },
+    "Try Tally Pro free": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prueba Tally Pro gratis"
+          }
+        }
+      }
+    },
+    "Try a different search, or loosen the filters.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prueba otra búsqueda o relaja los filtros."
+          }
+        }
+      }
+    },
+    "Try again": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reintentar"
+          }
+        }
+      }
+    },
+    "Turn on app lock": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar bloqueo de la app"
+          }
+        }
+      }
+    },
+    "Type": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipo"
+          }
+        }
+      }
+    },
+    "Unassigned": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin asignar"
+          }
+        }
+      }
+    },
+    "Unassigned is expected income minus everything you have set aside below.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin asignar es el ingreso previsto menos todo lo que has reservado abajo."
+          }
+        }
+      }
+    },
+    "Uncategorized": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin categoría"
+          }
+        }
+      }
+    },
+    "Unlimited goals": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metas ilimitadas"
+          }
+        }
+      }
+    },
+    "Unlock with %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desbloquear con %@"
+          }
+        }
+      }
+    },
+    "Unlock with Tally Pro": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desbloquear con Tally Pro"
+          }
+        }
+      }
+    },
+    "Unlock your budget": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desbloquea tu presupuesto"
+          }
+        }
+      }
+    },
+    "Use as default account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar como cuenta predeterminada"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versión"
+          }
+        }
+      }
+    },
+    "Wallet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cartera"
+          }
+        }
+      }
+    },
+    "We could not reach the App Store. Check your connection and try again.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No pudimos conectar con la App Store. Revisa tu conexión e inténtalo de nuevo."
+          }
+        }
+      }
+    },
+    "Week starts on": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La semana empieza el"
+          }
+        }
+      }
+    },
+    "Weekly, from %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semanal, desde %@"
+          }
+        }
+      }
+    },
+    "What do you expect to earn each month?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Cuánto esperas ganar cada mes?"
+          }
+        }
+      }
+    },
+    "What do you expect to earn each week?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Cuánto esperas ganar cada semana?"
+          }
+        }
+      }
+    },
+    "What do you expect to earn every two weeks?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Cuánto esperas ganar cada dos semanas?"
+          }
+        }
+      }
+    },
+    "What the account held when you added it. Turn on the toggle if it starts below zero.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo que tenía la cuenta cuando la añadiste. Activa el interruptor si empieza por debajo de cero."
+          }
+        }
+      }
+    },
+    "What you get": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qué obtienes"
+          }
+        }
+      }
+    },
+    "Where does your money live? One account is enough to begin, and you can add more later.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Dónde está tu dinero? Una cuenta basta para empezar y puedes añadir más después."
+          }
+        }
+      }
+    },
+    "Which currency do you use?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué moneda usas?"
+          }
+        }
+      }
+    },
+    "Which day do you get paid?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué día cobras?"
+          }
+        }
+      }
+    },
+    "Widgets and Apple Watch": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Widgets y Apple Watch"
+          }
+        }
+      }
+    },
+    "With a date, Tally works out how much to set aside each month.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con una fecha, Tally calcula cuánto reservar cada mes."
+          }
+        }
+      }
+    },
+    "Withdraw": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retirar"
+          }
+        }
+      }
+    },
+    "Withdrawal": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retiro"
+          }
+        }
+      }
+    },
+    "Yearly": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anual"
+          }
+        }
+      }
+    },
+    "Yesterday": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayer"
+          }
+        }
+      }
+    },
+    "You": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tú"
+          }
+        }
+      }
+    },
+    "You are %@ over budget for %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You are %1$@ over budget for %2$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estás %1$@ por encima del presupuesto de %2$@."
+          }
+        }
+      }
+    },
+    "You can take out up to %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puedes retirar hasta %@."
+          }
+        }
+      }
+    },
+    "You have %@ left to spend for %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You have %1$@ left to spend for %2$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Te quedan %1$@ para gastar en %2$@."
+          }
+        }
+      }
+    },
+    "You have %@ left to spend. That is about %@ a day for the next ^[%lld day](inflect: true).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You have %1$@ left to spend. That is about %2$@ a day for the next ^[%3$lld day](inflect: true)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Te quedan %1$@ para gastar. Son unos %2$@ al día durante los próximos ^[%3$lld día](inflect: true)."
+          }
+        }
+      }
+    },
+    "You have not set any category budgets for %@ yet. You have spent %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You have not set any category budgets for %1$@ yet. You have spent %2$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no has definido presupuestos por categoría para %1$@. Has gastado %2$@."
+          }
+        }
+      }
+    },
+    "You have spent %@ of %@ this period.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "You have spent %1$@ of %2$@ this period."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Has gastado %1$@ de %2$@ en este periodo."
+          }
+        }
+      }
+    },
+    "You're on Pro": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ya tienes Pro"
+          }
+        }
+      }
+    },
+    "Your budget is locked.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu presupuesto está bloqueado."
+          }
+        }
+      }
+    },
+    "Your budget is ready": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu presupuesto está listo"
+          }
+        }
+      }
+    },
+    "Your budget on the Home Screen, Lock Screen and wrist.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu presupuesto en la pantalla de inicio, la pantalla de bloqueo y la muñeca."
+          }
+        }
+      }
+    },
+    "Your data stays on this device.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus datos permanecen en este dispositivo."
+          }
+        }
+      }
+    },
+    "Your name": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu nombre"
+          }
+        }
+      }
+    },
+    "Your purchase is waiting for approval. Pro unlocks as soon as it goes through.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu compra está pendiente de aprobación. Pro se desbloquea en cuanto se complete."
+          }
+        }
+      }
+    },
+    "Your repeating costs": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus gastos recurrentes"
+          }
+        }
+      }
+    },
+    "Your share": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu parte"
+          }
+        }
+      }
+    },
+    "^[%lld category](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld categoría](inflect: true)"
+          }
+        }
+      }
+    },
+    "^[%lld day](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld día](inflect: true)"
+          }
+        }
+      }
+    },
+    "^[%lld month](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld mes](inflect: true)"
+          }
+        }
+      }
+    },
+    "^[%lld period](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld periodo](inflect: true)"
+          }
+        }
+      }
+    },
+    "^[%lld purchase](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld compra](inflect: true)"
+          }
+        }
+      }
+    },
+    "^[%lld week](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld semana](inflect: true)"
+          }
+        }
+      }
+    },
+    "^[%lld year](inflect: true)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld año](inflect: true)"
+          }
+        }
+      }
+    },
+    "another account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "otra cuenta"
+          }
+        }
+      }
+    },
+    "left": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "disponible"
+          }
+        }
+      }
+    },
+    "limit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "límite"
+          }
+        }
+      }
+    },
+    "of": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "de"
+          }
+        }
+      }
+    },
+    "of %@ planned": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "de %@ planificado"
+          }
+        }
+      }
+    },
+    "over": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "excedido"
+          }
+        }
+      }
+    },
+    "saved": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ahorrado"
+          }
+        }
+      }
+    },
+    "someone": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "alguien"
+          }
+        }
+      }
+    },
+    "spent": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "gastado"
+          }
+        }
+      }
+    },
+    "to go": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "por ahorrar"
+          }
+        }
+      }
+    },
+    "×": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "×"
+          }
+        }
+      }
+    },
+    "≈": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≈"
+          }
+        }
+      }
+    },
+    "≈ %@ per day for ^[%lld day](inflect: true)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "≈ %1$@ per day for ^[%2$lld day](inflect: true)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≈ %1$@ al día durante ^[%2$lld día](inflect: true)"
+          }
+        }
+      }
+    }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
