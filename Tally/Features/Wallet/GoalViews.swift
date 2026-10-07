@@ -31,10 +31,11 @@ enum GoalPlan {
         guard !goal.isComplete, let deadline = goal.deadline else { return nil }
         let dateText: String = deadline.formatted(date: .abbreviated, time: .omitted)
         if isPastDeadline(deadline, now: now) {
-            return "The target date, \(dateText), has passed."
+            return String(localized: "The target date, \(dateText), has passed.")
         }
         guard let monthly = monthlyAmount(for: goal, now: now) else { return nil }
-        return "Save \(settings.format(monthly)) per month to reach it by \(dateText)"
+        let monthlyText: String = settings.format(monthly)
+        return String(localized: "Save \(monthlyText) per month to reach it by \(dateText)")
     }
 }
 
@@ -385,7 +386,7 @@ private struct GoalContributionRow: View {
 
     private func title(isDeposit: Bool) -> String {
         if !contribution.note.isEmpty { return contribution.note }
-        return isDeposit ? "Deposit" : "Withdrawal"
+        return isDeposit ? String(localized: "Deposit") : String(localized: "Withdrawal")
     }
 }
 
@@ -444,7 +445,7 @@ struct GoalContributionView: View {
                 }
             }
             .tallyScreen()
-            .navigationTitle(isWithdrawal ? "Withdraw" : "Add money")
+            .navigationTitle(isWithdrawal ? Text("Withdraw") : Text("Add money"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -543,7 +544,7 @@ struct GoalEditorView: View {
                 }
             }
             .tallyScreen()
-            .navigationTitle(goal == nil ? "New goal" : "Edit goal")
+            .navigationTitle(goal == nil ? Text("New goal") : Text("Edit goal"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
