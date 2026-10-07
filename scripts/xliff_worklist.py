@@ -24,7 +24,7 @@ def main() -> None:
                 continue
             target = unit.find("x:target", NS)
             state = target.get("state") if target is not None else None
-            if target is not None and (target.text or "").strip() and (state is None or state in DONE):
+            if target is not None and "".join(target.itertext()).strip() and (state is None or state in DONE):
                 continue
             source = unit.find("x:source", NS)
             note = unit.find("x:note", NS)
@@ -32,7 +32,7 @@ def main() -> None:
                 "i": len(items) + 1,
                 "catalog": original,
                 "key": unit.get("id"),
-                "source": source.text if source is not None else "",
+                "source": " | ".join(t.strip() for t in source.itertext() if t.strip()) if source is not None else "",
                 "note": (note.text or "") if note is not None else "",
             })
     with open(sys.argv[2], "w", encoding="utf-8") as out:

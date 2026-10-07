@@ -35,13 +35,14 @@ def main() -> int:
                 source = unit.find("x:source", NS)
                 target = unit.find("x:target", NS)
                 state = target.get("state") if target is not None else None
-                text = (target.text or "").strip() if target is not None else ""
+                # Phrase sets (Siri shortcuts) nest each variant in <mrk> elements, so read all inner text.
+                text = "".join(target.itertext()).strip() if target is not None else ""
                 if not text or (state is not None and state not in DONE_STATES):
                     missing += 1
                     print("MISSING\t{}\t{}\t{}".format(
                         original,
                         json.dumps(unit.get("id")),
-                        json.dumps(source.text if source is not None else ""),
+                        json.dumps(" | ".join(t.strip() for t in source.itertext() if t.strip()) if source is not None else ""),
                     ))
     print(f"{missing} of {total} strings are missing a translation in {[p.name for p in xliffs]}")
     return 0 if (missing == 0 or report_only) else 1
